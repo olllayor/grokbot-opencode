@@ -24,6 +24,7 @@ async function compile(entry, outfile, format = 'cjs', platform = 'node') {
 }
 await compile('src/electron-main/main.ts', path.join(output,'dist/electron-main/main.cjs'));
 await compile('src/electron-preload/preload.ts', path.join(output,'dist/electron-preload/preload.cjs'));
+await compile('src/opencode/coordinator.ts', path.join(output, 'dist/node-agent-coordinator/main.cjs'));
 for (const name of ['preload-meeting-avatar','preload-desktop-mount-panel','preload-webview','preload-vnc','preload-meeting']) {
  try { await access(path.join(root,`src/auxiliary-preloads/${name}.ts`)); }
  catch { continue; }
