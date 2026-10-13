@@ -1,0 +1,2472 @@
+{
+  "originalArtifact": "recovered/dist/electron-preload/preload.cjs",
+  "originalSha256": "3ba7438998d25708efe6738a0346c6d196c8d7f4242bd36d3e3b757709c00261",
+  "formattedSource": "evidence/preload-readable.cjs",
+  "formattedSha256": "1648793ceda300a4428c2f5989b1fb7cecbdb55da3deff7436604663b67fa6e8",
+  "sourceRanges": [
+    {
+      "symbol": "Ft",
+      "start": 19048,
+      "end": 19555,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "u",
+      "start": 18022,
+      "end": 18099,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ms",
+      "start": 18886,
+      "end": 18912,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "pn",
+      "start": 14568,
+      "end": 14655,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ls",
+      "start": 14523,
+      "end": 14548,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "cs",
+      "start": 14552,
+      "end": 14566,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ss",
+      "start": 18916,
+      "end": 18957,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "mn",
+      "start": 14660,
+      "end": 14667,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Pt",
+      "start": 14981,
+      "end": 15059,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "us",
+      "start": 14669,
+      "end": 14980,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ue",
+      "start": 18165,
+      "end": 18352,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ys",
+      "start": 18961,
+      "end": 18998,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Sn",
+      "start": 15064,
+      "end": 15072,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "wt",
+      "start": 15074,
+      "end": 15167,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Gt",
+      "start": 19002,
+      "end": 19044,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ve",
+      "start": 15172,
+      "end": 15182,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Dt",
+      "start": 15184,
+      "end": 15277,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "hi",
+      "start": 105601,
+      "end": 124701,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "_i",
+      "start": 104709,
+      "end": 104834,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Kc",
+      "start": 104838,
+      "end": 104874,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ne",
+      "start": 104878,
+      "end": 104919,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "g",
+      "start": 17948,
+      "end": 18018,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Wc",
+      "start": 105154,
+      "end": 105418,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ei",
+      "start": 104963,
+      "end": 105150,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "hn",
+      "start": 19845,
+      "end": 19954,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ht",
+      "start": 19561,
+      "end": 19645,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Zt",
+      "start": 20889,
+      "end": 20928,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ts",
+      "start": 20855,
+      "end": 20887,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "jc",
+      "start": 104923,
+      "end": 104959,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Fc",
+      "start": 104473,
+      "end": 104600,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ar",
+      "start": 23474,
+      "end": 24834,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ns",
+      "start": 22365,
+      "end": 22450,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ge",
+      "start": 22536,
+      "end": 22746,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "rr",
+      "start": 22472,
+      "end": 22495,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "or",
+      "start": 22499,
+      "end": 22534,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "xs",
+      "start": 22454,
+      "end": 22468,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ps",
+      "start": 22747,
+      "end": 23473,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "nr",
+      "start": 21898,
+      "end": 21965,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ks",
+      "start": 21864,
+      "end": 21896,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ye",
+      "start": 102945,
+      "end": 102966,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "tr",
+      "start": 22160,
+      "end": 22360,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Os",
+      "start": 22083,
+      "end": 22159,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Is",
+      "start": 21970,
+      "end": 22081,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ir",
+      "start": 28560,
+      "end": 28627,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ls",
+      "start": 28536,
+      "end": 28558,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ds",
+      "start": 28505,
+      "end": 28530,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ws",
+      "start": 24839,
+      "end": 28501,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Xo",
+      "start": 67172,
+      "end": 67253,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Dc",
+      "start": 102998,
+      "end": 103060,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "he",
+      "start": 20929,
+      "end": 21087,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ci",
+      "start": 101511,
+      "end": 101578,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "kc",
+      "start": 101478,
+      "end": 101509,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ie",
+      "start": 101739,
+      "end": 101806,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ic",
+      "start": 101583,
+      "end": 101737,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "sr",
+      "start": 28870,
+      "end": 28943,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "vs",
+      "start": 28827,
+      "end": 28869,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ms",
+      "start": 28628,
+      "end": 28826,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "fi",
+      "start": 104396,
+      "end": 104469,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Qt",
+      "start": 21315,
+      "end": 21668,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Cs",
+      "start": 21259,
+      "end": 21293,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "er",
+      "start": 21669,
+      "end": 21859,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "wc",
+      "start": 102970,
+      "end": 102994,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ee",
+      "start": 13886,
+      "end": 14214,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "l",
+      "start": 13699,
+      "end": 13782,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "pi",
+      "start": 102132,
+      "end": 102504,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ui",
+      "start": 101948,
+      "end": 102029,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Nc",
+      "start": 102034,
+      "end": 102130,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Jt",
+      "start": 20823,
+      "end": 20849,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "En",
+      "start": 18354,
+      "end": 18421,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "yi",
+      "start": 103315,
+      "end": 103351,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Bc",
+      "start": 103601,
+      "end": 103875,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Gc",
+      "start": 104280,
+      "end": 104392,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Tn",
+      "start": 28948,
+      "end": 28957,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "dr",
+      "start": 28959,
+      "end": 29068,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Vc",
+      "start": 103879,
+      "end": 104276,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Rn",
+      "start": 20030,
+      "end": 20082,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Wt",
+      "start": 19959,
+      "end": 20005,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Yt",
+      "start": 20083,
+      "end": 20262,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Mc",
+      "start": 103141,
+      "end": 103181,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$t",
+      "start": 20283,
+      "end": 20346,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "As",
+      "start": 20267,
+      "end": 20281,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ai",
+      "start": 105422,
+      "end": 105597,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Hc",
+      "start": 104604,
+      "end": 104705,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "zt",
+      "start": 20763,
+      "end": 20817,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Lc",
+      "start": 103064,
+      "end": 103137,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Qe",
+      "start": 101107,
+      "end": 101132,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "li",
+      "start": 101180,
+      "end": 101473,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Cc",
+      "start": 101154,
+      "end": 101178,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Xt",
+      "start": 20403,
+      "end": 20683,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "hs",
+      "start": 20386,
+      "end": 20401,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "A",
+      "start": 18422,
+      "end": 18750,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "vt",
+      "start": 16394,
+      "end": 16469,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ca",
+      "start": 74385,
+      "end": 74694,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "S",
+      "start": 73698,
+      "end": 73778,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "w",
+      "start": 73779,
+      "end": 73827,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "q",
+      "start": 73893,
+      "end": 73958,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Cd",
+      "start": 74215,
+      "end": 74231,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Rr",
+      "start": 56725,
+      "end": 56763,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "la",
+      "start": 74235,
+      "end": 74383,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "pa",
+      "start": 74802,
+      "end": 75023,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "kd",
+      "start": 74699,
+      "end": 74715,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Vr",
+      "start": 57519,
+      "end": 57548,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Id",
+      "start": 74719,
+      "end": 74735,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Gr",
+      "start": 57552,
+      "end": 57663,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "hr",
+      "start": 56511,
+      "end": 56573,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Qs",
+      "start": 56493,
+      "end": 56509,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Js",
+      "start": 56178,
+      "end": 56411,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ua",
+      "start": 74739,
+      "end": 74800,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Sa",
+      "start": 75252,
+      "end": 75705,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Od",
+      "start": 75028,
+      "end": 75044,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Tr",
+      "start": 56767,
+      "end": 56815,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "_",
+      "start": 73828,
+      "end": 73892,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Nd",
+      "start": 75048,
+      "end": 75064,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "br",
+      "start": 56819,
+      "end": 56872,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "xd",
+      "start": 75068,
+      "end": 75084,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Cr",
+      "start": 56876,
+      "end": 56911,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ma",
+      "start": 75088,
+      "end": 75250,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ga",
+      "start": 75824,
+      "end": 76046,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Pd",
+      "start": 75710,
+      "end": 75726,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "kr",
+      "start": 56915,
+      "end": 56961,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "wd",
+      "start": 75730,
+      "end": 75755,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Se",
+      "start": 73959,
+      "end": 74041,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ya",
+      "start": 75759,
+      "end": 75822,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "_a",
+      "start": 76406,
+      "end": 76838,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Dd",
+      "start": 76051,
+      "end": 76067,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ir",
+      "start": 56965,
+      "end": 57016,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Md",
+      "start": 76091,
+      "end": 76107,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Nr",
+      "start": 57061,
+      "end": 57100,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ld",
+      "start": 76071,
+      "end": 76087,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Or",
+      "start": 57020,
+      "end": 57057,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "fa",
+      "start": 76382,
+      "end": 76404,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "vd",
+      "start": 76111,
+      "end": 76378,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Aa",
+      "start": 78224,
+      "end": 79641,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ud",
+      "start": 76843,
+      "end": 76859,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "xr",
+      "start": 57104,
+      "end": 57133,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Bd",
+      "start": 76863,
+      "end": 76879,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Pr",
+      "start": 57137,
+      "end": 57180,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Vd",
+      "start": 76883,
+      "end": 76899,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "wr",
+      "start": 57184,
+      "end": 57234,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Gd",
+      "start": 76903,
+      "end": 76919,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Dr",
+      "start": 57238,
+      "end": 57306,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Yd",
+      "start": 77027,
+      "end": 77363,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Fd",
+      "start": 76923,
+      "end": 76939,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ur",
+      "start": 57426,
+      "end": 57479,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Hd",
+      "start": 76943,
+      "end": 76959,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "vr",
+      "start": 57364,
+      "end": 57422,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Kd",
+      "start": 76963,
+      "end": 76979,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Lr",
+      "start": 57310,
+      "end": 57349,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "jd",
+      "start": 76983,
+      "end": 77005,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Do",
+      "start": 61549,
+      "end": 61559,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Lo",
+      "start": 61563,
+      "end": 61578,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Wd",
+      "start": 77009,
+      "end": 77025,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Mr",
+      "start": 57353,
+      "end": 57360,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "wn",
+      "start": 56578,
+      "end": 56719,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ea",
+      "start": 78200,
+      "end": 78222,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$d",
+      "start": 77368,
+      "end": 78196,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ra",
+      "start": 80017,
+      "end": 80430,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "qd",
+      "start": 79646,
+      "end": 79662,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Fr",
+      "start": 57669,
+      "end": 57695,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Xd",
+      "start": 79666,
+      "end": 79682,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "jr",
+      "start": 57907,
+      "end": 57961,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ke",
+      "start": 79744,
+      "end": 79826,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "zd",
+      "start": 79686,
+      "end": 79702,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Kr",
+      "start": 57756,
+      "end": 57903,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Jd",
+      "start": 79706,
+      "end": 79722,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Hr",
+      "start": 57699,
+      "end": 57752,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Zd",
+      "start": 79726,
+      "end": 79742,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Wr",
+      "start": 57965,
+      "end": 57998,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ha",
+      "start": 79831,
+      "end": 80015,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ba",
+      "start": 80567,
+      "end": 80806,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ta",
+      "start": 80435,
+      "end": 80565,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ka",
+      "start": 81136,
+      "end": 81626,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Qd",
+      "start": 80811,
+      "end": 80827,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Yr",
+      "start": 58002,
+      "end": 58055,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ca",
+      "start": 80831,
+      "end": 81134,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Oa",
+      "start": 81907,
+      "end": 82267,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ia",
+      "start": 81748,
+      "end": 81905,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "xa",
+      "start": 82696,
+      "end": 83623,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "nl",
+      "start": 82272,
+      "end": 82288,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Dn",
+      "start": 58338,
+      "end": 58376,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "tl",
+      "start": 82292,
+      "end": 82308,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Zr",
+      "start": 58380,
+      "end": 58438,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Je",
+      "start": 81662,
+      "end": 81743,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "el",
+      "start": 81631,
+      "end": 81660,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "rl",
+      "start": 82312,
+      "end": 82328,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Qr",
+      "start": 58442,
+      "end": 58468,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Na",
+      "start": 82332,
+      "end": 82694,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "wa",
+      "start": 83712,
+      "end": 83904,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ol",
+      "start": 83628,
+      "end": 83644,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$r",
+      "start": 58059,
+      "end": 58085,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "aa",
+      "start": 74125,
+      "end": 74210,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Pa",
+      "start": 83648,
+      "end": 83710,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ba",
+      "start": 85088,
+      "end": 85451,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ll",
+      "start": 84827,
+      "end": 84843,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "no",
+      "start": 58528,
+      "end": 58568,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ul",
+      "start": 84867,
+      "end": 84883,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "eo",
+      "start": 58472,
+      "end": 58524,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ua",
+      "start": 84887,
+      "end": 85086,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ga",
+      "start": 85650,
+      "end": 86032,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "cl",
+      "start": 84847,
+      "end": 84863,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "to",
+      "start": 58572,
+      "end": 58628,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Va",
+      "start": 85456,
+      "end": 85648,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "La",
+      "start": 84162,
+      "end": 84543,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "al",
+      "start": 83909,
+      "end": 83925,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "qr",
+      "start": 58089,
+      "end": 58120,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "il",
+      "start": 83929,
+      "end": 83945,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Xr",
+      "start": 58124,
+      "end": 58255,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "sl",
+      "start": 83949,
+      "end": 83965,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "zr",
+      "start": 58259,
+      "end": 58294,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Da",
+      "start": 83969,
+      "end": 84160,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Si",
+      "start": 102719,
+      "end": 102940,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "xc",
+      "start": 102509,
+      "end": 102539,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Oe",
+      "start": 102541,
+      "end": 102622,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "mi",
+      "start": 102627,
+      "end": 102717,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "va",
+      "start": 84625,
+      "end": 84822,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "dl",
+      "start": 84548,
+      "end": 84564,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Jr",
+      "start": 58298,
+      "end": 58334,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ma",
+      "start": 84568,
+      "end": 84623,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ha",
+      "start": 86160,
+      "end": 86514,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "pl",
+      "start": 86037,
+      "end": 86053,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ro",
+      "start": 58632,
+      "end": 58702,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ml",
+      "start": 86057,
+      "end": 86073,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "oo",
+      "start": 58706,
+      "end": 58778,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Sl",
+      "start": 86077,
+      "end": 86093,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ao",
+      "start": 58782,
+      "end": 58838,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "qo",
+      "start": 67141,
+      "end": 67170,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Fa",
+      "start": 86097,
+      "end": 86158,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ja",
+      "start": 86614,
+      "end": 86951,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "yl",
+      "start": 86519,
+      "end": 86535,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "uo",
+      "start": 59000,
+      "end": 59045,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "gl",
+      "start": 86539,
+      "end": 86555,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "vo",
+      "start": 62970,
+      "end": 63003,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ka",
+      "start": 86559,
+      "end": 86612,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "za",
+      "start": 88980,
+      "end": 89159,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Tl",
+      "start": 88903,
+      "end": 88919,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "po",
+      "start": 59049,
+      "end": 59374,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "bl",
+      "start": 88923,
+      "end": 88939,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "mo",
+      "start": 59378,
+      "end": 59399,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Xa",
+      "start": 88943,
+      "end": 88978,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "qa",
+      "start": 87811,
+      "end": 88898,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "El",
+      "start": 87266,
+      "end": 87282,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "so",
+      "start": 58887,
+      "end": 58914,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Bn",
+      "start": 87306,
+      "end": 87322,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "lo",
+      "start": 58918,
+      "end": 58960,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Al",
+      "start": 87286,
+      "end": 87302,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "co",
+      "start": 58964,
+      "end": 58996,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "hl",
+      "start": 87326,
+      "end": 87342,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ko",
+      "start": 66044,
+      "end": 66089,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$a",
+      "start": 87785,
+      "end": 87809,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Rl",
+      "start": 87346,
+      "end": 87781,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ya",
+      "start": 87049,
+      "end": 87261,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "_l",
+      "start": 86976,
+      "end": 86992,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "io",
+      "start": 58842,
+      "end": 58883,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Xe",
+      "start": 71926,
+      "end": 71971,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Rd",
+      "start": 71837,
+      "end": 71925,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "hd",
+      "start": 71708,
+      "end": 71836,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ad",
+      "start": 71658,
+      "end": 71684,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "bd",
+      "start": 72864,
+      "end": 73015,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ed",
+      "start": 71621,
+      "end": 71654,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Td",
+      "start": 71976,
+      "end": 72862,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "fl",
+      "start": 86956,
+      "end": 86972,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$o",
+      "start": 66815,
+      "end": 66967,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Wa",
+      "start": 86996,
+      "end": 87047,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Qa",
+      "start": 89492,
+      "end": 89887,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ja",
+      "start": 89222,
+      "end": 89356,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Cl",
+      "start": 89164,
+      "end": 89180,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "So",
+      "start": 59403,
+      "end": 59442,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Il",
+      "start": 89204,
+      "end": 89220,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "go",
+      "start": 59559,
+      "end": 59605,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "kl",
+      "start": 89184,
+      "end": 89200,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "yo",
+      "start": 59446,
+      "end": 59555,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Za",
+      "start": 89469,
+      "end": 89490,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ol",
+      "start": 89361,
+      "end": 89465,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ni",
+      "start": 89992,
+      "end": 90305,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Nl",
+      "start": 89892,
+      "end": 89908,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "fo",
+      "start": 59609,
+      "end": 59686,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Pl",
+      "start": 89932,
+      "end": 89939,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "xl",
+      "start": 89912,
+      "end": 89928,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "_o",
+      "start": 59690,
+      "end": 59714,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ei",
+      "start": 89943,
+      "end": 89990,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ri",
+      "start": 90340,
+      "end": 90574,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Un",
+      "start": 70796,
+      "end": 71492,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ea",
+      "start": 70753,
+      "end": 70791,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "gd",
+      "start": 70735,
+      "end": 70751,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "yd",
+      "start": 70555,
+      "end": 70731,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "na",
+      "start": 71514,
+      "end": 71552,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "fd",
+      "start": 71496,
+      "end": 71512,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ti",
+      "start": 90310,
+      "end": 90338,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ii",
+      "start": 99225,
+      "end": 100855,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ic",
+      "start": 91649,
+      "end": 91937,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "F",
+      "start": 91250,
+      "end": 91312,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "wl",
+      "start": 90579,
+      "end": 90611,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ll",
+      "start": 90649,
+      "end": 90665,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Eo",
+      "start": 59718,
+      "end": 59746,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "me",
+      "start": 91313,
+      "end": 91362,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ec",
+      "start": 95523,
+      "end": 95671,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ml",
+      "start": 90669,
+      "end": 90685,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ao",
+      "start": 59750,
+      "end": 59784,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "sc",
+      "start": 91938,
+      "end": 92101,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "vl",
+      "start": 90689,
+      "end": 90705,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ho",
+      "start": 59788,
+      "end": 59895,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "dc",
+      "start": 92102,
+      "end": 92499,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ue",
+      "start": 59899,
+      "end": 60075,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ul",
+      "start": 90709,
+      "end": 90784,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "cc",
+      "start": 92675,
+      "end": 93233,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ro",
+      "start": 60500,
+      "end": 60562,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "nd",
+      "start": 60482,
+      "end": 60498,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ed",
+      "start": 60079,
+      "end": 60478,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ia",
+      "start": 91445,
+      "end": 91497,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "sa",
+      "start": 91498,
+      "end": 91648,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Bl",
+      "start": 90788,
+      "end": 90813,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "qe",
+      "start": 62093,
+      "end": 62452,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Mn",
+      "start": 62456,
+      "end": 62470,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "lc",
+      "start": 92500,
+      "end": 92674,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ac",
+      "start": 91240,
+      "end": 91248,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "uc",
+      "start": 93234,
+      "end": 93356,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Vl",
+      "start": 90817,
+      "end": 90833,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "To",
+      "start": 60567,
+      "end": 60595,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "_c",
+      "start": 95319,
+      "end": 95522,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Gl",
+      "start": 90837,
+      "end": 90865,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Wl",
+      "start": 90947,
+      "end": 90963,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "oa",
+      "start": 73521,
+      "end": 73696,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "fc",
+      "start": 94857,
+      "end": 95318,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Fl",
+      "start": 90869,
+      "end": 90885,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ta",
+      "start": 73020,
+      "end": 73051,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Hl",
+      "start": 90889,
+      "end": 90905,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ra",
+      "start": 73055,
+      "end": 73119,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ee",
+      "start": 74042,
+      "end": 74124,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "da",
+      "start": 94722,
+      "end": 94856,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "jl",
+      "start": 90929,
+      "end": 90943,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ze",
+      "start": 73123,
+      "end": 73495,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Kl",
+      "start": 90909,
+      "end": 90925,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "pc",
+      "start": 93357,
+      "end": 93605,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ar",
+      "start": 55786,
+      "end": 56173,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "zs",
+      "start": 52450,
+      "end": 55785,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ce",
+      "start": 51944,
+      "end": 52030,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$e",
+      "start": 52338,
+      "end": 52449,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "j",
+      "start": 52139,
+      "end": 52192,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$s",
+      "start": 52031,
+      "end": 52068,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$",
+      "start": 48474,
+      "end": 48600,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "fr",
+      "start": 51440,
+      "end": 51467,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "xn",
+      "start": 48605,
+      "end": 48723,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Pn",
+      "start": 48727,
+      "end": 48760,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "gr",
+      "start": 51399,
+      "end": 51436,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "qs",
+      "start": 52069,
+      "end": 52138,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Xs",
+      "start": 52193,
+      "end": 52337,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "mr",
+      "start": 51113,
+      "end": 51224,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Sr",
+      "start": 51228,
+      "end": 51347,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "yr",
+      "start": 51351,
+      "end": 51395,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "mc",
+      "start": 93606,
+      "end": 93982,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Yl",
+      "start": 90967,
+      "end": 90983,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "bo",
+      "start": 60599,
+      "end": 60874,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "oi",
+      "start": 91363,
+      "end": 91444,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Dl",
+      "start": 90615,
+      "end": 90645,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Sc",
+      "start": 93983,
+      "end": 94267,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "$l",
+      "start": 90987,
+      "end": 91003,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "zo",
+      "start": 67295,
+      "end": 67308,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ld",
+      "start": 67258,
+      "end": 67275,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "cd",
+      "start": 67279,
+      "end": 67291,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ql",
+      "start": 91007,
+      "end": 91023,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Jo",
+      "start": 67312,
+      "end": 67367,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "yc",
+      "start": 94268,
+      "end": 94472,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Xl",
+      "start": 91027,
+      "end": 91043,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "_r",
+      "start": 51635,
+      "end": 51893,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "zl",
+      "start": 91047,
+      "end": 91063,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Er",
+      "start": 51897,
+      "end": 51942,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "gc",
+      "start": 94473,
+      "end": 94721,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Qo",
+      "start": 70325,
+      "end": 70550,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Sd",
+      "start": 67617,
+      "end": 70324,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "md",
+      "start": 67509,
+      "end": 67528,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Zo",
+      "start": 67373,
+      "end": 67384,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "pd",
+      "start": 67468,
+      "end": 67505,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ud",
+      "start": 67390,
+      "end": 67464,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "pe",
+      "start": 67530,
+      "end": 67616,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ac",
+      "start": 95672,
+      "end": 95925,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Jl",
+      "start": 91067,
+      "end": 91083,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ko",
+      "start": 61162,
+      "end": 61186,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Zl",
+      "start": 91087,
+      "end": 91116,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Co",
+      "start": 60878,
+      "end": 61158,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "hc",
+      "start": 95926,
+      "end": 96197,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ql",
+      "start": 91120,
+      "end": 91136,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Io",
+      "start": 61190,
+      "end": 61224,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Rc",
+      "start": 96198,
+      "end": 96410,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ec",
+      "start": 91140,
+      "end": 91156,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Oo",
+      "start": 61228,
+      "end": 61259,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Tc",
+      "start": 96476,
+      "end": 96722,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ze",
+      "start": 96411,
+      "end": 96475,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "nc",
+      "start": 91160,
+      "end": 91176,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "No",
+      "start": 61263,
+      "end": 61292,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "tc",
+      "start": 91180,
+      "end": 91196,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "xo",
+      "start": 61296,
+      "end": 61418,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "rc",
+      "start": 91200,
+      "end": 91216,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Po",
+      "start": 61422,
+      "end": 61465,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "oc",
+      "start": 91220,
+      "end": 91236,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "wo",
+      "start": 61469,
+      "end": 61543,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "ai",
+      "start": 99201,
+      "end": 99223,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "bc",
+      "start": 96727,
+      "end": 99197,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Vt",
+      "start": 18755,
+      "end": 18880,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Mt",
+      "start": 15594,
+      "end": 16393,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Ae",
+      "start": 15382,
+      "end": 15510,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "gn",
+      "start": 15511,
+      "end": 15593,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "di",
+      "start": 100882,
+      "end": 100958,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "si",
+      "start": 100860,
+      "end": 100880,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "vc",
+      "start": 103203,
+      "end": 103311,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "en",
+      "start": 103185,
+      "end": 103199,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "gi",
+      "start": 103563,
+      "end": 103597,
+      "semantics": "UTF-16 character indices in formatted source"
+    },
+    {
+      "symbol": "Uc",
+      "start": 103355,
+      "end": 103559,
+      "semantics": "UTF-16 character indices in formatted source"
+    }
+  ],
+  "injectedPrimitives": [
+    "B",
+    "s",
+    "P",
+    "y",
+    "p",
+    "c",
+    "W",
+    "I",
+    "R",
+    "m",
+    "se",
+    "De",
+    "ln",
+    "r",
+    "_e",
+    "f",
+    "te",
+    "Bt",
+    "ae",
+    "K"
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js",
+    "output_directory": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_be4e3d84ef1ee9e784996654d506bb2bdf76e097864be88857c944b164152215\",\"subject\":{\"name\":\"index.eager-platform-Dcfeegfw.js\",\"digest\":{\"sha256\":\"2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js\",\"output_directory\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":3236}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-FF2ZP2/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-FF2ZP2/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":3236},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-FF2ZP2/inputs/bundle.js\",\"ranges\":[[0,433227]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js\",\"sha256\":\"2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648\",\"bytes\":433227,\"snapshot_path\":\"/tmp/rea-wakaru-FF2ZP2/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/inputs/bundle.js\",\"sha256\":\"2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648\",\"bytes\":433227}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/modules/bundle.js\",\"sha256\":\"1d0fa1813484fd320745ce03b005822acefb8d4b4a90387ca6faa9b8520a2048\",\"bytes\":745861},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/modules/bundle.js.map\",\"sha256\":\"ba1854612317d7540dbd0f68d2dbab3a2609da3749bcd91eb27fa027784ea4f1\",\"bytes\":460709},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-FF2ZP2/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js\",\"original_sha256\":\"2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":433227}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/reports/stdout.json\",\"sha256\":\"ce09de891249752698ebb7bb4ffe0ae0ca652401bd71b5e561c02ccdfb2f6424\",\"bytes\":174},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/reports/provenance.json\",\"sha256\":\"85bab6f3ee770e4f4431a1e6a0a9f890eb012825fccc14cddbbeb899bc06f4bb\",\"bytes\":196},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/manifest.json\",\"sha256\":\"ea24040a2ea92ea1612e9309be80f717a34008486f393e7f8465f56e925a0cf9\",\"bytes\":3639},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_be4e3d84ef1ee9e784996654d506bb2bdf76e097864be88857c944b164152215",
+      "subject": {
+        "name": "index.eager-platform-Dcfeegfw.js",
+        "digest": {
+          "sha256": "2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js",
+        "output_directory": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":3236}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-FF2ZP2/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-FF2ZP2/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 3236
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-FF2ZP2/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  433227
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js",
+          "sha256": "2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648",
+          "bytes": 433227,
+          "snapshot_path": "/tmp/rea-wakaru-FF2ZP2/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/inputs/bundle.js",
+            "sha256": "2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648",
+            "bytes": 433227
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/modules/bundle.js",
+              "sha256": "1d0fa1813484fd320745ce03b005822acefb8d4b4a90387ca6faa9b8520a2048",
+              "bytes": 745861
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/modules/bundle.js.map",
+              "sha256": "ba1854612317d7540dbd0f68d2dbab3a2609da3749bcd91eb27fa027784ea4f1",
+              "bytes": 460709
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-FF2ZP2/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js",
+              "original_sha256": "2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 433227
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/reports/stdout.json",
+          "sha256": "ce09de891249752698ebb7bb4ffe0ae0ca652401bd71b5e561c02ccdfb2f6424",
+          "bytes": 174
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/reports/provenance.json",
+          "sha256": "85bab6f3ee770e4f4431a1e6a0a9f890eb012825fccc14cddbbeb899bc06f4bb",
+          "bytes": 196
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/manifest.json",
+          "sha256": "ea24040a2ea92ea1612e9309be80f717a34008486f393e7f8465f56e925a0cf9",
+          "bytes": 3639
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/index.eager-platform-Dcfeegfw.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/index.eager-platform-Dcfeegfw/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

@@ -1,0 +1,18 @@
+# Preload TypeScript reconstruction
+
+Observed source: `rea/recovered/dist/electron-preload/preload.cjs`, SHA-256 `3ba7438998d25708efe6738a0346c6d196c8d7f4242bd36d3e3b757709c00261`. Source names and original TypeScript annotations were absent from this packaged bundle. `rea/evidence/preload-readable.cjs` is a formatting aid, not original source.
+
+Reconstructed modules:
+
+- `src/electron-preload/contracts.ts`: 270 main RPC request declarations and 10 desktop-mount requests. Primitive, literal, union, array, record and optional field types follow the packaged validators. Custom transform/validator outputs without a recovered structural shape remain `unknown`.
+- `src/electron-preload/runtime.ts`: new readable RPC transport, failure envelope and method-probe handling, boot readiness gate, subscription cleanup, coordinator ownership, attachment staging, backend environment selection and telemetry handling.
+- `src/electron-preload/desktop.ts`: all 307 public desktop functions with typed argument adapters and descriptive identifiers. The argument payload assembly follows the shipped implementation, including omission rules, boolean coercions, callback event unpacking and platform-conditional cookie APIs.
+- `src/electron-preload/preload.ts`: six bridge exposures, reliability IPC, render trace port, sample-rate argument, coordinator port adapter and online notification.
+
+Validation: strict TypeScript checking passed. `node src/electron-preload/verify-reconstruction.mjs` executes both the shipped preload and reconstructed modules only in isolated VM contexts with mocked Electron APIs. It confirmed all exposed function shapes, 307 desktop functions, nine representative IPC argument traces, and event subscription channels. This is controlled replay, not observation of the installed app or real backend behavior.
+
+Known limits: returned RPC value shapes are `unknown`; runtime dependencies and backend behavior are provided by the recovered main/renderer packages. Custom request validators are represented as opaque types, because the renderer bridge itself forwards requests without validating them. The developer-tools hook now receives executable declarations from `src/rpc/declarations.ts`, using reconstructed TypeScript schema mechanics and provenance-bound shipped domain predicates/transforms in `domain-adapter.cjs`. No metadata substitutes are registered as validators. Original source layout, names and annotations cannot be recovered exactly. Coordinator lifecycle and trace port semantics were reconstructed statically; actual Electron port delivery has not been observed.
+
+REA RPC-scope supporting Evidence ID: `ev_cb14ec9ee603c453c432903820a2c8986498475fd85d330b5affc83215fbb6d8` (`rea/evidence/rea-rpc-server.json`). That scoped MCP analysis covers shared server transport functions, not the complete preload. The preload surface is corroborated directly against the shipped bytes and controlled replay.
+
+Executable schema parity: all 280 main/mount method declarations are registered with their real Standard Schema interface. The differential check additionally compares 3,312 validation results across every non-null request schema, including invalid primitive shapes, optional values, bytes, timezone, enrollment, attachment and telemetry candidates. The domain adapter retains 407 exact global declarations selected by TypeScript symbol resolution; it excludes Electron imports, runtime bootstrap and unrelated application code. Its origin ranges and digests are recorded in `src/rpc/domain-provenance.json`. This is a recovered domain JavaScript dependency behind a typed adapter, not a claim that original domain TypeScript was recovered.

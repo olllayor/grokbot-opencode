@@ -1,0 +1,17 @@
+import {spawn} from 'node:child_process';
+import {mkdir,access} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const payload=path.join(root,'build/application');
+await access(path.join(payload,'dist/electron-main/main.cjs'));
+const profile=path.join(root,'build/development-profile');
+const devIcon=path.join(payload,'resources/icon.png');
+await mkdir(profile,{recursive:true});
+const runtime=path.join(root,'node_modules/electron/dist/Electron.app/Contents/MacOS/Electron');
+const env={...process.env,SAND_USER_DATA_DIR:profile,SAND_DEV_APP_ICON:devIcon};
+delete env.ELECTRON_RUN_AS_NODE;
+const child=spawn(runtime,[payload,`--user-data-dir=${profile}`],{stdio:'inherit',env});
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>child.kill(signal));
+child.on('error',error=>{console.error(error.message);process.exitCode=1;});
+child.on('exit',code=>{process.exitCode=code??0;});

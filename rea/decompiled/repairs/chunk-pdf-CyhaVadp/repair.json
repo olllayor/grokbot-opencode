@@ -1,0 +1,14 @@
+{
+  "status": "syntax-and-constructor-differential-verified",
+  "input": "decompiled/renderer/chunk-pdf-CyhaVadp/modules/bundle.js",
+  "inputSha256": "a3d6880e1be16bbb2cbd228e570e109c4e4d15b458839fb4dc937e7182753791",
+  "original": "recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js",
+  "originalSha256": "dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a",
+  "output": "decompiled/repairs/chunk-pdf-CyhaVadp/bundle.js",
+  "outputSha256": "63fbffbe8bacb7efb8ad7877b749097667d82229efa06471c197b06d73314d39",
+  "rawRecoveryUnchanged": true,
+  "runtimeEquivalence": "unknown",
+  "constructorMatchesShippedAst": true,
+  "differentialCases": 2,
+  "reason": "Wakaru assigns both the incoming map and structured clone to const map. Replace only class Ci constructor with its exact shipped AST; preserve raw recovery. Verify clone/transfer behavior against the original class."
+}

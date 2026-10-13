@@ -1,0 +1,88 @@
+{
+  "source": {
+    "path": "/workspace/recovered/dist/renderer/assets/chunk-kotlin-BdnUsdx6.js",
+    "snapshot_path": "/tmp/rea-wakaru-GyjmyO/inputs/bundle.js",
+    "sha256": "54cb4543c0450734052410d7d2a601ae3a43ea797946925dd7646aa7c3bdbcb7",
+    "bytes": 9219,
+    "published_copy": {
+      "path": "/workspace/decompiled/renderer/chunk-kotlin-BdnUsdx6/inputs/bundle.js",
+      "sha256": "54cb4543c0450734052410d7d2a601ae3a43ea797946925dd7646aa7c3bdbcb7",
+      "bytes": 9219
+    }
+  },
+  "engine": {
+    "id": "wakaru",
+    "version": "1.13.0",
+    "executable": {
+      "path": "/usr/local/bin/wakaru",
+      "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+      "bytes": 25301016
+    },
+    "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+    "executed_source_revision": null
+  },
+  "options": {
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "status": "complete",
+  "detected_formats": [],
+  "reported_safety": "normal",
+  "reported_strategy": "structural",
+  "reported_format": "unknown",
+  "total": 1,
+  "failed": 0,
+  "modules": [
+    {
+      "reported_filename": "bundle.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "/workspace/decompiled/renderer/chunk-kotlin-BdnUsdx6/modules/bundle.js",
+        "sha256": "2f263b34633f2b706f6f88b790edd45ef6e0586b0e69d7e112d7becbaec383cf",
+        "bytes": 9330
+      },
+      "source_map": {
+        "path": "/workspace/decompiled/renderer/chunk-kotlin-BdnUsdx6/modules/bundle.js.map",
+        "sha256": "6e05c69bacce580b517113507a86a786bf096f098854670ec8c5b5e37ef3c383",
+        "bytes": 502
+      },
+      "provenance": {
+        "reported_input": "/tmp/rea-wakaru-GyjmyO/inputs/bundle.js",
+        "original_path": "/workspace/recovered/dist/renderer/assets/chunk-kotlin-BdnUsdx6.js",
+        "original_sha256": "54cb4543c0450734052410d7d2a601ae3a43ea797946925dd7646aa7c3bdbcb7",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 9219
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    }
+  ],
+  "warnings": [],
+  "report": {
+    "path": "/workspace/decompiled/renderer/chunk-kotlin-BdnUsdx6/reports/stdout.json",
+    "sha256": "c2856bffbdded03e001cbe0ea891dcf3f86bb072dab1520fbeedb17f25c17ce9",
+    "bytes": 173
+  },
+  "provenance": {
+    "path": "/workspace/decompiled/renderer/chunk-kotlin-BdnUsdx6/reports/provenance.json",
+    "sha256": "3e611bbd09a5d051739efb21144488d14e08fb84d303d6dceb1164fa0d9e7521",
+    "bytes": 194
+  },
+  "analysis_input": {
+    "input_path": "/workspace/decompiled/renderer/chunk-kotlin-BdnUsdx6/modules",
+    "format": "directory"
+  },
+  "runtime_equivalence": "unknown",
+  "limitations": [
+    "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+    "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+    "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+    "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+    "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+  ]
+}

@@ -1,0 +1,3 @@
+[sand] using isolated user-data dir: /Users/ollayor/Code/open-source/open-grokbot/build/smoke-profile-1791879004863
+[55161:1013/131016.910756:ERROR:content/browser/network_service_instance_impl.cc:703] Network service crashed or was terminated, restarting service.
+[55161:1013/131016.937534:ERROR:content/browser/gpu/gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=15

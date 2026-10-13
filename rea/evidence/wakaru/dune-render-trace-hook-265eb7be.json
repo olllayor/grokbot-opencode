@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js",
+    "output_directory": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_dfd203d151d4469d6c9049dfd607481bff46df88cbeb1ed733a69676ad7c73de\",\"subject\":{\"name\":\"dune-render-trace-hook-265eb7be.js\",\"digest\":{\"sha256\":\"265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js\",\"output_directory\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":140}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-V9wJEX/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-V9wJEX/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":140},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-V9wJEX/inputs/bundle.js\",\"ranges\":[[0,1241]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js\",\"sha256\":\"265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22\",\"bytes\":1241,\"snapshot_path\":\"/tmp/rea-wakaru-V9wJEX/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/inputs/bundle.js\",\"sha256\":\"265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22\",\"bytes\":1241}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/modules/bundle.js\",\"sha256\":\"795d0d1443b18afcb764a2f017ba7b84980965aa44d69a0b120073848904cb30\",\"bytes\":1262},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/modules/bundle.js.map\",\"sha256\":\"32840efaf1e924e13f409674160fe58163c6b3368a3e8d7d18dfc805571d1e4f\",\"bytes\":715},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-V9wJEX/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js\",\"original_sha256\":\"265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":1241}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/reports/stdout.json\",\"sha256\":\"2a1d405873019a2045306b9baf9d0030205a3f9064ba8bbb3cf1b1af8a65b6f7\",\"bytes\":173},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/reports/provenance.json\",\"sha256\":\"55705d994f7925fceb0a9732a1c54ab30bea20e5a707a425e2c060281251a993\",\"bytes\":194},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/manifest.json\",\"sha256\":\"1412f612ea6ffd614e9ab7d255d4c66df146e35f965daf732b70d304211495ff\",\"bytes\":3644},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_dfd203d151d4469d6c9049dfd607481bff46df88cbeb1ed733a69676ad7c73de",
+      "subject": {
+        "name": "dune-render-trace-hook-265eb7be.js",
+        "digest": {
+          "sha256": "265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js",
+        "output_directory": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":140}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-V9wJEX/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-V9wJEX/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 140
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-V9wJEX/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  1241
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js",
+          "sha256": "265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22",
+          "bytes": 1241,
+          "snapshot_path": "/tmp/rea-wakaru-V9wJEX/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/inputs/bundle.js",
+            "sha256": "265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22",
+            "bytes": 1241
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/modules/bundle.js",
+              "sha256": "795d0d1443b18afcb764a2f017ba7b84980965aa44d69a0b120073848904cb30",
+              "bytes": 1262
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/modules/bundle.js.map",
+              "sha256": "32840efaf1e924e13f409674160fe58163c6b3368a3e8d7d18dfc805571d1e4f",
+              "bytes": 715
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-V9wJEX/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js",
+              "original_sha256": "265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 1241
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/reports/stdout.json",
+          "sha256": "2a1d405873019a2045306b9baf9d0030205a3f9064ba8bbb3cf1b1af8a65b6f7",
+          "bytes": 173
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/reports/provenance.json",
+          "sha256": "55705d994f7925fceb0a9732a1c54ab30bea20e5a707a425e2c060281251a993",
+          "bytes": 194
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/manifest.json",
+          "sha256": "1412f612ea6ffd614e9ab7d255d4c66df146e35f965daf732b70d304211495ff",
+          "bytes": 3644
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/dune-render-trace-hook-265eb7be.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/dune-render-trace-hook-265eb7be/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "format": "webpack5",
+  "strategy": "structural",
+  "modules": {
+    "entry.js": {"input": "/tmp/rea-wakaru-HQBFAC/inputs/bundle.js", "ranges": [[391457,397665]], "extraction": "structural"},
+    "module-975.js": {"input": "/tmp/rea-wakaru-HQBFAC/inputs/bundle.js", "ranges": [[386735,391011]], "extraction": "structural"}
+  }
+}

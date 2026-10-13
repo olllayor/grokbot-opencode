@@ -1,0 +1,23 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "analyze_web_bundle",
+  "arguments": {
+    "cdp_endpoint": "http://127.0.0.1:49631",
+    "target_id": "64C6BB8A430A34CD645C43756C073D04",
+    "observation_ms": 1000,
+    "include_script_sources": true,
+    "fetch_source_maps": false
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"error\":{\"code\":\"target_unavailable\",\"category\":\"unavailable\",\"message\":\"Analysis could not complete. Run `rea doctor`, then try again.\",\"retryable\":false,\"remediation\":{\"action\":\"Analysis could not complete. Run `rea doctor`, then try again.\"},\"details\":{\"operation\":\"analyze_web_bundle\",\"reason\":\"target_not_allowed\"}}}"
+      }
+    ],
+    "isError": true
+  }
+}

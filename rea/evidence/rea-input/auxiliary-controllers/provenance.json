@@ -1,0 +1,47 @@
+{
+  "scope": "auxiliary-controller-reconstruction",
+  "nonExecution": true,
+  "provenance": [
+    {
+      "source": "recovered/dist/electron-preload/preload-vnc.cjs",
+      "sha256": "3ebe0f9da769f63f91656c769ba17af0f08c08bb5594918b633a6428e17cc0a3",
+      "extraction": "inert AST-selected top-level declarations; dependencies may be deliberately excluded",
+      "selectedDeclarations": [
+        "de",
+        "rn",
+        "on",
+        "pn",
+        "fn",
+        "M",
+        "Tn",
+        "Tt",
+        "xt",
+        "wt",
+        "Ct",
+        "It",
+        "Mt",
+        "At",
+        "Ot",
+        "wn"
+      ]
+    },
+    {
+      "source": "recovered/dist/electron-preload/preload-meeting.cjs",
+      "sha256": "08fc2d5b0fcc00a1bad5ac030d9c42b545b695e728a43dfc0902a8c2b3a5d9d7",
+      "extraction": "inert AST-selected top-level declarations; dependencies may be deliberately excluded",
+      "selectedDeclarations": [
+        "V",
+        "R",
+        "re",
+        "ie",
+        "z",
+        "J"
+      ]
+    },
+    {
+      "source": "recovered/dist/electron-preload/preload-webview.cjs",
+      "sha256": "d0272e0ce7e857ed34c6e0d726babbb3c7a36c2d13a797f39d600e75789bbe6e",
+      "extraction": "complete original inert entrypoint"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "nonExecution": true,
+  "extraction": "Inert AST selection; shared dependencies deliberately omitted for lifecycle-focused static graph.",
+  "provenance": [
+    {
+      "source": "recovered/dist/electron-preload/preload-webview.cjs",
+      "sha256": "d0272e0ce7e857ed34c6e0d726babbb3c7a36c2d13a797f39d600e75789bbe6e",
+      "selectedDeclarations": [
+        "X",
+        "U",
+        "V",
+        "z",
+        "L"
+      ]
+    },
+    {
+      "source": "recovered/dist/electron-preload/preload-vnc.cjs",
+      "sha256": "3ebe0f9da769f63f91656c769ba17af0f08c08bb5594918b633a6428e17cc0a3",
+      "selectedDeclarations": [
+        "de",
+        "pn",
+        "fn",
+        "Ct"
+      ]
+    },
+    {
+      "source": "recovered/dist/electron-preload/preload-meeting.cjs",
+      "sha256": "08fc2d5b0fcc00a1bad5ac030d9c42b545b695e728a43dfc0902a8c2b3a5d9d7",
+      "selectedDeclarations": [
+        "V",
+        "J"
+      ]
+    }
+  ]
+}

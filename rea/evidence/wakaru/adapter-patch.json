@@ -1,0 +1,7 @@
+{
+  "reaVersion": "6.3.0",
+  "file": "/opt/rea/node_modules/rea-agents/dist/javascript/recovery/WakaruReport.js",
+  "beforeSha256": "dc114327b988d0b1cefe0fb2090c84d6a710e3818adeb50b6dc5d9a572494961",
+  "afterSha256": "a7bd5996b84a55f0b734caaf982289dbaeff4f1015edc5438bbddbae439d7be0",
+  "change": "Allow safe relative .json filenames for modules explicitly reported as JavaScript by Wakaru. Path normalization, path registry, artifact-set validation, provenance and UTF-8 range checks remain in force."
+}

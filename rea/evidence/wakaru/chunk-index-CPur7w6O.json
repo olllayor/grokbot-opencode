@@ -1,0 +1,489 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js",
+    "output_directory": "/workspace/decompiled/renderer/chunk-index-CPur7w6O",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_1452f9f87de3690d760b4ad858df86b1fbdb67d78750234358828cdfa2905260\",\"subject\":{\"name\":\"chunk-index-CPur7w6O.js\",\"digest\":{\"sha256\":\"749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js\",\"output_directory\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[\\\"esbuild\\\"],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"Pp.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"},{\\\"filename\\\":\\\"Vp.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"},{\\\"filename\\\":\\\"entry.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":3,\\\"failed\\\":0,\\\"elapsed_ms\\\":4359}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-MQIGNR/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-MQIGNR/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[\"esbuild\"],\"safety\":\"normal\",\"modules\":[{\"filename\":\"Pp.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"},{\"filename\":\"Vp.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"},{\"filename\":\"entry.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":3,\"failed\":0,\"elapsed_ms\":4359},\"provenance\":{\"format\":\"esbuild\",\"strategy\":\"structural\",\"modules\":{\"Pp.js\":{\"input\":\"/tmp/rea-wakaru-MQIGNR/inputs/bundle.js\",\"ranges\":[[245011,274235]],\"extraction\":\"structural\"},\"Vp.js\":{\"input\":\"/tmp/rea-wakaru-MQIGNR/inputs/bundle.js\",\"ranges\":[[274464,280724]],\"extraction\":\"structural\"},\"entry.js\":{\"input\":\"/tmp/rea-wakaru-MQIGNR/inputs/bundle.js\",\"ranges\":[[0,384],[385,59620],[60211,62991],[63470,199817],[200212,204077],[204248,204677],[205793,206124],[206742,207556],[208974,211323],[211399,212340],[212715,212958],[213023,213947],[214061,214543],[214908,215647],[215926,216001],[216179,220658],[222526,223170],[224026,224663],[225041,225212],[225344,244802],[274235,274245],[280724,369449]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js\",\"sha256\":\"749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7\",\"bytes\":369499,\"snapshot_path\":\"/tmp/rea-wakaru-MQIGNR/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/inputs/bundle.js\",\"sha256\":\"749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7\",\"bytes\":369499}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[\"esbuild\"],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"esbuild\",\"total\":3,\"failed\":0,\"modules\":[{\"reported_filename\":\"Pp.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Pp.js\",\"sha256\":\"a9d9fa5da403ae258618ad4428cd35f664598ed00f12ea00a8bb9717e3e39efc\",\"bytes\":72731},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Pp.js.map\",\"sha256\":\"95d5ae974575bf3d6883bca223669bb10937477598ee2b5896e525eee1352191\",\"bytes\":51916},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-MQIGNR/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js\",\"original_sha256\":\"749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":245011,\"end\":274235}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}},{\"reported_filename\":\"Vp.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Vp.js\",\"sha256\":\"182a32c5a73a5e449e4867d51250d59b0a0d7443c713a51e05a5a31ee6cfef89\",\"bytes\":14753},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Vp.js.map\",\"sha256\":\"6e8ffcf12ca011a4a415798efcb5bf12f7590d38b511b2036cebd892549c364a\",\"bytes\":9701},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-MQIGNR/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js\",\"original_sha256\":\"749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":274464,\"end\":280724}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}},{\"reported_filename\":\"entry.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/entry.js\",\"sha256\":\"05536482946af48e365a55aca4e7ea4b4c894b2f2f57b9ba9bef1993e26370a5\",\"bytes\":609200},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/entry.js.map\",\"sha256\":\"9ac1e330d8d8e4f8114bff63337573d951cd16be19ddab5bd6c3344af6aec4ce\",\"bytes\":487444},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-MQIGNR/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js\",\"original_sha256\":\"749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":384},{\"start\":385,\"end\":59620},{\"start\":60211,\"end\":62991},{\"start\":63470,\"end\":199817},{\"start\":200212,\"end\":204077},{\"start\":204248,\"end\":204677},{\"start\":205793,\"end\":206124},{\"start\":206742,\"end\":207556},{\"start\":208974,\"end\":211323},{\"start\":211399,\"end\":212340},{\"start\":212715,\"end\":212958},{\"start\":213023,\"end\":213947},{\"start\":214061,\"end\":214543},{\"start\":214908,\"end\":215647},{\"start\":215926,\"end\":216001},{\"start\":216179,\"end\":220658},{\"start\":222526,\"end\":223170},{\"start\":224026,\"end\":224663},{\"start\":225041,\"end\":225212},{\"start\":225344,\"end\":244802},{\"start\":274235,\"end\":274245},{\"start\":280724,\"end\":369449}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/reports/stdout.json\",\"sha256\":\"162cf4ff9f3887732316b971c3bdc170955d7a517cfa1e3ea8f705b163807bb0\",\"bytes\":308},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/reports/provenance.json\",\"sha256\":\"2305e6c9c912877668d0f819dc10c9a128f2feae4db4edd72a1da93c3b32e478\",\"bytes\":769},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/manifest.json\",\"sha256\":\"2d8bac74a94162a0bacde1635e536c732e82c90df44a68fc40f3d72db185278f\",\"bytes\":7378},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Pp.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Vp.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/entry.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_1452f9f87de3690d760b4ad858df86b1fbdb67d78750234358828cdfa2905260",
+      "subject": {
+        "name": "chunk-index-CPur7w6O.js",
+        "digest": {
+          "sha256": "749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js",
+        "output_directory": "/workspace/decompiled/renderer/chunk-index-CPur7w6O",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[\"esbuild\"],\"safety\":\"normal\",\"modules\":[{\"filename\":\"Pp.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"},{\"filename\":\"Vp.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"},{\"filename\":\"entry.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":3,\"failed\":0,\"elapsed_ms\":4359}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-MQIGNR/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [
+            "esbuild"
+          ],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "Pp.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            },
+            {
+              "filename": "Vp.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            },
+            {
+              "filename": "entry.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 3,
+          "failed": 0,
+          "elapsed_ms": 4359
+        },
+        "provenance": {
+          "format": "esbuild",
+          "strategy": "structural",
+          "modules": {
+            "Pp.js": {
+              "input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js",
+              "ranges": [
+                [
+                  245011,
+                  274235
+                ]
+              ],
+              "extraction": "structural"
+            },
+            "Vp.js": {
+              "input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js",
+              "ranges": [
+                [
+                  274464,
+                  280724
+                ]
+              ],
+              "extraction": "structural"
+            },
+            "entry.js": {
+              "input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  384
+                ],
+                [
+                  385,
+                  59620
+                ],
+                [
+                  60211,
+                  62991
+                ],
+                [
+                  63470,
+                  199817
+                ],
+                [
+                  200212,
+                  204077
+                ],
+                [
+                  204248,
+                  204677
+                ],
+                [
+                  205793,
+                  206124
+                ],
+                [
+                  206742,
+                  207556
+                ],
+                [
+                  208974,
+                  211323
+                ],
+                [
+                  211399,
+                  212340
+                ],
+                [
+                  212715,
+                  212958
+                ],
+                [
+                  213023,
+                  213947
+                ],
+                [
+                  214061,
+                  214543
+                ],
+                [
+                  214908,
+                  215647
+                ],
+                [
+                  215926,
+                  216001
+                ],
+                [
+                  216179,
+                  220658
+                ],
+                [
+                  222526,
+                  223170
+                ],
+                [
+                  224026,
+                  224663
+                ],
+                [
+                  225041,
+                  225212
+                ],
+                [
+                  225344,
+                  244802
+                ],
+                [
+                  274235,
+                  274245
+                ],
+                [
+                  280724,
+                  369449
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js",
+          "sha256": "749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7",
+          "bytes": 369499,
+          "snapshot_path": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/inputs/bundle.js",
+            "sha256": "749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7",
+            "bytes": 369499
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [
+          "esbuild"
+        ],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "esbuild",
+        "total": 3,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "Pp.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Pp.js",
+              "sha256": "a9d9fa5da403ae258618ad4428cd35f664598ed00f12ea00a8bb9717e3e39efc",
+              "bytes": 72731
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Pp.js.map",
+              "sha256": "95d5ae974575bf3d6883bca223669bb10937477598ee2b5896e525eee1352191",
+              "bytes": 51916
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js",
+              "original_sha256": "749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 245011,
+                  "end": 274235
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          },
+          {
+            "reported_filename": "Vp.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Vp.js",
+              "sha256": "182a32c5a73a5e449e4867d51250d59b0a0d7443c713a51e05a5a31ee6cfef89",
+              "bytes": 14753
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Vp.js.map",
+              "sha256": "6e8ffcf12ca011a4a415798efcb5bf12f7590d38b511b2036cebd892549c364a",
+              "bytes": 9701
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js",
+              "original_sha256": "749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 274464,
+                  "end": 280724
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          },
+          {
+            "reported_filename": "entry.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/entry.js",
+              "sha256": "05536482946af48e365a55aca4e7ea4b4c894b2f2f57b9ba9bef1993e26370a5",
+              "bytes": 609200
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/entry.js.map",
+              "sha256": "9ac1e330d8d8e4f8114bff63337573d951cd16be19ddab5bd6c3344af6aec4ce",
+              "bytes": 487444
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js",
+              "original_sha256": "749e3dc6011da2b81863bacc22af9212c8ce9d011513219d7179078751f3dcf7",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 384
+                },
+                {
+                  "start": 385,
+                  "end": 59620
+                },
+                {
+                  "start": 60211,
+                  "end": 62991
+                },
+                {
+                  "start": 63470,
+                  "end": 199817
+                },
+                {
+                  "start": 200212,
+                  "end": 204077
+                },
+                {
+                  "start": 204248,
+                  "end": 204677
+                },
+                {
+                  "start": 205793,
+                  "end": 206124
+                },
+                {
+                  "start": 206742,
+                  "end": 207556
+                },
+                {
+                  "start": 208974,
+                  "end": 211323
+                },
+                {
+                  "start": 211399,
+                  "end": 212340
+                },
+                {
+                  "start": 212715,
+                  "end": 212958
+                },
+                {
+                  "start": 213023,
+                  "end": 213947
+                },
+                {
+                  "start": 214061,
+                  "end": 214543
+                },
+                {
+                  "start": 214908,
+                  "end": 215647
+                },
+                {
+                  "start": 215926,
+                  "end": 216001
+                },
+                {
+                  "start": 216179,
+                  "end": 220658
+                },
+                {
+                  "start": 222526,
+                  "end": 223170
+                },
+                {
+                  "start": 224026,
+                  "end": 224663
+                },
+                {
+                  "start": 225041,
+                  "end": 225212
+                },
+                {
+                  "start": 225344,
+                  "end": 244802
+                },
+                {
+                  "start": 274235,
+                  "end": 274245
+                },
+                {
+                  "start": 280724,
+                  "end": 369449
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/reports/stdout.json",
+          "sha256": "162cf4ff9f3887732316b971c3bdc170955d7a517cfa1e3ea8f705b163807bb0",
+          "bytes": 308
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/reports/provenance.json",
+          "sha256": "2305e6c9c912877668d0f819dc10c9a128f2feae4db4edd72a1da93c3b32e478",
+          "bytes": 769
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/manifest.json",
+          "sha256": "2d8bac74a94162a0bacde1635e536c732e82c90df44a68fc40f3d72db185278f",
+          "bytes": 7378
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-index-CPur7w6O.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Pp.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/Vp.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/chunk-index-CPur7w6O/modules/entry.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

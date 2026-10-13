@@ -1,0 +1,8 @@
+[sand] using isolated user-data dir: /Users/clps/Documents/GitHub/grokbot/build/inspection-profile-1791660881946
+
+DevTools listening on ws://127.0.0.1:60218/devtools/browser/fc91ff62-8619-4019-8c2b-a514a2939df3
+[47484:1010/203442.855366:ERROR:net/cert/internal/trust_store_mac.cc:807] Error parsing certificate:
+ERROR: Failed parsing extensions
+
+[47484:1010/203442.855447:ERROR:net/cert/internal/trust_store_mac.cc:807] Error parsing certificate:
+ERROR: Failed parsing extensions

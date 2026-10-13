@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/workspace/evidence/wakaru/index-ZYxf-aBb-canonical.json\",\"bytes\":6242,\"records\":1,\"unknowns\":0}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/workspace/evidence/wakaru/index-ZYxf-aBb-canonical.json",
+      "bytes": 6242,
+      "records": 1,
+      "unknowns": 0
+    }
+  }
+}

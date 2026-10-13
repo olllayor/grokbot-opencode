@@ -1,0 +1,20 @@
+import {readFile,readdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+import {assertErasure} from '../rea/scripts/ts-port-generate.mjs';
+import {checkSource} from '../rea/scripts/ts-port-check.mjs';
+const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+const domain=JSON.parse(await readFile('src/ported/domain/port-manifest.json','utf8'));
+const domainSource=await readFile('src/rpc/domain-adapter.cjs','utf8');
+const domainTs=await readFile('src/ported/domain/domain-adapter.cts','utf8');
+if(hash(domainSource)!==domain.sourceHash||hash(domainTs)!==domain.tsHash||assertErasure(domainSource,domainTs)!==domain.erasedAstHash)throw Error('Domain adapter source port changed');
+const checked=checkSource(domainTs,path.resolve('src/ported/domain/domain-adapter.cts'));
+if(checked.diagnostics.length)throw Error('Domain adapter strict typecheck failed');
+const manifest=JSON.parse(await readFile('build/reconstruction-manifest.json','utf8'));
+if(manifest.status!=='complete-typescript-source-port'||manifest.sourcePort.units!==540)throw Error('Incomplete source-port build');
+const covered=new Set(manifest.sourcePort.entries.map(entry=>entry.artifact));
+for(const entry of manifest.replacements)if(entry.output)covered.add(entry.output);
+const seen=[];
+async function visit(directory,prefix=''){for(const entry of await readdir(directory,{withFileTypes:true})){const relative=path.posix.join(prefix,entry.name);if(entry.isDirectory())await visit(path.join(directory,entry.name),relative);else if(/\.(js|cjs|mjs)$/.test(entry.name)){if(!covered.has(relative))throw Error('Runtime JavaScript without TS build provenance: '+relative);seen.push(relative);}}}
+await visit('build/application');
+console.log(JSON.stringify({runtimeJavaScriptOutputs:seen.length,sourcePortUnits:540,additionalDomainAdapter:true,allOutputsHaveTypeScriptProvenance:true}));

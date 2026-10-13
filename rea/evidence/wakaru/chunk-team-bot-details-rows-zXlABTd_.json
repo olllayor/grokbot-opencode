@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js",
+    "output_directory": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_d4bba7e3640658a00506b9cd7c2077670dd04f1475ecf5c402d81e79a7348307\",\"subject\":{\"name\":\"chunk-team-bot-details-rows-zXlABTd_.js\",\"digest\":{\"sha256\":\"571c9d00ccad99208e9c9c8a3b95f727ca8e0d8ac34b7a92bff1e239d276b64f\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js\",\"output_directory\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":426}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-7DUZBJ/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-7DUZBJ/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":426},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-7DUZBJ/inputs/bundle.js\",\"ranges\":[[0,18902]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js\",\"sha256\":\"571c9d00ccad99208e9c9c8a3b95f727ca8e0d8ac34b7a92bff1e239d276b64f\",\"bytes\":18902,\"snapshot_path\":\"/tmp/rea-wakaru-7DUZBJ/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/inputs/bundle.js\",\"sha256\":\"571c9d00ccad99208e9c9c8a3b95f727ca8e0d8ac34b7a92bff1e239d276b64f\",\"bytes\":18902}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/modules/bundle.js\",\"sha256\":\"fc8bc2d0b6228f6ad0d2e5696f8d723ee22d77e77afc67ea51ec3feab20ef4ac\",\"bytes\":34711},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/modules/bundle.js.map\",\"sha256\":\"dd7491e82e9fcb641d79492880cd5c09162c75e19cb348066094358fc1f4b714\",\"bytes\":23483},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-7DUZBJ/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js\",\"original_sha256\":\"571c9d00ccad99208e9c9c8a3b95f727ca8e0d8ac34b7a92bff1e239d276b64f\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":18902}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/reports/stdout.json\",\"sha256\":\"5297c78848681fe15d069433a8cf44fb10947cd32f298dfd608d93fc2d4ad630\",\"bytes\":173},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/reports/provenance.json\",\"sha256\":\"9ed21416a39bdbeb25c62ff143f9f69300b3afe6aa0d5ecbd28223739d021098\",\"bytes\":195},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/manifest.json\",\"sha256\":\"593b50534c83f3ec9039f841af7436354c125eaf64075ae9e4356aca9d833738\",\"bytes\":3690},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_d4bba7e3640658a00506b9cd7c2077670dd04f1475ecf5c402d81e79a7348307",
+      "subject": {
+        "name": "chunk-team-bot-details-rows-zXlABTd_.js",
+        "digest": {
+          "sha256": "571c9d00ccad99208e9c9c8a3b95f727ca8e0d8ac34b7a92bff1e239d276b64f"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js",
+        "output_directory": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":426}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-7DUZBJ/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-7DUZBJ/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 426
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-7DUZBJ/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  18902
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js",
+          "sha256": "571c9d00ccad99208e9c9c8a3b95f727ca8e0d8ac34b7a92bff1e239d276b64f",
+          "bytes": 18902,
+          "snapshot_path": "/tmp/rea-wakaru-7DUZBJ/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/inputs/bundle.js",
+            "sha256": "571c9d00ccad99208e9c9c8a3b95f727ca8e0d8ac34b7a92bff1e239d276b64f",
+            "bytes": 18902
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/modules/bundle.js",
+              "sha256": "fc8bc2d0b6228f6ad0d2e5696f8d723ee22d77e77afc67ea51ec3feab20ef4ac",
+              "bytes": 34711
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/modules/bundle.js.map",
+              "sha256": "dd7491e82e9fcb641d79492880cd5c09162c75e19cb348066094358fc1f4b714",
+              "bytes": 23483
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-7DUZBJ/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js",
+              "original_sha256": "571c9d00ccad99208e9c9c8a3b95f727ca8e0d8ac34b7a92bff1e239d276b64f",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 18902
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/reports/stdout.json",
+          "sha256": "5297c78848681fe15d069433a8cf44fb10947cd32f298dfd608d93fc2d4ad630",
+          "bytes": 173
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/reports/provenance.json",
+          "sha256": "9ed21416a39bdbeb25c62ff143f9f69300b3afe6aa0d5ecbd28223739d021098",
+          "bytes": 195
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/manifest.json",
+          "sha256": "593b50534c83f3ec9039f841af7436354c125eaf64075ae9e4356aca9d833738",
+          "bytes": 3690
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-details-rows-zXlABTd_.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/chunk-team-bot-details-rows-zXlABTd_/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

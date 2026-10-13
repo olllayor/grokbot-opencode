@@ -1,0 +1,154 @@
+
+> grokbot-reconstruction@0.66.0 test
+> node --test tests/*.test.mjs && node src/electron-preload/verify-reconstruction.mjs && node src/rpc/verify-reconstruction.mjs && node evidence/verify-renderer.mjs && node evidence/verify-auxiliary-preloads.mjs && node evidence/verify-auxiliary-lifecycle.mjs && node evidence/verify-renderer-startup.mjs
+
+TAP version 13
+# Subtest: user-data parsing matches shipped bootstrap across precedence and malformed arguments
+ok 1 - user-data parsing matches shipped bootstrap across precedence and malformed arguments
+  ---
+  duration_ms: 0.624459
+  type: 'test'
+  ...
+# Subtest: cache read classifications match shipped code, including chained and cyclic errors
+ok 2 - cache read classifications match shipped code, including chained and cyclic errors
+  ---
+  duration_ms: 0.784166
+  type: 'test'
+  ...
+# Subtest: atomic write matches symlink-following, permissions and serialized final contents
+ok 3 - atomic write matches symlink-following, permissions and serialized final contents
+  ---
+  duration_ms: 72.777584
+  type: 'test'
+  ...
+# Subtest: cache pruning keeps current plus two old caches and only removes stale own temporary files
+ok 4 - cache pruning keeps current plus two old caches and only removes stale own temporary files
+  ---
+  duration_ms: 6.441625
+  type: 'test'
+  ...
+# Subtest: startup waits for core and reports both cache handles; app failures reach core failure hook
+ok 5 - startup waits for core and reports both cache handles; app failures reach core failure hook
+  ---
+  duration_ms: 0.37775
+  type: 'test'
+  ...
+# Subtest: CommonJS loader executes exports and persists reusable V8 cache
+ok 6 - CommonJS loader executes exports and persists reusable V8 cache
+  ---
+  duration_ms: 20.985042
+  type: 'test'
+  ...
+# Subtest: Windows user-data settlement matches shipped migration and conflict branches on real temporary directories
+ok 7 - Windows user-data settlement matches shipped migration and conflict branches on real temporary directories
+  ---
+  duration_ms: 12.649292
+  type: 'test'
+  ...
+# Subtest: URL and path security decisions match shipped policies including unusual encodings
+ok 8 - URL and path security decisions match shipped policies including unusual encodings
+  ---
+  duration_ms: 1.031334
+  type: 'test'
+  ...
+# Subtest: window navigation preserves same-document events and blocks embedded MCP escapes
+ok 9 - window navigation preserves same-document events and blocks embedded MCP escapes
+  ---
+  duration_ms: 0.264792
+  type: 'test'
+  ...
+# Subtest: desktop settings generation invalidates repeated permissions and reports cleanup failures
+ok 10 - desktop settings generation invalidates repeated permissions and reports cleanup failures
+  ---
+  duration_ms: 1.73125
+  type: 'test'
+  ...
+# Subtest: host data-root migration preserves unknown/live writers and canonical conflicts
+ok 11 - host data-root migration preserves unknown/live writers and canonical conflicts
+  ---
+  duration_ms: 17.036417
+  type: 'test'
+  ...
+# Subtest: window geometry restoration matches shipped overlap/clamping decisions
+ok 12 - window geometry restoration matches shipped overlap/clamping decisions
+  ---
+  duration_ms: 1.137542
+  type: 'test'
+  ...
+# Subtest: hardware and window policy match shipped platform defaults
+ok 13 - hardware and window policy match shipped platform defaults
+  ---
+  duration_ms: 0.174083
+  type: 'test'
+  ...
+# Subtest: desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions
+ok 14 - desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions
+  ---
+  duration_ms: 0.740292
+  type: 'test'
+  ...
+# Subtest: remainder gating matches shipped asset/document/quit behavior
+ok 15 - remainder gating matches shipped asset/document/quit behavior
+  ---
+  duration_ms: 0.446292
+  type: 'test'
+  ...
+# Subtest: idle update gates and periodic lifecycle match shipped code
+ok 16 - idle update gates and periodic lifecycle match shipped code
+  ---
+  duration_ms: 1.100167
+  type: 'test'
+  ...
+# Subtest: response validators and Content-Range parsing match shipped code
+ok 17 - response validators and Content-Range parsing match shipped code
+  ---
+  duration_ms: 0.622333
+  type: 'test'
+  ...
+# Subtest: fresh and resumed downloads match bytes, hash, progress, requests and cleanup
+ok 18 - fresh and resumed downloads match bytes, hash, progress, requests and cleanup
+  ---
+  duration_ms: 11.442208
+  type: 'test'
+  ...
+# Subtest: integrity and unexpected range failures preserve shipped cleanup/error semantics
+ok 19 - integrity and unexpected range failures preserve shipped cleanup/error semantics
+  ---
+  duration_ms: 3.965667
+  type: 'test'
+  ...
+# Subtest: windows placement retries only transient errors with matching policy
+ok 20 - windows placement retries only transient errors with matching policy
+  ---
+  duration_ms: 0.335
+  type: 'test'
+  ...
+# Subtest: Squirrel feed route/status/ZIP behavior matches shipped server
+ok 21 - Squirrel feed route/status/ZIP behavior matches shipped server
+  ---
+  duration_ms: 25.396125
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 504.050958
+Validated 3312 shipped-vs-reconstructed request schemas through executable developer-hook declarations.
+Verified 307 desktop functions, all exposed bridge function shapes, 9 IPC argument traces, and subscription channels.
+RPC differential checks passed: 22 envelopes/probes/registration outcomes, trust gating, payload transform, broadcasts and idempotent teardown.
+Renderer differential verification passed: 30720 boot states, persistence key/envelope/stage/quota cases, deferred startup lifecycle.
+Renderer persistence registry differential lifecycle passed.
+Account boot and voice settings differential verification passed.
+preload-desktop-mount-panel.cjs: exposed API and IPC equivalence passed
+preload-meeting-avatar.cjs: exposed API and IPC equivalence passed
+VNC liveness rolling window and rearming equivalence passed
+Meeting provider/status and PCM conversion checks passed
+webview: shipped-entrypoint mocked lifecycle equivalence passed
+vnc: shipped-entrypoint mocked lifecycle equivalence passed
+meeting: shipped-entrypoint mocked lifecycle equivalence passed
+Renderer entrypoint differential lifecycle passed: startup ordering, browser subscriptions/unsubscription, identity restoration, zoom/sound, focus locks, boot, dev pagehide, locale and theme.

@@ -1,0 +1,2 @@
+// Inert shipped declaration. Original: recovered/dist/renderer/assets/index-ZYxf-aBb.js offsets 1846672-1847025
+function BRe(t){return!t.isLocaleSettled||t.bootStatus!=="ready"?!1:!t.isAccountAuthorizedForAppView||!t.hasAccountSlot||t.rosterLoadState!=="loading"||t.isShowingRestoredRoster?!0:x6({isAccountAuthorizedForAppView:t.isAccountAuthorizedForAppView,firstBoxPhase:t.firstBoxPhase,isShowingRestoredRoster:!1,isComputerRebuildLocked:!1,isPrivacyBlocked:!1})}

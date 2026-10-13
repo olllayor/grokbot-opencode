@@ -1,0 +1,181 @@
+"use strict";
+!(function () {
+  try {
+    var e =
+        "undefined" != typeof window
+          ? window
+          : "undefined" != typeof global
+            ? global
+            : "undefined" != typeof globalThis
+              ? globalThis
+              : "undefined" != typeof self
+                ? self
+                : {},
+      n = new e.Error().stack;
+    n &&
+      ((e._sentryDebugIds = e._sentryDebugIds || {}),
+      (e._sentryDebugIds[n] = "1de1ad3b-298d-4d79-a703-a8262c1c4d3f"),
+      (e._sentryDebugIdIdentifier =
+        "sentry-dbid-1de1ad3b-298d-4d79-a703-a8262c1c4d3f"));
+  } catch (e) {}
+})();
+("use strict");
+var E = require("electron");
+var l = class e {
+  static audioChannel = "sand:meetings:audio";
+  static pageChannel = "sand:meetings:page";
+  static debugChannel = "sand:meetings:debug";
+  static avatarFrameChannel = "sand:meetings:avatar-frame";
+  static avatarSourceChannel = "sand:meetings:avatar-source";
+  static displayNameArg = "--sand-meetings-display-name=";
+  static pageLanguage = "en-US";
+  static sampleRateHz = 16e3;
+  static pagePollMs = 1e3;
+  static sourcePollMs = 100;
+  static sourceRecentMs = 400;
+  static stampEvent = "sand-meeting-stamp";
+  static wakeEvent = "sand-meeting-wake";
+  static hearEvent = "sand-meeting-hear";
+  static idleEvent = "sand-meeting-idle";
+  static cameraReadyEvent = "sand-meeting-camera";
+  static displayNameOf(r) {
+    let i = r.find((o) => o.startsWith(e.displayNameArg));
+    if (i === void 0) return null;
+    let t = decodeURIComponent(i.slice(e.displayNameArg.length)).trim();
+    return t.length > 0 ? t : null;
+  }
+};
+var d = {
+  now: () => Date.now(),
+  monotonicNow: () => performance.now(),
+  schedule(e, r, i) {
+    S(e);
+    let t = !0,
+      o = globalThis.setTimeout(() => {
+        t && ((t = !1), r());
+      }, e);
+    return (
+      i?.keepEventLoopAlive !== !0 && D(o) && o.unref(),
+      {
+        dispose() {
+          t && ((t = !1), globalThis.clearTimeout(o));
+        },
+      }
+    );
+  },
+};
+function D(e) {
+  return (
+    typeof e == "object" &&
+    e !== null &&
+    "unref" in e &&
+    typeof e.unref == "function"
+  );
+}
+function S(e) {
+  if (!Number.isFinite(e) || e < 0)
+    throw new RangeError("delayMs must be a finite non-negative number");
+}
+var c = class extends Error {
+  constructor(r) {
+    (super(`Deadline exceeded for ${r}`),
+      (this.code = "deadline_exceeded"),
+      (this.name = "DeadlineExceededError"),
+      (this.policyName = r));
+  }
+};
+function f(e) {
+  (L(e.name), _(e.timeoutMs, "timeoutMs"));
+  let r = e.clock ?? d;
+  return {
+    name: e.name,
+    async run(i, t) {
+      if (t?.aborted) throw h(t, e.name);
+      let o = new AbortController(),
+        y = () => {},
+        P = new Promise((a, s) => {
+          y = s;
+        }),
+        p = () => {},
+        A = new Promise((a, s) => {
+          p = s;
+        }),
+        g = () => {};
+      if (t != null) {
+        let a = () => {
+          let s = h(t, e.name);
+          (p(s), o.abort(s));
+        };
+        (t.addEventListener("abort", a, { once: !0 }),
+          (g = () => t.removeEventListener("abort", a)));
+      }
+      let x = r.schedule(e.timeoutMs, () => {
+        let a = new c(e.name);
+        (y(a), o.abort(a));
+      });
+      try {
+        return await Promise.race([i(o.signal), P, A]);
+      } finally {
+        (x.dispose(), g());
+      }
+    },
+  };
+}
+var q = { none: 0, equal: 1 / 2, full: 1 };
+function h(e, r) {
+  return e.reason ?? T(r);
+}
+function T(e) {
+  let r = new Error(`Operation aborted for ${e}`);
+  return ((r.name = "AbortError"), r);
+}
+var C = /^[a-z0-9]+([-.][a-z0-9]+)*$/;
+function L(e) {
+  if (!C.test(e))
+    throw new TypeError(
+      `name must be lowercase segments joined by "-" or ".", got ${JSON.stringify(e)}`,
+    );
+}
+function _(e, r) {
+  if (!Number.isFinite(e) || e < 0)
+    throw new RangeError(`${r} must be a finite non-negative number`);
+}
+var b = 6e4;
+function w(e) {
+  return e instanceof Error ? e.message : void 0;
+}
+function u(...e) {
+  console.warn("[sand-webview-preload]", ...e);
+}
+var k = !1,
+  M = null,
+  R = null;
+function H() {
+  if (!k) {
+    k = !0;
+    try {
+      let e = require("electron");
+      ((M = e.ipcRenderer ?? null), (R = e.webFrame ?? null));
+    } catch (e) {
+      u("electron module unavailable", w(e));
+    }
+  }
+}
+function v() {
+  return (H(), M);
+}
+var Ee = f({ name: "sand-webview-passkey-stall", timeoutMs: b });
+var m = v();
+m === null
+  ? u("meetings avatar preload: electron bridges unavailable")
+  : E.contextBridge.exposeInMainWorld("sandMeetingAvatar", {
+      send: (e) => {
+        m.send(l.avatarFrameChannel, e);
+      },
+      onSource: (e) => {
+        m.on(l.avatarSourceChannel, (r, i) => {
+          e(i);
+        });
+      },
+    });
+//# debugId=1de1ad3b-298d-4d79-a703-a8262c1c4d3f

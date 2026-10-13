@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/workspace/evidence/wakaru/rea-canonical.json\",\"bytes\":1915192,\"records\":282,\"unknowns\":0}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/workspace/evidence/wakaru/rea-canonical.json",
+      "bytes": 1915192,
+      "records": 282,
+      "unknowns": 0
+    }
+  }
+}

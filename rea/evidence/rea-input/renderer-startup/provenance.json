@@ -1,0 +1,7 @@
+{
+  "original": "recovered/dist/renderer/assets/index-ZYxf-aBb.js",
+  "start": 1864863,
+  "end": 1872146,
+  "sha256": "34d4319789105934f6bad75a63d893697c9cc118446af4b7f5826a173294b184",
+  "integration": "evidence/renderer-startup-adapter.js"
+}

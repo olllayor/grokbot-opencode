@@ -1,0 +1,22 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/Users/clps/Documents/GitHub/grokbot/recovered/dist/renderer/assets/index-ZYxf-aBb.js",
+    "output_directory": "/Users/clps/Documents/GitHub/grokbot/evidence/web-decompiled-entry",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"error\":{\"code\":\"capability_unavailable\",\"category\":\"unsupported_provider\",\"message\":\"Provide an absolute REA_WAKARU_COMMAND pointing to Wakaru 1.13.0 on Linux x64; no tool is installed by REA\",\"retryable\":false,\"remediation\":{\"action\":\"Provide an absolute REA_WAKARU_COMMAND pointing to Wakaru 1.13.0 on Linux x64; no tool is installed by REA\"},\"details\":{\"provider_id\":\"wakaru\",\"operation\":\"recover_javascript_sources\",\"reason\":\"Provide an absolute REA_WAKARU_COMMAND pointing to Wakaru 1.13.0 on Linux x64; no tool is installed by REA\"}}}"
+      }
+    ],
+    "isError": true
+  }
+}

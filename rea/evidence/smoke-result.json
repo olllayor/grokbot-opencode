@@ -1,0 +1,11 @@
+{
+  "executable": "/Users/ollayor/Code/open-source/open-grokbot/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron",
+  "profile": "/Users/ollayor/Code/open-source/open-grokbot/build/smoke-profile-1791879004863",
+  "aliveAfter12Seconds": true,
+  "exit": {
+    "code": 0,
+    "signal": null
+  },
+  "failures": [],
+  "limitation": "Development runtime process smoke; avoids packaged move-to-Applications gate. No signed-in backend or packaged UI acceptance."
+}

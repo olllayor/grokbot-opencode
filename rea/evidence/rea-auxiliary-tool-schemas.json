@@ -1,0 +1,1911 @@
+[
+  {
+    "name": "inspect_analysis_view",
+    "title": "Inspect Analysis View",
+    "description": "Inspect a selected view of completed binary-layout or JavaScript application Evidence without repeating analysis. Use an exact same-session retained evidence_id or portable inline Evidence. Select a summary, layout mitigations/linkage facet, one section/symbol/module, or a stable page with a positive limit. Module pages contain JavaScript assets, bundled modules and source modules; use node_id when paths are ambiguous or unavailable. Returns selected facts inline with artifact identity, parent Evidence ID, a distinct view digest, coverage, limitations and unknowns. Actual serialized size determines MCP transport admission; choose a smaller page or export the retained Evidence when needed.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/__schema0",
+          "description": "Value for source."
+        },
+        "view": {
+          "$ref": "#/$defs/__schema18",
+          "description": "Value for view."
+        }
+      },
+      "required": [
+        "source",
+        "view"
+      ],
+      "additionalProperties": false,
+      "$defs": {
+        "__schema0": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "retained-evidence",
+                  "description": "Value for kind."
+                },
+                "evidence_id": {
+                  "type": "string",
+                  "pattern": "^ev_[a-f0-9]{64}$",
+                  "description": "Stable identifier of the recorded Evidence observation."
+                }
+              },
+              "required": [
+                "kind",
+                "evidence_id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "inline",
+                  "description": "Value for kind."
+                },
+                "evidence": {
+                  "type": "object",
+                  "properties": {
+                    "evidence_id": {
+                      "$ref": "#/$defs/__schema1",
+                      "description": "Stable identifier of the recorded Evidence observation."
+                    },
+                    "subject": {
+                      "$ref": "#/$defs/__schema2",
+                      "description": "Value for subject."
+                    },
+                    "provider": {
+                      "$ref": "#/$defs/__schema4",
+                      "description": "Value for provider."
+                    },
+                    "analysis_profile": {
+                      "$ref": "#/$defs/__schema5",
+                      "description": "Value for analysis profile."
+                    },
+                    "predicate_type": {
+                      "$ref": "#/$defs/__schema8",
+                      "description": "Value for predicate type."
+                    },
+                    "operation": {
+                      "$ref": "#/$defs/__schema9",
+                      "description": "Value for operation."
+                    },
+                    "parameters": {
+                      "$ref": "#/$defs/__schema7",
+                      "description": "Value for parameters."
+                    },
+                    "raw_result": {
+                      "$ref": "#/$defs/__schema10",
+                      "description": "Value for raw result."
+                    },
+                    "normalized_result": {
+                      "$ref": "#/$defs/__schema11",
+                      "description": "Value for normalized result."
+                    },
+                    "confidence": {
+                      "$ref": "#/$defs/__schema12",
+                      "description": "Value for confidence."
+                    },
+                    "authority": {
+                      "$ref": "#/$defs/__schema13",
+                      "description": "Value for authority."
+                    },
+                    "environment": {
+                      "$ref": "#/$defs/__schema14",
+                      "description": "Value for environment."
+                    },
+                    "limitations": {
+                      "$ref": "#/$defs/__schema15",
+                      "description": "Value for limitations."
+                    },
+                    "locations": {
+                      "$ref": "#/$defs/__schema16",
+                      "description": "Value for locations."
+                    },
+                    "evidence_links": {
+                      "$ref": "#/$defs/__schema17",
+                      "description": "Value for evidence links."
+                    }
+                  },
+                  "required": [
+                    "evidence_id",
+                    "subject",
+                    "provider",
+                    "analysis_profile",
+                    "predicate_type",
+                    "operation",
+                    "parameters",
+                    "raw_result",
+                    "normalized_result",
+                    "confidence",
+                    "authority",
+                    "environment",
+                    "limitations",
+                    "locations",
+                    "evidence_links"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Evidence record produced by this operation."
+                }
+              },
+              "required": [
+                "kind",
+                "evidence"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "__schema1": {
+          "type": "string",
+          "pattern": "^ev_[a-f0-9]{64}$"
+        },
+        "__schema2": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Exact name used by this operation."
+                },
+                "digest": {
+                  "type": "object",
+                  "properties": {
+                    "sha256": {
+                      "$ref": "#/$defs/__schema3",
+                      "description": "Value for sha256."
+                    }
+                  },
+                  "required": [
+                    "sha256"
+                  ],
+                  "description": "Value for digest."
+                },
+                "format": {
+                  "type": "string",
+                  "enum": [
+                    "hopper",
+                    "analysis-database",
+                    "mach-o",
+                    "elf",
+                    "pe",
+                    "dos-mz",
+                    "dos-com",
+                    "zip",
+                    "ipa",
+                    "apk",
+                    "msix",
+                    "appx",
+                    "asar",
+                    "dmg",
+                    "pkg",
+                    "plist",
+                    "javascript",
+                    "source-map",
+                    "directory",
+                    "file",
+                    "unknown",
+                    "mach-o-universal",
+                    "javascript-bundle",
+                    "entitlements"
+                  ],
+                  "description": "Declared input artifact format."
+                },
+                "architecture": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "x86",
+                        "x86_64",
+                        "arm",
+                        "arm64"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "description": "Value for architecture."
+                },
+                "local_path": {
+                  "type": "string",
+                  "description": "Local filesystem path for local."
+                }
+              },
+              "required": [
+                "name",
+                "digest",
+                "format",
+                "architecture",
+                "local_path"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "__schema3": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "__schema4": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Value for id."
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Exact name used by this operation."
+            },
+            "version": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Value for version."
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "version"
+          ]
+        },
+        "__schema5": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "provider": {
+                  "$ref": "#/$defs/__schema6",
+                  "description": "Value for provider."
+                },
+                "parameters": {
+                  "$ref": "#/$defs/__schema7",
+                  "description": "Value for parameters."
+                },
+                "digest": {
+                  "$ref": "#/$defs/__schema3",
+                  "description": "Value for digest."
+                }
+              },
+              "required": [
+                "provider",
+                "parameters",
+                "digest"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "__schema6": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Value for id."
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Exact name used by this operation."
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Value for version."
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "version"
+          ]
+        },
+        "__schema7": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "__schema8": {
+          "type": "string",
+          "minLength": 1
+        },
+        "__schema9": {
+          "type": "string",
+          "minLength": 1
+        },
+        "__schema10": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/__schema11"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "__schema11": {},
+        "__schema12": {
+          "type": "string",
+          "enum": [
+            "observed",
+            "derived",
+            "inferred"
+          ]
+        },
+        "__schema13": {
+          "type": "string",
+          "enum": [
+            "shipped-artifact",
+            "controlled-replay",
+            "historical-reference",
+            "external-service",
+            "analyst-inference"
+          ]
+        },
+        "__schema14": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Value for id."
+                },
+                "platform": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Value for platform."
+                },
+                "architecture": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Value for architecture."
+                },
+                "isolation": {
+                  "type": "string",
+                  "enum": [
+                    "none",
+                    "process",
+                    "container",
+                    "virtual-machine"
+                  ],
+                  "description": "Value for isolation."
+                }
+              },
+              "required": [
+                "id",
+                "platform",
+                "architecture",
+                "isolation"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "__schema15": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "__schema16": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "address",
+                    "description": "Value for kind."
+                  },
+                  "address": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Value for address."
+                  }
+                },
+                "required": [
+                  "kind",
+                  "address"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "address-range",
+                    "description": "Value for kind."
+                  },
+                  "start": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Value for start."
+                  },
+                  "end": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Value for end."
+                  }
+                },
+                "required": [
+                  "kind",
+                  "start",
+                  "end"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "artifact-path",
+                    "description": "Value for kind."
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Local filesystem path used by this operation."
+                  }
+                },
+                "required": [
+                  "kind",
+                  "path"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "file-offset",
+                    "description": "Value for kind."
+                  },
+                  "offset": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991,
+                    "description": "Value for offset."
+                  }
+                },
+                "required": [
+                  "kind",
+                  "offset"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "file-offset-range",
+                    "description": "Value for kind."
+                  },
+                  "start": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991,
+                    "description": "Value for start."
+                  },
+                  "end": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991,
+                    "description": "Value for end."
+                  }
+                },
+                "required": [
+                  "kind",
+                  "start",
+                  "end"
+                ]
+              }
+            ]
+          }
+        },
+        "__schema17": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ev_[a-f0-9]{64}$"
+          }
+        },
+        "__schema18": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "summary",
+                  "description": "Value for kind."
+                }
+              },
+              "required": [
+                "kind"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "facet",
+                  "description": "Value for kind."
+                },
+                "facet": {
+                  "type": "string",
+                  "enum": [
+                    "mitigations",
+                    "linkage"
+                  ],
+                  "description": "Value for facet."
+                }
+              },
+              "required": [
+                "kind",
+                "facet"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "$ref": "#/$defs/__schema19",
+                  "description": "Value for kind."
+                },
+                "collection": {
+                  "$ref": "#/$defs/__schema20",
+                  "description": "Value for collection."
+                },
+                "selector": {
+                  "$ref": "#/$defs/__schema21",
+                  "description": "Value for selector."
+                }
+              },
+              "required": [
+                "kind",
+                "collection",
+                "selector"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "page",
+                  "description": "Value for kind."
+                },
+                "collection": {
+                  "type": "string",
+                  "enum": [
+                    "sections",
+                    "symbols",
+                    "modules"
+                  ],
+                  "description": "Value for collection."
+                },
+                "offset": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991,
+                  "description": "Value for offset."
+                },
+                "limit": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991,
+                  "description": "Value for limit."
+                }
+              },
+              "required": [
+                "kind",
+                "collection",
+                "offset",
+                "limit"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "__schema19": {
+          "type": "string",
+          "const": "item"
+        },
+        "__schema20": {
+          "type": "string",
+          "enum": [
+            "sections",
+            "symbols",
+            "modules"
+          ]
+        },
+        "__schema21": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991,
+                  "description": "Value for index."
+                }
+              },
+              "required": [
+                "index"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Exact name used by this operation."
+                }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "description": "Exact observed module path or original source-map reference from a module page; an empty reference is valid."
+                }
+              },
+              "required": [
+                "path"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "node_id": {
+                  "type": "string",
+                  "pattern": "^jag_node_[a-f0-9]{64}$",
+                  "description": "Value for node id."
+                }
+              },
+              "required": [
+                "node_id"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "examples": [
+        {
+          "source": {
+            "kind": "retained-evidence",
+            "evidence_id": "ev_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          },
+          "view": {
+            "kind": "summary"
+          }
+        },
+        {
+          "source": {
+            "kind": "retained-evidence",
+            "evidence_id": "ev_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          },
+          "view": {
+            "kind": "item",
+            "collection": "sections",
+            "selector": {
+              "name": ".text"
+            }
+          }
+        },
+        {
+          "source": {
+            "kind": "retained-evidence",
+            "evidence_id": "ev_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          },
+          "view": {
+            "kind": "page",
+            "collection": "modules",
+            "offset": 0,
+            "limit": 32
+          }
+        }
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": false
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "evidence_id": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "subject": {
+          "$ref": "#/$defs/__schema1"
+        },
+        "provider": {
+          "$ref": "#/$defs/__schema3"
+        },
+        "analysis_profile": {
+          "$ref": "#/$defs/__schema4"
+        },
+        "predicate_type": {
+          "$ref": "#/$defs/__schema7"
+        },
+        "operation": {
+          "$ref": "#/$defs/__schema8"
+        },
+        "parameters": {
+          "$ref": "#/$defs/__schema6"
+        },
+        "raw_result": {
+          "$ref": "#/$defs/__schema9"
+        },
+        "normalized_result": {
+          "$ref": "#/$defs/__schema11"
+        },
+        "confidence": {
+          "$ref": "#/$defs/__schema21"
+        },
+        "authority": {
+          "$ref": "#/$defs/__schema22"
+        },
+        "environment": {
+          "$ref": "#/$defs/__schema23"
+        },
+        "limitations": {
+          "$ref": "#/$defs/__schema24"
+        },
+        "locations": {
+          "$ref": "#/$defs/__schema25"
+        },
+        "evidence_links": {
+          "$ref": "#/$defs/__schema26"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "subject",
+        "provider",
+        "analysis_profile",
+        "predicate_type",
+        "operation",
+        "parameters",
+        "raw_result",
+        "normalized_result",
+        "confidence",
+        "authority",
+        "environment",
+        "limitations",
+        "locations",
+        "evidence_links"
+      ],
+      "additionalProperties": false,
+      "$defs": {
+        "__schema0": {
+          "type": "string",
+          "pattern": "^ev_[a-f0-9]{64}$"
+        },
+        "__schema1": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "digest": {
+                  "type": "object",
+                  "properties": {
+                    "sha256": {
+                      "$ref": "#/$defs/__schema2"
+                    }
+                  },
+                  "required": [
+                    "sha256"
+                  ],
+                  "additionalProperties": false
+                },
+                "format": {
+                  "type": "string",
+                  "enum": [
+                    "hopper",
+                    "analysis-database",
+                    "mach-o",
+                    "elf",
+                    "pe",
+                    "dos-mz",
+                    "dos-com",
+                    "zip",
+                    "ipa",
+                    "apk",
+                    "msix",
+                    "appx",
+                    "asar",
+                    "dmg",
+                    "pkg",
+                    "plist",
+                    "javascript",
+                    "source-map",
+                    "directory",
+                    "file",
+                    "unknown",
+                    "mach-o-universal",
+                    "javascript-bundle",
+                    "entitlements"
+                  ]
+                },
+                "architecture": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "x86",
+                        "x86_64",
+                        "arm",
+                        "arm64"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "local_path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "digest",
+                "format",
+                "architecture",
+                "local_path"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "__schema2": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "__schema3": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "__schema4": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "provider": {
+                  "$ref": "#/$defs/__schema5"
+                },
+                "parameters": {
+                  "$ref": "#/$defs/__schema6"
+                },
+                "digest": {
+                  "$ref": "#/$defs/__schema2"
+                }
+              },
+              "required": [
+                "provider",
+                "parameters",
+                "digest"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "__schema5": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "__schema6": {
+          "type": "object",
+          "additionalProperties": {}
+        },
+        "__schema7": {
+          "type": "string",
+          "minLength": 1
+        },
+        "__schema8": {
+          "type": "string",
+          "minLength": 1
+        },
+        "__schema9": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/__schema10"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "__schema10": {},
+        "__schema11": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "summary"
+                },
+                "view": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "const": "summary"
+                    }
+                  },
+                  "required": [
+                    "kind"
+                  ],
+                  "additionalProperties": false
+                },
+                "summary": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "bytes": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "format": {
+                          "type": "string",
+                          "const": "elf"
+                        },
+                        "architecture": {
+                          "type": "object",
+                          "properties": {
+                            "machine": {
+                              "type": "string",
+                              "const": "EM_X86_64"
+                            },
+                            "bits": {
+                              "type": "number",
+                              "const": 64
+                            },
+                            "byte_order": {
+                              "type": "string",
+                              "const": "little"
+                            }
+                          },
+                          "required": [
+                            "machine",
+                            "bits",
+                            "byte_order"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "image_type": {
+                          "type": "string",
+                          "enum": [
+                            "ET_EXEC",
+                            "ET_DYN",
+                            "ET_REL"
+                          ]
+                        },
+                        "entry": {
+                          "type": "object",
+                          "properties": {
+                            "reported_value": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "meaning": {
+                              "type": "string",
+                              "enum": [
+                                "linked-virtual-address",
+                                "not-applicable",
+                                "absent"
+                              ]
+                            },
+                            "execution_status": {
+                              "type": "string",
+                              "const": "unknown"
+                            }
+                          },
+                          "required": [
+                            "reported_value",
+                            "meaning",
+                            "execution_status"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "counts": {
+                          "type": "object",
+                          "properties": {
+                            "sections": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "segments": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "symbols": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "relocations": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            }
+                          },
+                          "required": [
+                            "sections",
+                            "segments",
+                            "symbols",
+                            "relocations"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "limitation_count": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      },
+                      "required": [
+                        "bytes",
+                        "format",
+                        "architecture",
+                        "image_type",
+                        "entry",
+                        "counts",
+                        "limitation_count"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "input_path": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "format": {
+                          "type": "string",
+                          "enum": [
+                            "asar",
+                            "directory"
+                          ]
+                        },
+                        "root_artifact_sha256": {
+                          "$ref": "#/$defs/__schema2"
+                        },
+                        "statistics": {
+                          "$ref": "#/$defs/__schema6"
+                        },
+                        "electron": {
+                          "$ref": "#/$defs/__schema6"
+                        },
+                        "coverage": {
+                          "$ref": "#/$defs/__schema6"
+                        },
+                        "limitation_count": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      },
+                      "required": [
+                        "input_path",
+                        "format",
+                        "root_artifact_sha256",
+                        "statistics",
+                        "electron",
+                        "coverage",
+                        "limitation_count"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                },
+                "parent_evidence_id": {
+                  "$ref": "#/$defs/__schema12"
+                },
+                "parent_operation": {
+                  "$ref": "#/$defs/__schema13"
+                },
+                "parent_digest": {
+                  "$ref": "#/$defs/__schema2"
+                },
+                "view_digest": {
+                  "$ref": "#/$defs/__schema2"
+                },
+                "artifact": {
+                  "$ref": "#/$defs/__schema14"
+                },
+                "coverage": {
+                  "$ref": "#/$defs/__schema15"
+                },
+                "limitations": {
+                  "$ref": "#/$defs/__schema16"
+                },
+                "unknowns": {
+                  "$ref": "#/$defs/__schema17"
+                }
+              },
+              "required": [
+                "kind",
+                "view",
+                "summary",
+                "parent_evidence_id",
+                "parent_operation",
+                "parent_digest",
+                "view_digest",
+                "artifact",
+                "coverage",
+                "limitations",
+                "unknowns"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "facet"
+                },
+                "view": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "const": "facet"
+                    },
+                    "facet": {
+                      "type": "string",
+                      "enum": [
+                        "mitigations",
+                        "linkage"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "facet"
+                  ],
+                  "additionalProperties": false
+                },
+                "facet": {
+                  "$ref": "#/$defs/__schema10"
+                },
+                "parent_evidence_id": {
+                  "$ref": "#/$defs/__schema12"
+                },
+                "parent_operation": {
+                  "$ref": "#/$defs/__schema13"
+                },
+                "parent_digest": {
+                  "$ref": "#/$defs/__schema2"
+                },
+                "view_digest": {
+                  "$ref": "#/$defs/__schema2"
+                },
+                "artifact": {
+                  "$ref": "#/$defs/__schema14"
+                },
+                "coverage": {
+                  "$ref": "#/$defs/__schema15"
+                },
+                "limitations": {
+                  "$ref": "#/$defs/__schema16"
+                },
+                "unknowns": {
+                  "$ref": "#/$defs/__schema17"
+                }
+              },
+              "required": [
+                "kind",
+                "view",
+                "facet",
+                "parent_evidence_id",
+                "parent_operation",
+                "parent_digest",
+                "view_digest",
+                "artifact",
+                "coverage",
+                "limitations",
+                "unknowns"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "item"
+                },
+                "view": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "$ref": "#/$defs/__schema18"
+                    },
+                    "collection": {
+                      "$ref": "#/$defs/__schema19"
+                    },
+                    "selector": {
+                      "$ref": "#/$defs/__schema20"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "collection",
+                    "selector"
+                  ],
+                  "additionalProperties": false
+                },
+                "item": {
+                  "$ref": "#/$defs/__schema10"
+                },
+                "parent_evidence_id": {
+                  "$ref": "#/$defs/__schema12"
+                },
+                "parent_operation": {
+                  "$ref": "#/$defs/__schema13"
+                },
+                "parent_digest": {
+                  "$ref": "#/$defs/__schema2"
+                },
+                "view_digest": {
+                  "$ref": "#/$defs/__schema2"
+                },
+                "artifact": {
+                  "$ref": "#/$defs/__schema14"
+                },
+                "coverage": {
+                  "$ref": "#/$defs/__schema15"
+                },
+                "limitations": {
+                  "$ref": "#/$defs/__schema16"
+                },
+                "unknowns": {
+                  "$ref": "#/$defs/__schema17"
+                }
+              },
+              "required": [
+                "kind",
+                "view",
+                "item",
+                "parent_evidence_id",
+                "parent_operation",
+                "parent_digest",
+                "view_digest",
+                "artifact",
+                "coverage",
+                "limitations",
+                "unknowns"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "page"
+                },
+                "view": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "const": "page"
+                    },
+                    "collection": {
+                      "type": "string",
+                      "enum": [
+                        "sections",
+                        "symbols",
+                        "modules"
+                      ]
+                    },
+                    "offset": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "limit": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "collection",
+                    "offset",
+                    "limit"
+                  ],
+                  "additionalProperties": false
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/__schema10"
+                  }
+                },
+                "parent_evidence_id": {
+                  "$ref": "#/$defs/__schema12"
+                },
+                "parent_operation": {
+                  "$ref": "#/$defs/__schema13"
+                },
+                "parent_digest": {
+                  "$ref": "#/$defs/__schema2"
+                },
+                "view_digest": {
+                  "$ref": "#/$defs/__schema2"
+                },
+                "artifact": {
+                  "$ref": "#/$defs/__schema14"
+                },
+                "coverage": {
+                  "$ref": "#/$defs/__schema15"
+                },
+                "limitations": {
+                  "$ref": "#/$defs/__schema16"
+                },
+                "unknowns": {
+                  "$ref": "#/$defs/__schema17"
+                }
+              },
+              "required": [
+                "kind",
+                "view",
+                "items",
+                "parent_evidence_id",
+                "parent_operation",
+                "parent_digest",
+                "view_digest",
+                "artifact",
+                "coverage",
+                "limitations",
+                "unknowns"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "__schema12": {
+          "type": "string",
+          "pattern": "^ev_[a-f0-9]{64}$"
+        },
+        "__schema13": {
+          "type": "string",
+          "enum": [
+            "inspect_binary_layout",
+            "analyze_javascript_application"
+          ]
+        },
+        "__schema14": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "$ref": "#/$defs/__schema2"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "__schema15": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "complete-within-view",
+                "page",
+                "empty"
+              ]
+            },
+            "examined": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "total": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "next_offset": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "exhausted": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "status",
+            "examined",
+            "total",
+            "next_offset",
+            "exhausted"
+          ],
+          "additionalProperties": false
+        },
+        "__schema16": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "__schema17": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "__schema18": {
+          "type": "string",
+          "const": "item"
+        },
+        "__schema19": {
+          "type": "string",
+          "enum": [
+            "sections",
+            "symbols",
+            "modules"
+          ]
+        },
+        "__schema20": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "index"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "description": "Exact observed module path or original source-map reference from a module page; an empty reference is valid."
+                }
+              },
+              "required": [
+                "path"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "node_id": {
+                  "type": "string",
+                  "pattern": "^jag_node_[a-f0-9]{64}$"
+                }
+              },
+              "required": [
+                "node_id"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "__schema21": {
+          "type": "string",
+          "enum": [
+            "observed",
+            "derived",
+            "inferred"
+          ]
+        },
+        "__schema22": {
+          "type": "string",
+          "enum": [
+            "shipped-artifact",
+            "controlled-replay",
+            "historical-reference",
+            "external-service",
+            "analyst-inference"
+          ]
+        },
+        "__schema23": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "platform": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "architecture": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "isolation": {
+                  "type": "string",
+                  "enum": [
+                    "none",
+                    "process",
+                    "container",
+                    "virtual-machine"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "platform",
+                "architecture",
+                "isolation"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "__schema24": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "__schema25": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "address"
+                  },
+                  "address": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "kind",
+                  "address"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "address-range"
+                  },
+                  "start": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "end": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "kind",
+                  "start",
+                  "end"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "artifact-path"
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "kind",
+                  "path"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "file-offset"
+                  },
+                  "offset": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "kind",
+                  "offset"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "file-offset-range"
+                  },
+                  "start": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "end": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "kind",
+                  "start",
+                  "end"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "__schema26": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ev_[a-f0-9]{64}$"
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "export_evidence_bundle",
+    "title": "Export Evidence Bundle",
+    "description": "Atomically write the session's deterministic Evidence bundle to the requested local path. Existing files require overwrite: true; records and manifests use canonical byte-stable ordering.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/__schema0",
+          "description": "Absolute local filesystem path for the exported evidence bundle; relative paths are rejected."
+        },
+        "overwrite": {
+          "$ref": "#/$defs/__schema1",
+          "description": "Whether an existing destination may be replaced."
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "additionalProperties": false,
+      "$defs": {
+        "__schema0": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[^\\x00]*$",
+          "description": "Absolute local filesystem path for the exported evidence bundle; relative paths are rejected."
+        },
+        "__schema1": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "examples": [
+        {
+          "path": "/tmp/evidence.json",
+          "overwrite": false
+        }
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true,
+      "idempotentHint": true,
+      "openWorldHint": false
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "result": {
+          "$ref": "#/$defs/__schema0"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "additionalProperties": false,
+      "$defs": {
+        "__schema0": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "unknowns": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "path",
+            "bytes",
+            "records",
+            "unknowns"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+]

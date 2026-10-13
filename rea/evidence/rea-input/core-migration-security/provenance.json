@@ -1,0 +1,114 @@
+{
+  "artifact": "recovered/dist/electron-main/main-core.cjs",
+  "sha256": "e7728657b60ce27ee3c3334a9ab6be41352b74e35c364fbfa2613ae3671538e0",
+  "functions": [
+    {
+      "name": "rl",
+      "start": 317056,
+      "end": 317212
+    },
+    {
+      "name": "Cf",
+      "start": 317212,
+      "end": 317331
+    },
+    {
+      "name": "cy",
+      "start": 317335,
+      "end": 317392
+    },
+    {
+      "name": "ol",
+      "start": 318100,
+      "end": 318203
+    },
+    {
+      "name": "Z9",
+      "start": 318388,
+      "end": 318629
+    },
+    {
+      "name": "jy",
+      "start": 401906,
+      "end": 401983
+    },
+    {
+      "name": "Nk",
+      "start": 401983,
+      "end": 402058
+    },
+    {
+      "name": "rD",
+      "start": 415208,
+      "end": 415583
+    },
+    {
+      "name": "oT",
+      "start": 415583,
+      "end": 415639
+    },
+    {
+      "name": "_Z",
+      "start": 415639,
+      "end": 415695
+    },
+    {
+      "name": "oD",
+      "start": 415695,
+      "end": 415763
+    },
+    {
+      "name": "aD",
+      "start": 415763,
+      "end": 415809
+    },
+    {
+      "name": "Km",
+      "start": 584748,
+      "end": 584920
+    },
+    {
+      "name": "jT",
+      "start": 584920,
+      "end": 585015
+    },
+    {
+      "name": "tM",
+      "start": 585015,
+      "end": 585211
+    },
+    {
+      "name": "dne",
+      "start": 585211,
+      "end": 585323
+    },
+    {
+      "name": "lne",
+      "start": 585323,
+      "end": 585411
+    },
+    {
+      "name": "une",
+      "start": 585411,
+      "end": 585501
+    },
+    {
+      "name": "pne",
+      "start": 585501,
+      "end": 585883
+    },
+    {
+      "name": "fne",
+      "start": 585883,
+      "end": 587302
+    },
+    {
+      "name": "nM",
+      "start": 587302,
+      "end": 587425
+    }
+  ],
+  "limitations": [
+    "Inert AST extraction of declarations only; closed-over symbols are intentionally unresolved."
+  ]
+}

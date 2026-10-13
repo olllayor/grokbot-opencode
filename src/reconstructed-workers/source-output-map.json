@@ -1,0 +1,119 @@
+{
+  "status": "partial-helper-reconstruction",
+  "entrypoints": [
+    {
+      "source": "src/reconstructed-workers/chrome-import-worker.ts",
+      "output": "dist/electron-main/chrome-import-worker.cjs",
+      "replaces": "recovered/dist/electron-main/chrome-import-worker.cjs",
+      "format": "cjs",
+      "platform": "node",
+      "vendorDependencies": [],
+      "builtInDependencies": [
+        "node:fs",
+        "node:fs/promises",
+        "node:os",
+        "node:path",
+        "node:crypto",
+        "node:sqlite",
+        "node:child_process",
+        "node:util",
+        "node:worker_threads"
+      ]
+    }
+  ],
+  "bindingReplacements": [
+    {
+      "bundle": "dist/electron-main/meetings-main.cjs",
+      "binding": "re",
+      "module": "src/reconstructed-workers/meetings-service.ts",
+      "expression": "createMeetingsServiceClass({createBackend: backend => new O(backend),createRuntime: options => new V(options),openWindow: request => _.open(request),createStt: options => new T(options),createMonitor: options => new k(options)})",
+      "retainedApplicationDependencies": [
+        "O",
+        "V",
+        "_",
+        "T",
+        "k"
+      ]
+    },
+    {
+      "bundle": "dist/electron-main/onepassword-connection-service.cjs",
+      "module": "src/reconstructed-workers/onepassword-policy.ts",
+      "factory": "createOnePasswordPolicy(v)",
+      "bindings": {
+        "Z": "invalidSetup",
+        "zt": "connectionErrorDetail",
+        "qt": "parseServiceAccountToken",
+        "Zt": "classifyOutcome",
+        "vn": "projectError"
+      },
+      "retainedApplicationDependencies": [
+        "v",
+        "De",
+        "$t"
+      ]
+    },
+    {
+      "bundle": "dist/electron-main/onepassword-connection-service.cjs",
+      "binding": "De",
+      "module": "src/reconstructed-workers/onepassword-connection.ts",
+      "expression": "createOnePasswordConnectionServiceClass({OperationError:v,backendBudget:Ye,mintBudget:Sn,reportFailure:J,setupNotReady:input=>_e.credentialProviderSetupNotReady(input),setupFailed:input=>_e.credentialProviderSetupFailed(input)})"
+    },
+    {
+      "bundle": "dist/electron-main/onepassword-connection-service.cjs",
+      "binding": "Ze",
+      "selector": "nested-assignment-expression",
+      "module": "src/reconstructed-workers/onepassword-cli-runtime.ts",
+      "expression": "createOnePasswordCliRuntimeClass({CliError:O,systemPaths:an,download:sn,runProcess:wt,environment:ve,parseVersion:vt,extractArchive:St,delay:Se,reportFailure:J,missingError:pr,version:z,productionLauncherRequirement:on,developmentLauncherRequirement:$e,cliSignatureRequirement:tn,verificationTimeout:Qr,processBufferBytes:ze,versionTimeout:ht,downloadTimeout:yt})"
+    },
+    {
+      "bundle": "dist/electron-main/onepassword-connection-service.cjs",
+      "binding": "We",
+      "selector": "nested-assignment-expression",
+      "module": "src/reconstructed-workers/onepassword-provisioning.ts",
+      "expression": "createOnePasswordProvisioningBridgeClass({OperationError:v,unavailableSink:ye,createExecutor:un,translateRuntimeError:Ae,translateProcessError:fn,chooseSupported:Tt,identifier:Ne,name:Ke,expiration:Bt,accounts:Ft,vaults:Mt,vault:Ut,token:Ht,boundedString:W,environment:ve,delay:Se,readTimeout:pn,mutationTimeout:yn,deliveryTimeout:Nt,jsonBytes:At,tokenBytes:En,consumerReferenceLength:Pt})"
+    },
+    {
+      "bundle": "dist/electron-main/onepassword-connection-service.cjs",
+      "module": "src/reconstructed-workers/onepassword-validation.ts",
+      "factory": "createOnePasswordValidators(v)",
+      "bindings": {
+        "Ne": "identifier",
+        "Ke": "name",
+        "Ft": "accounts",
+        "Mt": "vaults",
+        "Ut": "vault",
+        "Bt": "expiration",
+        "Ht": "token"
+      }
+    },
+    {
+      "bundle": "dist/electron-main/onepassword-connection-service.cjs",
+      "module": "src/reconstructed-workers/onepassword-validation.ts",
+      "bindings": {
+        "Ot": "parseSemanticVersion",
+        "_t": "versionAtLeast",
+        "hn": "supportedCandidate",
+        "Tt": "chooseSupportedCli",
+        "W": "boundedString",
+        "Lt": "accountUrl"
+      }
+    },
+    {
+      "bundle": "dist/electron-main/onepassword-connection-service.cjs",
+      "binding": "$t",
+      "module": "src/reconstructed-workers/onepassword-connection.ts",
+      "expression": "createDefaultOnePasswordConnectionFactory({ConnectionService:De,loadRuntime:()=>Promise.resolve().then(()=>(Xe(),dn)),loadBridge:()=>Promise.resolve().then(()=>(wn(),gn)),join:An.join})"
+    }
+  ],
+  "remainingApplicationCode": [
+    "meetings-main.cjs concrete meeting runtime, window orchestration, speech streams, census monitor and report queue",
+    "onepassword-connection-service.cjs archive validation/extraction, process adapters, environment scrubbing and process/runtime-error translation helpers"
+  ],
+  "vendor": [
+    {
+      "path": "dist/renderer/assets/pdf.worker.min-qwK7q_zL.mjs",
+      "classification": "third-party PDF worker; retain as vendor dependency"
+    }
+  ],
+  "aggregate": "src/reconstructed-workers/index.ts"
+}

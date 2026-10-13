@@ -1,0 +1,1278 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "capture_process_scenario",
+  "arguments": {
+    "executable": "node",
+    "arguments": [
+      "--test",
+      "tests/bootstrap.test.mjs",
+      "tests/main-core.test.mjs",
+      "tests/update.test.mjs"
+    ],
+    "working_directory": "/Users/clps/Documents/GitHub/grokbot",
+    "timeout_ms": 30000,
+    "settle_ms": 250,
+    "normalization": {
+      "pids": true,
+      "paths": true,
+      "ports": true
+    },
+    "limits": {
+      "output_bytes": 131072
+    }
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_3c62418e256a43b44f57b678236881978321306874d35ba0abf30de9e39f5fa1\",\"subject\":null,\"provider\":{\"id\":\"rea-process\",\"name\":\"REA process capture\",\"version\":\"3\"},\"analysis_profile\":null,\"predicate_type\":\"rea.process-capture\",\"operation\":\"capture_process_scenario\",\"parameters\":{\"executable_name\":\"node\",\"argument_count\":4,\"event_count\":0,\"filesystem_observation_path_count\":0,\"normalization\":{\"paths\":true,\"pids\":true,\"ports\":true,\"time_bucket_ms\":10,\"patterns\":[]}},\"raw_result\":null,\"normalized_result\":{\"manifest\":{\"rea_version\":\"6.3.0\",\"provider_version\":\"3\",\"platform\":\"darwin\",\"architecture\":\"arm64\",\"pty_backend\":\"node-pty\",\"started_at\":\"2026-10-10T17:59:05.601Z\",\"completed_at\":\"2026-10-10T17:59:06.406Z\",\"scenario\":{\"executable\":\"/Users/clps/.local/share/vite-plus/js_runtime/node/22.23.3/bin/node\",\"arguments\":[\"--test\",\"tests/bootstrap.test.mjs\",\"tests/main-core.test.mjs\",\"tests/update.test.mjs\"],\"working_directory\":\"/Users/clps/Documents/GitHub/grokbot\",\"environment\":{},\"filesystem_observation_paths\":[],\"terminal\":{\"columns\":80,\"rows\":24,\"scrollback\":1000},\"events\":[],\"timeout_ms\":30000,\"idle_timeout_ms\":30000,\"settle_ms\":250,\"limits\":{\"output_bytes\":131072,\"files\":10000,\"file_bytes\":10000000,\"processes\":1000,\"filesystem_depth\":16},\"normalization\":{\"paths\":true,\"pids\":true,\"ports\":true,\"time_bucket_ms\":10,\"patterns\":[]},\"executable_sha256\":\"68f4d07ca49e0500cc135c7e0a445093e228e42e126ac22306d045f0a8c2636b\"},\"comparison_contract\":{\"working_directory\":\"/Users/clps/Documents/GitHub/grokbot\",\"environment\":{},\"ambient_environment\":\"unknown\",\"filesystem_observation_paths\":[],\"terminal\":{\"columns\":80,\"rows\":24,\"scrollback\":1000},\"events\":[],\"timeout_ms\":30000,\"idle_timeout_ms\":30000,\"settle_ms\":250,\"limits\":{\"output_bytes\":131072,\"files\":10000,\"file_bytes\":10000000,\"processes\":1000,\"filesystem_depth\":16},\"normalization\":{\"paths\":true,\"pids\":true,\"ports\":true,\"time_bucket_ms\":10,\"patterns\":[]},\"port_normalization_version\":\"contextual-endpoints-v2\"},\"full_scenario_sha256\":\"aa57f8cefe3287d2f84a0e5bc78eb64b741c1d1c7d05dddb8a259c40cc5c9c24\",\"comparison_contract_sha256\":\"4270efbb38ff2d7fd707e840f821c2d1d553f69b893ebfda305172ac2e7736b6\",\"selected_executable_sha256\":\"68f4d07ca49e0500cc135c7e0a445093e228e42e126ac22306d045f0a8c2636b\",\"executable_sha256\":\"68f4d07ca49e0500cc135c7e0a445093e228e42e126ac22306d045f0a8c2636b\",\"executable_identity\":{\"state\":\"path_metadata_unchanged\",\"reason\":null},\"normalization_sha256\":\"60a27b2d1ee5aa73bf2e5cb2deaed2e9cc548f961ad2e3772c981828b643cc43\"},\"normalization\":{\"paths\":true,\"pids\":true,\"ports\":true,\"time_bucket_ms\":10,\"patterns\":[]},\"frames\":[{\"sequence\":0,\"at_ms\":140,\"data\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n\"},{\"sequence\":1,\"at_ms\":140,\"data\":\"✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n\"},{\"sequence\":2,\"at_ms\":220,\"data\":\"✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n\"},{\"sequence\":3,\"at_ms\":220,\"data\":\"✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n\"},{\"sequence\":4,\"at_ms\":220,\"data\":\"✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n\"},{\"sequence\":5,\"at_ms\":240,\"data\":\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n\"},{\"sequence\":6,\"at_ms\":350,\"data\":\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n\"},{\"sequence\":7,\"at_ms\":350,\"data\":\"✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n\"},{\"sequence\":8,\"at_ms\":350,\"data\":\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n\"},{\"sequence\":9,\"at_ms\":350,\"data\":\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\r\\n\"},{\"sequence\":10,\"at_ms\":500,\"data\":\"✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\\r\\n\"},{\"sequence\":11,\"at_ms\":500,\"data\":\"✔ response validators and Content-Range parsing match shipped code (0.638708ms)\\r\\n\"},{\"sequence\":12,\"at_ms\":510,\"data\":\"✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\\r\\n\"},{\"sequence\":13,\"at_ms\":520,\"data\":\"✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\\r\\n\"},{\"sequence\":14,\"at_ms\":520,\"data\":\"✔ windows placement retries only transient errors with matching policy (0.325833ms)\\r\\n\"},{\"sequence\":15,\"at_ms\":540,\"data\":\"✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)\\r\\n\"},{\"sequence\":16,\"at_ms\":570,\"data\":\"ℹ tests 16\\r\\nℹ suites 0\\r\\nℹ pass 16\\r\\nℹ fail 0\\r\\nℹ cancelled 0\\r\\nℹ skipped 0\\r\\nℹ todo 0\\r\\nℹ duration_ms 507.491875\\r\\n\"}],\"rendered_frames\":[{\"sequence\":0,\"at_ms\":140,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":2,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\u001b[1B\\u001b[20D\"},{\"sequence\":1,\"at_ms\":140,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":4,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\u001b[1B\\u001b[15D\"},{\"sequence\":2,\"at_ms\":220,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":6,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\u001b[1B\\u001b[17D\"},{\"sequence\":3,\"at_ms\":220,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":8,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\u001b[1B\\u001b[25D\"},{\"sequence\":4,\"at_ms\":220,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":10,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\u001b[1B\\u001b[26D\"},{\"sequence\":5,\"at_ms\":240,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":11,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\u001b[1B\\u001b[77D\"},{\"sequence\":6,\"at_ms\":350,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":13,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\u001b[1B\\u001b[5D\"},{\"sequence\":7,\"at_ms\":350,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":14,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\u001b[1B\\u001b[73D\"},{\"sequence\":8,\"at_ms\":350,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":16,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\u001b[1B\\u001b[24D\"},{\"sequence\":9,\"at_ms\":350,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":17,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\u001b[1B\\u001b[76D\"},{\"sequence\":10,\"at_ms\":500,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":18,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    \",\"✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\r\\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\\u001b[1B\\u001b[74D\"},{\"sequence\":11,\"at_ms\":500,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":19,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    \",\"✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      \",\"✔ response validators and Content-Range parsing match shipped code (0.638708ms) \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\r\\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\\r\\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\\u001b[1B\\u001b[79D\"},{\"sequence\":12,\"at_ms\":510,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":21,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    \",\"✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      \",\"✔ response validators and Content-Range parsing match shipped code (0.638708ms) \",\"✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup \",\"(12.708167ms)                                                                   \",\"                                                                                \",\"                                                                                \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\r\\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\\r\\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\\r\\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\\u001b[1B\\u001b[13D\"},{\"sequence\":13,\"at_ms\":520,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":23,\"active_buffer\":\"normal\",\"lines\":[\"✔ user-data parsing matches shipped bootstrap across precedence and malformed ar\",\"guments (0.550209ms)                                                            \",\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    \",\"✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      \",\"✔ response validators and Content-Range parsing match shipped code (0.638708ms) \",\"✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup \",\"(12.708167ms)                                                                   \",\"✔ integrity and unexpected range failures preserve shipped cleanup/error semanti\",\"cs (4.319084ms)                                                                 \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\r\\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\\r\\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\\r\\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\\r\\n✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\\u001b[1B\\u001b[15D\"},{\"sequence\":14,\"at_ms\":520,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":23,\"active_buffer\":\"normal\",\"lines\":[\"✔ cache read classifications match shipped code, including chained and cyclic er\",\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    \",\"✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      \",\"✔ response validators and Content-Range parsing match shipped code (0.638708ms) \",\"✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup \",\"(12.708167ms)                                                                   \",\"✔ integrity and unexpected range failures preserve shipped cleanup/error semanti\",\"cs (4.319084ms)                                                                 \",\"✔ windows placement retries only transient errors with matching policy (0.325833\",\"ms)                                                                             \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\r\\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\\r\\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\\r\\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\\r\\n✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\\r\\n✔ windows placement retries only transient errors with matching policy (0.325833ms)\\r\\n\"},{\"sequence\":15,\"at_ms\":540,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":23,\"active_buffer\":\"normal\",\"lines\":[\"rors (0.6635ms)                                                                 \",\"✔ atomic write matches symlink-following, permissions and serialized final conte\",\"nts (78.855208ms)                                                               \",\"✔ cache pruning keeps current plus two old caches and only removes stale own tem\",\"porary files (5.668042ms)                                                       \",\"✔ startup waits for core and reports both cache handles; app failures reach core\",\" failure hook (0.427292ms)                                                      \",\"✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   \",\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    \",\"✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      \",\"✔ response validators and Content-Range parsing match shipped code (0.638708ms) \",\"✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup \",\"(12.708167ms)                                                                   \",\"✔ integrity and unexpected range failures preserve shipped cleanup/error semanti\",\"cs (4.319084ms)                                                                 \",\"✔ windows placement retries only transient errors with matching policy (0.325833\",\"ms)                                                                             \",\"✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)  \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\r\\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\\r\\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\\r\\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\\r\\n✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\\r\\n✔ windows placement retries only transient errors with matching policy (0.325833ms)\\r\\n✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)\\r\\n\"},{\"sequence\":16,\"at_ms\":570,\"columns\":80,\"rows\":24,\"cursor_x\":0,\"cursor_y\":23,\"active_buffer\":\"normal\",\"lines\":[\"✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180\",\"42ms)                                                                           \",\"✔ hardware and window policy match shipped platform defaults (0.174041ms)       \",\"✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe\",\"d functions (0.729875ms)                                                        \",\"✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    \",\"✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      \",\"✔ response validators and Content-Range parsing match shipped code (0.638708ms) \",\"✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup \",\"(12.708167ms)                                                                   \",\"✔ integrity and unexpected range failures preserve shipped cleanup/error semanti\",\"cs (4.319084ms)                                                                 \",\"✔ windows placement retries only transient errors with matching policy (0.325833\",\"ms)                                                                             \",\"✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)  \",\"ℹ tests 16                                                                      \",\"ℹ suites 0                                                                      \",\"ℹ pass 16                                                                       \",\"ℹ fail 0                                                                        \",\"ℹ cancelled 0                                                                   \",\"ℹ skipped 0                                                                     \",\"ℹ todo 0                                                                        \",\"ℹ duration_ms 507.491875                                                        \",\"                                                                                \"],\"serialized_state\":\"✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\\r\\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\\r\\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\\r\\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\\r\\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\\r\\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\\r\\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\\r\\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\\r\\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\\r\\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\\r\\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\\r\\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\\r\\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\\r\\n✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\\r\\n✔ windows placement retries only transient errors with matching policy (0.325833ms)\\r\\n✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)\\r\\nℹ tests 16\\r\\nℹ suites 0\\r\\nℹ pass 16\\r\\nℹ fail 0\\r\\nℹ cancelled 0\\r\\nℹ skipped 0\\r\\nℹ todo 0\\r\\nℹ duration_ms 507.491875\\r\\n\"}],\"interaction_events\":[],\"exit\":{\"code\":0,\"signal\":0,\"reason\":\"exited\"},\"settlement\":{\"state\":\"quiesced\",\"elapsed_ms\":198,\"cleanup_outcome\":\"not_required\"},\"process_samples\":[{\"at_ms\":230,\"pid\":1,\"parent_pid\":2,\"command\":\"<executable> --test tests/bootstrap.test.mjs tests/main-core.test.mjs tests/update.test.mjs\",\"process_group_id\":1,\"session_id\":null},{\"at_ms\":230,\"pid\":3,\"parent_pid\":1,\"command\":\"(node)\",\"process_group_id\":1,\"session_id\":null},{\"at_ms\":230,\"pid\":4,\"parent_pid\":1,\"command\":\"<executable> tests/main-core.test.mjs\",\"process_group_id\":1,\"session_id\":null},{\"at_ms\":230,\"pid\":5,\"parent_pid\":1,\"command\":\"<executable> tests/update.test.mjs\",\"process_group_id\":1,\"session_id\":null},{\"at_ms\":230,\"pid\":6,\"parent_pid\":3,\"command\":\"(esbuild)\",\"process_group_id\":1,\"session_id\":null},{\"at_ms\":560,\"pid\":1,\"parent_pid\":2,\"command\":\"(node)\",\"process_group_id\":1,\"session_id\":null},{\"at_ms\":560,\"pid\":5,\"parent_pid\":1,\"command\":\"(node)\",\"process_group_id\":1,\"session_id\":null},{\"at_ms\":560,\"pid\":7,\"parent_pid\":5,\"command\":\"<defunct>\",\"process_group_id\":1,\"session_id\":null}],\"filesystem_checkpoints\":[{\"name\":\"before\",\"at_ms\":0,\"files\":[],\"effects\":[],\"truncated\":false},{\"name\":\"after_settlement\",\"at_ms\":805,\"files\":[],\"effects\":[],\"truncated\":false}],\"event_journal\":[{\"capture_order\":0,\"collection\":\"filesystem_checkpoints\",\"index\":0},{\"capture_order\":1,\"collection\":\"frames\",\"index\":0},{\"capture_order\":2,\"collection\":\"frames\",\"index\":1},{\"capture_order\":3,\"collection\":\"rendered_frames\",\"index\":0},{\"capture_order\":4,\"collection\":\"rendered_frames\",\"index\":1},{\"capture_order\":5,\"collection\":\"frames\",\"index\":2},{\"capture_order\":6,\"collection\":\"rendered_frames\",\"index\":2},{\"capture_order\":7,\"collection\":\"frames\",\"index\":3},{\"capture_order\":8,\"collection\":\"frames\",\"index\":4},{\"capture_order\":9,\"collection\":\"rendered_frames\",\"index\":3},{\"capture_order\":10,\"collection\":\"rendered_frames\",\"index\":4},{\"capture_order\":11,\"collection\":\"frames\",\"index\":5},{\"capture_order\":12,\"collection\":\"rendered_frames\",\"index\":5},{\"capture_order\":13,\"collection\":\"process_samples\",\"index\":0},{\"capture_order\":14,\"collection\":\"process_samples\",\"index\":1},{\"capture_order\":15,\"collection\":\"process_samples\",\"index\":2},{\"capture_order\":16,\"collection\":\"process_samples\",\"index\":3},{\"capture_order\":17,\"collection\":\"process_samples\",\"index\":4},{\"capture_order\":18,\"collection\":\"frames\",\"index\":6},{\"capture_order\":19,\"collection\":\"frames\",\"index\":7},{\"capture_order\":20,\"collection\":\"frames\",\"index\":8},{\"capture_order\":21,\"collection\":\"frames\",\"index\":9},{\"capture_order\":22,\"collection\":\"rendered_frames\",\"index\":6},{\"capture_order\":23,\"collection\":\"rendered_frames\",\"index\":7},{\"capture_order\":24,\"collection\":\"rendered_frames\",\"index\":8},{\"capture_order\":25,\"collection\":\"rendered_frames\",\"index\":9},{\"capture_order\":26,\"collection\":\"frames\",\"index\":10},{\"capture_order\":27,\"collection\":\"frames\",\"index\":11},{\"capture_order\":28,\"collection\":\"rendered_frames\",\"index\":10},{\"capture_order\":29,\"collection\":\"rendered_frames\",\"index\":11},{\"capture_order\":30,\"collection\":\"frames\",\"index\":12},{\"capture_order\":31,\"collection\":\"rendered_frames\",\"index\":12},{\"capture_order\":32,\"collection\":\"frames\",\"index\":13},{\"capture_order\":33,\"collection\":\"frames\",\"index\":14},{\"capture_order\":34,\"collection\":\"rendered_frames\",\"index\":13},{\"capture_order\":35,\"collection\":\"rendered_frames\",\"index\":14},{\"capture_order\":36,\"collection\":\"frames\",\"index\":15},{\"capture_order\":37,\"collection\":\"rendered_frames\",\"index\":15},{\"capture_order\":38,\"collection\":\"frames\",\"index\":16},{\"capture_order\":39,\"collection\":\"rendered_frames\",\"index\":16},{\"capture_order\":40,\"collection\":\"lifecycle\",\"index\":0},{\"capture_order\":41,\"collection\":\"process_samples\",\"index\":5},{\"capture_order\":42,\"collection\":\"process_samples\",\"index\":6},{\"capture_order\":43,\"collection\":\"process_samples\",\"index\":7},{\"capture_order\":44,\"collection\":\"lifecycle\",\"index\":1},{\"capture_order\":45,\"collection\":\"filesystem_checkpoints\",\"index\":1}],\"files_before\":[],\"files_after\":[],\"filesystem_effects\":[],\"truncated\":false,\"truncation_details\":{\"raw_terminal\":{\"budget_bytes\":131072,\"observed_bytes\":1609,\"retained_bytes\":1609,\"observed_frames\":17,\"retained_frames\":17},\"rendered_terminal\":{\"budget_bytes\":131072,\"observed_bytes\":47670,\"retained_bytes\":47670,\"observed_frames\":17,\"retained_frames\":17},\"filesystem_before\":{\"files_limit\":10000,\"depth_limit\":16,\"enumeration_truncated\":false,\"enumeration_reasons\":[],\"hash_budget_bytes\":10000000,\"hashed_bytes\":0,\"hash_omissions\":[]},\"filesystem_after\":{\"files_limit\":10000,\"depth_limit\":16,\"enumeration_truncated\":false,\"enumeration_reasons\":[],\"hash_budget_bytes\":10000000,\"hashed_bytes\":0,\"hash_omissions\":[]},\"process\":{\"sample_limit\":1000,\"sampling_partial\":false,\"retained_samples\":8,\"sample_limit_reached\":false,\"sampling_failures\":0,\"first_sampling_failure\":null,\"coverage\":\"sampled\"}},\"limitations\":[\"The executable digest is a prelaunch file sample; matching path metadata immediately after spawn does not prove an atomic operating-system image binding.\",\"Process trees are sampled and may omit short-lived descendants.\",\"Filesystem observations are before/after snapshots, not syscall traces.\",\"Inherited host environment variables are not recorded and may affect results.\",\"No filesystem observation paths were selected; filesystem effects remain unknown.\"],\"residual_unknowns\":[{\"scope\":\"process\",\"reason\":\"Process trees are sampled and may omit short-lived descendants.\"},{\"scope\":\"process\",\"reason\":\"The executable digest is a prelaunch file sample; operating-system image binding is not atomically observed.\"},{\"scope\":\"environment\",\"reason\":\"Inherited host environment variables are not recorded.\"},{\"scope\":\"network\",\"reason\":\"Network activity is not observed by this capture.\"},{\"scope\":\"filesystem\",\"reason\":\"No filesystem observation paths were selected; filesystem effects remain unknown.\"}],\"cleanup\":{\"owned_process_group\":\"verified\",\"temporary_root\":\"removed\"}},\"confidence\":\"observed\",\"authority\":\"controlled-replay\",\"environment\":{\"id\":\"darwin-arm64\",\"platform\":\"darwin\",\"architecture\":\"arm64\",\"isolation\":\"process\"},\"limitations\":[\"Artifact identity is unavailable for this observation.\",\"The executable digest is a prelaunch file sample; matching path metadata immediately after spawn does not prove an atomic operating-system image binding.\",\"Process trees are sampled and may omit short-lived descendants.\",\"Filesystem observations are before/after snapshots, not syscall traces.\",\"Inherited host environment variables are not recorded and may affect results.\",\"No filesystem observation paths were selected; filesystem effects remain unknown.\"],\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_3c62418e256a43b44f57b678236881978321306874d35ba0abf30de9e39f5fa1",
+      "subject": null,
+      "provider": {
+        "id": "rea-process",
+        "name": "REA process capture",
+        "version": "3"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.process-capture",
+      "operation": "capture_process_scenario",
+      "parameters": {
+        "executable_name": "node",
+        "argument_count": 4,
+        "event_count": 0,
+        "filesystem_observation_path_count": 0,
+        "normalization": {
+          "paths": true,
+          "pids": true,
+          "ports": true,
+          "time_bucket_ms": 10,
+          "patterns": []
+        }
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "manifest": {
+          "rea_version": "6.3.0",
+          "provider_version": "3",
+          "platform": "darwin",
+          "architecture": "arm64",
+          "pty_backend": "node-pty",
+          "started_at": "2026-10-10T17:59:05.601Z",
+          "completed_at": "2026-10-10T17:59:06.406Z",
+          "scenario": {
+            "executable": "/Users/clps/.local/share/vite-plus/js_runtime/node/22.23.3/bin/node",
+            "arguments": [
+              "--test",
+              "tests/bootstrap.test.mjs",
+              "tests/main-core.test.mjs",
+              "tests/update.test.mjs"
+            ],
+            "working_directory": "/Users/clps/Documents/GitHub/grokbot",
+            "environment": {},
+            "filesystem_observation_paths": [],
+            "terminal": {
+              "columns": 80,
+              "rows": 24,
+              "scrollback": 1000
+            },
+            "events": [],
+            "timeout_ms": 30000,
+            "idle_timeout_ms": 30000,
+            "settle_ms": 250,
+            "limits": {
+              "output_bytes": 131072,
+              "files": 10000,
+              "file_bytes": 10000000,
+              "processes": 1000,
+              "filesystem_depth": 16
+            },
+            "normalization": {
+              "paths": true,
+              "pids": true,
+              "ports": true,
+              "time_bucket_ms": 10,
+              "patterns": []
+            },
+            "executable_sha256": "68f4d07ca49e0500cc135c7e0a445093e228e42e126ac22306d045f0a8c2636b"
+          },
+          "comparison_contract": {
+            "working_directory": "/Users/clps/Documents/GitHub/grokbot",
+            "environment": {},
+            "ambient_environment": "unknown",
+            "filesystem_observation_paths": [],
+            "terminal": {
+              "columns": 80,
+              "rows": 24,
+              "scrollback": 1000
+            },
+            "events": [],
+            "timeout_ms": 30000,
+            "idle_timeout_ms": 30000,
+            "settle_ms": 250,
+            "limits": {
+              "output_bytes": 131072,
+              "files": 10000,
+              "file_bytes": 10000000,
+              "processes": 1000,
+              "filesystem_depth": 16
+            },
+            "normalization": {
+              "paths": true,
+              "pids": true,
+              "ports": true,
+              "time_bucket_ms": 10,
+              "patterns": []
+            },
+            "port_normalization_version": "contextual-endpoints-v2"
+          },
+          "full_scenario_sha256": "aa57f8cefe3287d2f84a0e5bc78eb64b741c1d1c7d05dddb8a259c40cc5c9c24",
+          "comparison_contract_sha256": "4270efbb38ff2d7fd707e840f821c2d1d553f69b893ebfda305172ac2e7736b6",
+          "selected_executable_sha256": "68f4d07ca49e0500cc135c7e0a445093e228e42e126ac22306d045f0a8c2636b",
+          "executable_sha256": "68f4d07ca49e0500cc135c7e0a445093e228e42e126ac22306d045f0a8c2636b",
+          "executable_identity": {
+            "state": "path_metadata_unchanged",
+            "reason": null
+          },
+          "normalization_sha256": "60a27b2d1ee5aa73bf2e5cb2deaed2e9cc548f961ad2e3772c981828b643cc43"
+        },
+        "normalization": {
+          "paths": true,
+          "pids": true,
+          "ports": true,
+          "time_bucket_ms": 10,
+          "patterns": []
+        },
+        "frames": [
+          {
+            "sequence": 0,
+            "at_ms": 140,
+            "data": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n"
+          },
+          {
+            "sequence": 1,
+            "at_ms": 140,
+            "data": "✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n"
+          },
+          {
+            "sequence": 2,
+            "at_ms": 220,
+            "data": "✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n"
+          },
+          {
+            "sequence": 3,
+            "at_ms": 220,
+            "data": "✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n"
+          },
+          {
+            "sequence": 4,
+            "at_ms": 220,
+            "data": "✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n"
+          },
+          {
+            "sequence": 5,
+            "at_ms": 240,
+            "data": "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n"
+          },
+          {
+            "sequence": 6,
+            "at_ms": 350,
+            "data": "✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n"
+          },
+          {
+            "sequence": 7,
+            "at_ms": 350,
+            "data": "✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n"
+          },
+          {
+            "sequence": 8,
+            "at_ms": 350,
+            "data": "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n"
+          },
+          {
+            "sequence": 9,
+            "at_ms": 350,
+            "data": "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\r\n"
+          },
+          {
+            "sequence": 10,
+            "at_ms": 500,
+            "data": "✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\r\n"
+          },
+          {
+            "sequence": 11,
+            "at_ms": 500,
+            "data": "✔ response validators and Content-Range parsing match shipped code (0.638708ms)\r\n"
+          },
+          {
+            "sequence": 12,
+            "at_ms": 510,
+            "data": "✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\r\n"
+          },
+          {
+            "sequence": 13,
+            "at_ms": 520,
+            "data": "✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\r\n"
+          },
+          {
+            "sequence": 14,
+            "at_ms": 520,
+            "data": "✔ windows placement retries only transient errors with matching policy (0.325833ms)\r\n"
+          },
+          {
+            "sequence": 15,
+            "at_ms": 540,
+            "data": "✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)\r\n"
+          },
+          {
+            "sequence": 16,
+            "at_ms": 570,
+            "data": "ℹ tests 16\r\nℹ suites 0\r\nℹ pass 16\r\nℹ fail 0\r\nℹ cancelled 0\r\nℹ skipped 0\r\nℹ todo 0\r\nℹ duration_ms 507.491875\r\n"
+          }
+        ],
+        "rendered_frames": [
+          {
+            "sequence": 0,
+            "at_ms": 140,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 2,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\u001b[1B\u001b[20D"
+          },
+          {
+            "sequence": 1,
+            "at_ms": 140,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 4,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\u001b[1B\u001b[15D"
+          },
+          {
+            "sequence": 2,
+            "at_ms": 220,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 6,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\u001b[1B\u001b[17D"
+          },
+          {
+            "sequence": 3,
+            "at_ms": 220,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 8,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\u001b[1B\u001b[25D"
+          },
+          {
+            "sequence": 4,
+            "at_ms": 220,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 10,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\u001b[1B\u001b[26D"
+          },
+          {
+            "sequence": 5,
+            "at_ms": 240,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 11,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\u001b[1B\u001b[77D"
+          },
+          {
+            "sequence": 6,
+            "at_ms": 350,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 13,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\u001b[1B\u001b[5D"
+          },
+          {
+            "sequence": 7,
+            "at_ms": 350,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 14,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\u001b[1B\u001b[73D"
+          },
+          {
+            "sequence": 8,
+            "at_ms": 350,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 16,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\u001b[1B\u001b[24D"
+          },
+          {
+            "sequence": 9,
+            "at_ms": 350,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 17,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\u001b[1B\u001b[76D"
+          },
+          {
+            "sequence": 10,
+            "at_ms": 500,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 18,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    ",
+              "✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\r\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\u001b[1B\u001b[74D"
+          },
+          {
+            "sequence": 11,
+            "at_ms": 500,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 19,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    ",
+              "✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      ",
+              "✔ response validators and Content-Range parsing match shipped code (0.638708ms) ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\r\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\r\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\u001b[1B\u001b[79D"
+          },
+          {
+            "sequence": 12,
+            "at_ms": 510,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 21,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    ",
+              "✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      ",
+              "✔ response validators and Content-Range parsing match shipped code (0.638708ms) ",
+              "✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup ",
+              "(12.708167ms)                                                                   ",
+              "                                                                                ",
+              "                                                                                ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\r\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\r\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\r\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\u001b[1B\u001b[13D"
+          },
+          {
+            "sequence": 13,
+            "at_ms": 520,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 23,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ user-data parsing matches shipped bootstrap across precedence and malformed ar",
+              "guments (0.550209ms)                                                            ",
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    ",
+              "✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      ",
+              "✔ response validators and Content-Range parsing match shipped code (0.638708ms) ",
+              "✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup ",
+              "(12.708167ms)                                                                   ",
+              "✔ integrity and unexpected range failures preserve shipped cleanup/error semanti",
+              "cs (4.319084ms)                                                                 ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\r\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\r\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\r\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\r\n✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\u001b[1B\u001b[15D"
+          },
+          {
+            "sequence": 14,
+            "at_ms": 520,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 23,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ cache read classifications match shipped code, including chained and cyclic er",
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    ",
+              "✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      ",
+              "✔ response validators and Content-Range parsing match shipped code (0.638708ms) ",
+              "✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup ",
+              "(12.708167ms)                                                                   ",
+              "✔ integrity and unexpected range failures preserve shipped cleanup/error semanti",
+              "cs (4.319084ms)                                                                 ",
+              "✔ windows placement retries only transient errors with matching policy (0.325833",
+              "ms)                                                                             ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\r\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\r\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\r\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\r\n✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\r\n✔ windows placement retries only transient errors with matching policy (0.325833ms)\r\n"
+          },
+          {
+            "sequence": 15,
+            "at_ms": 540,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 23,
+            "active_buffer": "normal",
+            "lines": [
+              "rors (0.6635ms)                                                                 ",
+              "✔ atomic write matches symlink-following, permissions and serialized final conte",
+              "nts (78.855208ms)                                                               ",
+              "✔ cache pruning keeps current plus two old caches and only removes stale own tem",
+              "porary files (5.668042ms)                                                       ",
+              "✔ startup waits for core and reports both cache handles; app failures reach core",
+              " failure hook (0.427292ms)                                                      ",
+              "✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)   ",
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    ",
+              "✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      ",
+              "✔ response validators and Content-Range parsing match shipped code (0.638708ms) ",
+              "✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup ",
+              "(12.708167ms)                                                                   ",
+              "✔ integrity and unexpected range failures preserve shipped cleanup/error semanti",
+              "cs (4.319084ms)                                                                 ",
+              "✔ windows placement retries only transient errors with matching policy (0.325833",
+              "ms)                                                                             ",
+              "✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)  ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\r\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\r\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\r\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\r\n✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\r\n✔ windows placement retries only transient errors with matching policy (0.325833ms)\r\n✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)\r\n"
+          },
+          {
+            "sequence": 16,
+            "at_ms": 570,
+            "columns": 80,
+            "rows": 24,
+            "cursor_x": 0,
+            "cursor_y": 23,
+            "active_buffer": "normal",
+            "lines": [
+              "✔ window geometry restoration matches shipped overlap/clamping decisions (1.1180",
+              "42ms)                                                                           ",
+              "✔ hardware and window policy match shipped platform defaults (0.174041ms)       ",
+              "✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shippe",
+              "d functions (0.729875ms)                                                        ",
+              "✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)    ",
+              "✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)      ",
+              "✔ response validators and Content-Range parsing match shipped code (0.638708ms) ",
+              "✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup ",
+              "(12.708167ms)                                                                   ",
+              "✔ integrity and unexpected range failures preserve shipped cleanup/error semanti",
+              "cs (4.319084ms)                                                                 ",
+              "✔ windows placement retries only transient errors with matching policy (0.325833",
+              "ms)                                                                             ",
+              "✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)  ",
+              "ℹ tests 16                                                                      ",
+              "ℹ suites 0                                                                      ",
+              "ℹ pass 16                                                                       ",
+              "ℹ fail 0                                                                        ",
+              "ℹ cancelled 0                                                                   ",
+              "ℹ skipped 0                                                                     ",
+              "ℹ todo 0                                                                        ",
+              "ℹ duration_ms 507.491875                                                        ",
+              "                                                                                "
+            ],
+            "serialized_state": "✔ user-data parsing matches shipped bootstrap across precedence and malformed arguments (0.550209ms)\r\n✔ cache read classifications match shipped code, including chained and cyclic errors (0.6635ms)\r\n✔ atomic write matches symlink-following, permissions and serialized final contents (78.855208ms)\r\n✔ cache pruning keeps current plus two old caches and only removes stale own temporary files (5.668042ms)\r\n✔ startup waits for core and reports both cache handles; app failures reach core failure hook (0.427292ms)\r\n✔ CommonJS loader executes exports and persists reusable V8 cache (18.5205ms)\r\n✔ window geometry restoration matches shipped overlap/clamping decisions (1.118042ms)\r\n✔ hardware and window policy match shipped platform defaults (0.174041ms)\r\n✔ desktop startup lifecycle telemetry and failure/stuck arbitration match shipped functions (0.729875ms)\r\n✔ remainder gating matches shipped asset/document/quit behavior (0.442042ms)\r\n✔ idle update gates and periodic lifecycle match shipped code (1.112292ms)\r\n✔ response validators and Content-Range parsing match shipped code (0.638708ms)\r\n✔ fresh and resumed downloads match bytes, hash, progress, requests and cleanup (12.708167ms)\r\n✔ integrity and unexpected range failures preserve shipped cleanup/error semantics (4.319084ms)\r\n✔ windows placement retries only transient errors with matching policy (0.325833ms)\r\n✔ Squirrel feed route/status/ZIP behavior matches shipped server (25.471292ms)\r\nℹ tests 16\r\nℹ suites 0\r\nℹ pass 16\r\nℹ fail 0\r\nℹ cancelled 0\r\nℹ skipped 0\r\nℹ todo 0\r\nℹ duration_ms 507.491875\r\n"
+          }
+        ],
+        "interaction_events": [],
+        "exit": {
+          "code": 0,
+          "signal": 0,
+          "reason": "exited"
+        },
+        "settlement": {
+          "state": "quiesced",
+          "elapsed_ms": 198,
+          "cleanup_outcome": "not_required"
+        },
+        "process_samples": [
+          {
+            "at_ms": 230,
+            "pid": 1,
+            "parent_pid": 2,
+            "command": "<executable> --test tests/bootstrap.test.mjs tests/main-core.test.mjs tests/update.test.mjs",
+            "process_group_id": 1,
+            "session_id": null
+          },
+          {
+            "at_ms": 230,
+            "pid": 3,
+            "parent_pid": 1,
+            "command": "(node)",
+            "process_group_id": 1,
+            "session_id": null
+          },
+          {
+            "at_ms": 230,
+            "pid": 4,
+            "parent_pid": 1,
+            "command": "<executable> tests/main-core.test.mjs",
+            "process_group_id": 1,
+            "session_id": null
+          },
+          {
+            "at_ms": 230,
+            "pid": 5,
+            "parent_pid": 1,
+            "command": "<executable> tests/update.test.mjs",
+            "process_group_id": 1,
+            "session_id": null
+          },
+          {
+            "at_ms": 230,
+            "pid": 6,
+            "parent_pid": 3,
+            "command": "(esbuild)",
+            "process_group_id": 1,
+            "session_id": null
+          },
+          {
+            "at_ms": 560,
+            "pid": 1,
+            "parent_pid": 2,
+            "command": "(node)",
+            "process_group_id": 1,
+            "session_id": null
+          },
+          {
+            "at_ms": 560,
+            "pid": 5,
+            "parent_pid": 1,
+            "command": "(node)",
+            "process_group_id": 1,
+            "session_id": null
+          },
+          {
+            "at_ms": 560,
+            "pid": 7,
+            "parent_pid": 5,
+            "command": "<defunct>",
+            "process_group_id": 1,
+            "session_id": null
+          }
+        ],
+        "filesystem_checkpoints": [
+          {
+            "name": "before",
+            "at_ms": 0,
+            "files": [],
+            "effects": [],
+            "truncated": false
+          },
+          {
+            "name": "after_settlement",
+            "at_ms": 805,
+            "files": [],
+            "effects": [],
+            "truncated": false
+          }
+        ],
+        "event_journal": [
+          {
+            "capture_order": 0,
+            "collection": "filesystem_checkpoints",
+            "index": 0
+          },
+          {
+            "capture_order": 1,
+            "collection": "frames",
+            "index": 0
+          },
+          {
+            "capture_order": 2,
+            "collection": "frames",
+            "index": 1
+          },
+          {
+            "capture_order": 3,
+            "collection": "rendered_frames",
+            "index": 0
+          },
+          {
+            "capture_order": 4,
+            "collection": "rendered_frames",
+            "index": 1
+          },
+          {
+            "capture_order": 5,
+            "collection": "frames",
+            "index": 2
+          },
+          {
+            "capture_order": 6,
+            "collection": "rendered_frames",
+            "index": 2
+          },
+          {
+            "capture_order": 7,
+            "collection": "frames",
+            "index": 3
+          },
+          {
+            "capture_order": 8,
+            "collection": "frames",
+            "index": 4
+          },
+          {
+            "capture_order": 9,
+            "collection": "rendered_frames",
+            "index": 3
+          },
+          {
+            "capture_order": 10,
+            "collection": "rendered_frames",
+            "index": 4
+          },
+          {
+            "capture_order": 11,
+            "collection": "frames",
+            "index": 5
+          },
+          {
+            "capture_order": 12,
+            "collection": "rendered_frames",
+            "index": 5
+          },
+          {
+            "capture_order": 13,
+            "collection": "process_samples",
+            "index": 0
+          },
+          {
+            "capture_order": 14,
+            "collection": "process_samples",
+            "index": 1
+          },
+          {
+            "capture_order": 15,
+            "collection": "process_samples",
+            "index": 2
+          },
+          {
+            "capture_order": 16,
+            "collection": "process_samples",
+            "index": 3
+          },
+          {
+            "capture_order": 17,
+            "collection": "process_samples",
+            "index": 4
+          },
+          {
+            "capture_order": 18,
+            "collection": "frames",
+            "index": 6
+          },
+          {
+            "capture_order": 19,
+            "collection": "frames",
+            "index": 7
+          },
+          {
+            "capture_order": 20,
+            "collection": "frames",
+            "index": 8
+          },
+          {
+            "capture_order": 21,
+            "collection": "frames",
+            "index": 9
+          },
+          {
+            "capture_order": 22,
+            "collection": "rendered_frames",
+            "index": 6
+          },
+          {
+            "capture_order": 23,
+            "collection": "rendered_frames",
+            "index": 7
+          },
+          {
+            "capture_order": 24,
+            "collection": "rendered_frames",
+            "index": 8
+          },
+          {
+            "capture_order": 25,
+            "collection": "rendered_frames",
+            "index": 9
+          },
+          {
+            "capture_order": 26,
+            "collection": "frames",
+            "index": 10
+          },
+          {
+            "capture_order": 27,
+            "collection": "frames",
+            "index": 11
+          },
+          {
+            "capture_order": 28,
+            "collection": "rendered_frames",
+            "index": 10
+          },
+          {
+            "capture_order": 29,
+            "collection": "rendered_frames",
+            "index": 11
+          },
+          {
+            "capture_order": 30,
+            "collection": "frames",
+            "index": 12
+          },
+          {
+            "capture_order": 31,
+            "collection": "rendered_frames",
+            "index": 12
+          },
+          {
+            "capture_order": 32,
+            "collection": "frames",
+            "index": 13
+          },
+          {
+            "capture_order": 33,
+            "collection": "frames",
+            "index": 14
+          },
+          {
+            "capture_order": 34,
+            "collection": "rendered_frames",
+            "index": 13
+          },
+          {
+            "capture_order": 35,
+            "collection": "rendered_frames",
+            "index": 14
+          },
+          {
+            "capture_order": 36,
+            "collection": "frames",
+            "index": 15
+          },
+          {
+            "capture_order": 37,
+            "collection": "rendered_frames",
+            "index": 15
+          },
+          {
+            "capture_order": 38,
+            "collection": "frames",
+            "index": 16
+          },
+          {
+            "capture_order": 39,
+            "collection": "rendered_frames",
+            "index": 16
+          },
+          {
+            "capture_order": 40,
+            "collection": "lifecycle",
+            "index": 0
+          },
+          {
+            "capture_order": 41,
+            "collection": "process_samples",
+            "index": 5
+          },
+          {
+            "capture_order": 42,
+            "collection": "process_samples",
+            "index": 6
+          },
+          {
+            "capture_order": 43,
+            "collection": "process_samples",
+            "index": 7
+          },
+          {
+            "capture_order": 44,
+            "collection": "lifecycle",
+            "index": 1
+          },
+          {
+            "capture_order": 45,
+            "collection": "filesystem_checkpoints",
+            "index": 1
+          }
+        ],
+        "files_before": [],
+        "files_after": [],
+        "filesystem_effects": [],
+        "truncated": false,
+        "truncation_details": {
+          "raw_terminal": {
+            "budget_bytes": 131072,
+            "observed_bytes": 1609,
+            "retained_bytes": 1609,
+            "observed_frames": 17,
+            "retained_frames": 17
+          },
+          "rendered_terminal": {
+            "budget_bytes": 131072,
+            "observed_bytes": 47670,
+            "retained_bytes": 47670,
+            "observed_frames": 17,
+            "retained_frames": 17
+          },
+          "filesystem_before": {
+            "files_limit": 10000,
+            "depth_limit": 16,
+            "enumeration_truncated": false,
+            "enumeration_reasons": [],
+            "hash_budget_bytes": 10000000,
+            "hashed_bytes": 0,
+            "hash_omissions": []
+          },
+          "filesystem_after": {
+            "files_limit": 10000,
+            "depth_limit": 16,
+            "enumeration_truncated": false,
+            "enumeration_reasons": [],
+            "hash_budget_bytes": 10000000,
+            "hashed_bytes": 0,
+            "hash_omissions": []
+          },
+          "process": {
+            "sample_limit": 1000,
+            "sampling_partial": false,
+            "retained_samples": 8,
+            "sample_limit_reached": false,
+            "sampling_failures": 0,
+            "first_sampling_failure": null,
+            "coverage": "sampled"
+          }
+        },
+        "limitations": [
+          "The executable digest is a prelaunch file sample; matching path metadata immediately after spawn does not prove an atomic operating-system image binding.",
+          "Process trees are sampled and may omit short-lived descendants.",
+          "Filesystem observations are before/after snapshots, not syscall traces.",
+          "Inherited host environment variables are not recorded and may affect results.",
+          "No filesystem observation paths were selected; filesystem effects remain unknown."
+        ],
+        "residual_unknowns": [
+          {
+            "scope": "process",
+            "reason": "Process trees are sampled and may omit short-lived descendants."
+          },
+          {
+            "scope": "process",
+            "reason": "The executable digest is a prelaunch file sample; operating-system image binding is not atomically observed."
+          },
+          {
+            "scope": "environment",
+            "reason": "Inherited host environment variables are not recorded."
+          },
+          {
+            "scope": "network",
+            "reason": "Network activity is not observed by this capture."
+          },
+          {
+            "scope": "filesystem",
+            "reason": "No filesystem observation paths were selected; filesystem effects remain unknown."
+          }
+        ],
+        "cleanup": {
+          "owned_process_group": "verified",
+          "temporary_root": "removed"
+        }
+      },
+      "confidence": "observed",
+      "authority": "controlled-replay",
+      "environment": {
+        "id": "darwin-arm64",
+        "platform": "darwin",
+        "architecture": "arm64",
+        "isolation": "process"
+      },
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "The executable digest is a prelaunch file sample; matching path metadata immediately after spawn does not prove an atomic operating-system image binding.",
+        "Process trees are sampled and may omit short-lived descendants.",
+        "Filesystem observations are before/after snapshots, not syscall traces.",
+        "Inherited host environment variables are not recorded and may affect results.",
+        "No filesystem observation paths were selected; filesystem effects remain unknown."
+      ],
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "format": "unknown",
+  "strategy": "structural",
+  "modules": {
+    "bundle.js": {"input": "/tmp/rea-wakaru-CwoGUN/inputs/bundle.js", "ranges": [[0,22035]], "extraction": "structural"}
+  }
+}

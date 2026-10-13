@@ -1,0 +1,214 @@
+{
+  "evidenceId": "ev_c5aedf879c94a73a3ab6ee8cd4a752fcdb329d5808fad39ed8b18056bcf32f54",
+  "scriptsObserved": 32,
+  "scriptsAnalyzed": 32,
+  "completeness": {
+    "status": "complete",
+    "parsed_scripts": 32,
+    "parse_failures": 0,
+    "visited_ast_nodes": 1592139
+  },
+  "chunkEdges": 477,
+  "routeCandidates": 15,
+  "endpointCandidates": 11,
+  "matches": [
+    {
+      "file": "assets/chunk-network-debugger-dialog-CP26Orpf.js",
+      "bytes": 11438,
+      "sha256": "1eafd5874d8791d0e0a30ae565e57b52bb5d9e742187ed2fb73e9de54983c451",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-team-bot-details-pane-CISL5cWF.js",
+      "bytes": 905,
+      "sha256": "4e0f91aefbb840f9db59dc6a85b2f96c4cf129b633ebe735f7f2760e9753b6d0",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/index.eager-app-Cj5f8Gby.js",
+      "bytes": 1638291,
+      "sha256": "dd5b92add9e5ee9c3d3ed224c68eff2b09f7a4e5204393a1b4076f0258e157cc",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-bot-template-details-focus-BkZ83BHB.js",
+      "bytes": 758,
+      "sha256": "1c4ac038636972e2eb0707d55e21ff7377cc1c92a9705d4f80e5864e580a5fe3",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-shiki-token-cache-hLYN1QGX.js",
+      "bytes": 15730,
+      "sha256": "9a6a4a6c26b13e35124fad8b290da61da856787a61f08d4301a3d2dd5d0e43f3",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/index.eager-common-CdCvBQNJ.js",
+      "bytes": 180974,
+      "sha256": "41e1f756b1db45a73c619f872db44f75d931c1d91471fd187160265ae1327d68",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/index.eager-vendor-Qbf9YA6n.js",
+      "bytes": 534430,
+      "sha256": "92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-box-desktop-modal-CuGtBMZ_.js",
+      "bytes": 29326,
+      "sha256": "2dce6c1197485c54154326eaf26f00e0f56525aeb47086ea3f28997e2b90ee53",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-index-C0dBjfzC.js",
+      "bytes": 18622,
+      "sha256": "cc5e65916ff52c0e745f3042ed38b2c7d7c440bc1f8cb46c66dfb2b06aa6ca5f",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-team-agent-rows-BhWKSjqA.js",
+      "bytes": 1355,
+      "sha256": "a83ccd43d09dad58baf3cde12db70614dfc1a72b6226884bd24e9c7e5d3f8e37",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-transcript-markdown-CYMJ1eec.js",
+      "bytes": 34300,
+      "sha256": "319cce2d7be4c40ed94b31d73f923d09e84f3b1d85caa4f20b93d72bd0e8610d",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-computer-screen-preview-CWm3uF84.js",
+      "bytes": 14669,
+      "sha256": "4d31e05101680fc93fdd7a726469489844dc556750902bbeeaa390b798f29aff",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-file-markdown-46Rn501q.js",
+      "bytes": 13620,
+      "sha256": "c9534e28c2ee0ff6dfb376373e5e5cedd7ebc3e092e3839f72a5f349aa39cc08",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-template-editor-dialog-Nc0OT5-x.js",
+      "bytes": 4855,
+      "sha256": "16743192c3f9cf028b96b5f0e49ce4ef76ffa7f3d0ed09b342a23f35b46ae235",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/dune-render-trace-hook-265eb7be.js",
+      "bytes": 1241,
+      "sha256": "265eb7be42a907cf48d695fadf8208ba4d47132f84b3b19155b83c1aca7bcc22",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-fullscreen-file-viewer-body-C0tdpt_M.js",
+      "bytes": 77839,
+      "sha256": "4da1877b83a1f7e62d291702e88a32a2fff7ada56722e8c8e243377c7a02b32e",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/index.eager-platform-Dcfeegfw.js",
+      "bytes": 433227,
+      "sha256": "2d3d9f89dc73d8acffd1c73221e4e4b5fcaa2b4cff8e8cb8c4b0b999219c1648",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-index-C28g9N0y.js",
+      "bytes": 14233,
+      "sha256": "0fb01636b17ca782bcd7afe28ce2a6b84d209ea13a873471b3dc1c50f7ccb6f8",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-sentry-sdk-SVPtdEdF.js",
+      "bytes": 79143,
+      "sha256": "b03f96b014f325b40d9edb6d2a3c5b762b535e572d53e6c17257de8663673608",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-bot-template-details-dialog-CbD31Hrp.js",
+      "bytes": 33160,
+      "sha256": "b42c0ed488981bb5a7df62e8e8dc5f7e911fbe3e9f572e4bd29d97e7b1ad029c",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-bot-template-share-card-frame-gOKZUO-a.js",
+      "bytes": 4334,
+      "sha256": "323173472d809fca65ba7d1cd9408ef40159a9700106a0f03b8b79c356394ed8",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-use-active-option-scroll-B1hXdW5d.js",
+      "bytes": 853,
+      "sha256": "1eb7a7a098f2d38c0f8eb21414fed19d41765b65d1e9c972359fd951d3ed6e1b",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-member-chip-SDE-oMC0.js",
+      "bytes": 3266,
+      "sha256": "18a3e1be91e2ce446b5a2941da6edf72bc689339d599a67fe53fa70d738eba15",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/index-ZYxf-aBb.js",
+      "bytes": 1874854,
+      "sha256": "113565e9936674429ee4cb52c66aa2668c63ff483553b5ece2e57e9070c5d0b1",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-team-bot-share-card-CeroIs_e.js",
+      "bytes": 5052,
+      "sha256": "3ce52cda3f215ed89c733e70fae69100f07af7a306cbd2b2533802f5de8c5951",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-new-agent-pane-rQyepdtx.js",
+      "bytes": 22940,
+      "sha256": "bcfb2d49182a01d092bb2cad51525d6877006a506b19803737dfa4d63c5aaad0",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-wipe-navigation-B3wgZxtA.js",
+      "bytes": 5145,
+      "sha256": "bc5f3618ce59bed933fc0a8a490aed51ab9c554640f1e1bfc8e040d1377ec767",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-ToggleIconButton-DDH2e1NR.js",
+      "bytes": 12753,
+      "sha256": "68ed23e8b147dacbc70998cd2e754ed1292b39a63f1de0899a555326a3356435",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-new-chat-bar-CV7S1605.js",
+      "bytes": 34361,
+      "sha256": "b4662980fd4e3fb9e606477cd3300749fd29131dcc324649bafdee72402fef05",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-get-file-icon-ZAkFyGfn.js",
+      "bytes": 34941,
+      "sha256": "b5543a00e57fb14f0578c5605c38829cd3abeb063bdf6381a61632561ca58c7a",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-agent-character-picker-DUX3hpCp.js",
+      "bytes": 6638,
+      "sha256": "a2e504a3ce4a2eb3246fd18a47838341f3709d11960443d8a79f781166239f05",
+      "matchesCapturedSource": true
+    },
+    {
+      "file": "assets/chunk-markdown-math-D9a2zKdp.js",
+      "bytes": 152976,
+      "sha256": "adef396e30ecd023b953ca93dea213dbcbeeefa8a6d96d508bc31c1aacf71d0e",
+      "matchesCapturedSource": true
+    }
+  ],
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "Static bundle findings are observations or bounded inferences; REA does not execute captured JavaScript.",
+    "String-built routes and endpoints, encrypted configuration, and server-side behavior may remain unknown.",
+    "Page-declared WebMCP metadata is untrusted and is never registered or invoked as an REA tool."
+  ]
+}

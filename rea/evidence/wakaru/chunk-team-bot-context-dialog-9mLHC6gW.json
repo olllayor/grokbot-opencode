@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js",
+    "output_directory": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_e08a9c4bb3da029807aeedd50957ab14a673a3b172025132b7c3b45644593001\",\"subject\":{\"name\":\"chunk-team-bot-context-dialog-9mLHC6gW.js\",\"digest\":{\"sha256\":\"e009e9e8cd347f592a5325a9d3aaf958e1f3bab88e2338d989deda82427ca50d\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js\",\"output_directory\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":498}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-BD0ZdW/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-BD0ZdW/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":498},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-BD0ZdW/inputs/bundle.js\",\"ranges\":[[0,21680]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js\",\"sha256\":\"e009e9e8cd347f592a5325a9d3aaf958e1f3bab88e2338d989deda82427ca50d\",\"bytes\":21680,\"snapshot_path\":\"/tmp/rea-wakaru-BD0ZdW/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/inputs/bundle.js\",\"sha256\":\"e009e9e8cd347f592a5325a9d3aaf958e1f3bab88e2338d989deda82427ca50d\",\"bytes\":21680}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/modules/bundle.js\",\"sha256\":\"65e5608c8447e91414beba386da5c24bbd73d3621b285f9f1a5b0f11bfc35046\",\"bytes\":42179},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/modules/bundle.js.map\",\"sha256\":\"6b818872081d13f45e027ccc024aa46357e5c7eb1fd8c8f0a155eab6eb0ee7b0\",\"bytes\":32958},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-BD0ZdW/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js\",\"original_sha256\":\"e009e9e8cd347f592a5325a9d3aaf958e1f3bab88e2338d989deda82427ca50d\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":21680}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/reports/stdout.json\",\"sha256\":\"06542de8fb559cc4fe1938e39157ae11fef5b506b86163f9ff625371e70938d2\",\"bytes\":173},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/reports/provenance.json\",\"sha256\":\"bbf1f3d6af2ec1c7f2d9b8a45da4433f5ce1b45d99b54ced36e0cc27a7994566\",\"bytes\":195},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/manifest.json\",\"sha256\":\"ac054f53a5d52a99cf2f80fab3f19e3cc211cd84cec34d8b295fac5375f9a2af\",\"bytes\":3706},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_e08a9c4bb3da029807aeedd50957ab14a673a3b172025132b7c3b45644593001",
+      "subject": {
+        "name": "chunk-team-bot-context-dialog-9mLHC6gW.js",
+        "digest": {
+          "sha256": "e009e9e8cd347f592a5325a9d3aaf958e1f3bab88e2338d989deda82427ca50d"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js",
+        "output_directory": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":498}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-BD0ZdW/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-BD0ZdW/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 498
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-BD0ZdW/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  21680
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js",
+          "sha256": "e009e9e8cd347f592a5325a9d3aaf958e1f3bab88e2338d989deda82427ca50d",
+          "bytes": 21680,
+          "snapshot_path": "/tmp/rea-wakaru-BD0ZdW/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/inputs/bundle.js",
+            "sha256": "e009e9e8cd347f592a5325a9d3aaf958e1f3bab88e2338d989deda82427ca50d",
+            "bytes": 21680
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/modules/bundle.js",
+              "sha256": "65e5608c8447e91414beba386da5c24bbd73d3621b285f9f1a5b0f11bfc35046",
+              "bytes": 42179
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/modules/bundle.js.map",
+              "sha256": "6b818872081d13f45e027ccc024aa46357e5c7eb1fd8c8f0a155eab6eb0ee7b0",
+              "bytes": 32958
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-BD0ZdW/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js",
+              "original_sha256": "e009e9e8cd347f592a5325a9d3aaf958e1f3bab88e2338d989deda82427ca50d",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 21680
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/reports/stdout.json",
+          "sha256": "06542de8fb559cc4fe1938e39157ae11fef5b506b86163f9ff625371e70938d2",
+          "bytes": 173
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/reports/provenance.json",
+          "sha256": "bbf1f3d6af2ec1c7f2d9b8a45da4433f5ce1b45d99b54ced36e0cc27a7994566",
+          "bytes": 195
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/manifest.json",
+          "sha256": "ac054f53a5d52a99cf2f80fab3f19e3cc211cd84cec34d8b295fac5375f9a2af",
+          "bytes": 3706
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-team-bot-context-dialog-9mLHC6gW.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/chunk-team-bot-context-dialog-9mLHC6gW/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

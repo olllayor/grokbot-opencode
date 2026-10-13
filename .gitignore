@@ -1,0 +1,6 @@
+node_modules/
+build/
+rea/evidence/*.json
+!rea/evidence/rea-*.json
+!rea/evidence/runtime-inspection-result.json
+!rea/evidence/smoke-result.json

@@ -1,0 +1,14 @@
+export const entry='src/reconstructed-main/settings.ts';
+export const bindings={
+ Dm:'__grokbotMain.createDesktopSettingsBase({createIO:xT,schema:hw,isMissingFile:rn,unreadableError:km,errorMessage:on,legacyInstruction:kl,defaultTheme:nw,defaultLanguage:VN,defaultSpellCheck:ow,defaultNotificationPreferences:xm,defaultNotificationConfig:mw,defaultReview:ZD})',
+ bm:'__grokbotMain.createComputerUseModelSchema(A)',
+ Pm:'__grokbotMain.createAccountSchema(A,{computerUseModel:bm,permissions:Ml,rosterCensus:ew})',
+ Mee:'__grokbotMain.createSettingsSchemas(A,{computerUseModel:bm,permissions:Ml,themes:hT,languages:hy,sounds:ET,rosterCensus:ew,releaseTracks:pc}).settings',
+ hw:'__grokbotMain.createSettingsSchemas(A,{computerUseModel:bm,permissions:Ml,themes:hT,languages:hy,sounds:ET,rosterCensus:ew,releaseTracks:pc}).migrating',
+ xT:'(e,t=he,n)=>__grokbotMain.createSettingsIO(e,t,n,{openReadWithinRoot:Rl,atomicWrite:En,isUnsafePath:error=>error instanceof pt,errno:ke})',
+ Um:'__grokbotMain.createThemeServiceClass({nativeTheme:Fm.nativeTheme,systemPreferences:Fm.systemPreferences,createDeferred:za,attemptWrite:fc,reportFailure:H,windowBackground:Ow,platform:process.platform})',
+ Lm:'__grokbotMain.createLanguageServiceClass({resolve:Gf,normalize:Gy,activate:$s,attemptWrite:fc})',
+ Om:'__grokbotMain.isReleaseTrack',Nee:'__grokbotMain.isInternalTrack',TT:'__grokbotMain.availableReleaseTracks',gw:'__grokbotMain.visibleReleaseTracks',kee:'__grokbotMain.managedReleaseTrack',Sw:'__grokbotMain.managedReleasePolicy',_w:'__grokbotMain.effectiveReleaseTrack',
+ fa:'e=>__grokbotMain.createDurableFileOwner(e,on)'
+};
+console.log(JSON.stringify({artifact:'dist/electron-main/main-core.cjs',entry,namespace:'__grokbotMain',bindings},null,2));

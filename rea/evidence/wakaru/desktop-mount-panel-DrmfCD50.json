@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js",
+    "output_directory": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_69c048dcb09d3abe20e39de46731f2171e01e6bd2810e269b188895a14b24666\",\"subject\":{\"name\":\"desktop-mount-panel-DrmfCD50.js\",\"digest\":{\"sha256\":\"34e72d0b39262dc46869660f2ef4658d5350834662b7a7ff50e0d44c58bdeefb\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js\",\"output_directory\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":294}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-Q2dWMY/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-Q2dWMY/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":294},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-Q2dWMY/inputs/bundle.js\",\"ranges\":[[0,7131]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js\",\"sha256\":\"34e72d0b39262dc46869660f2ef4658d5350834662b7a7ff50e0d44c58bdeefb\",\"bytes\":7131,\"snapshot_path\":\"/tmp/rea-wakaru-Q2dWMY/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/inputs/bundle.js\",\"sha256\":\"34e72d0b39262dc46869660f2ef4658d5350834662b7a7ff50e0d44c58bdeefb\",\"bytes\":7131}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/modules/bundle.js\",\"sha256\":\"1202d1836d5db367be8c0714cf2d3bac989d353263d8f529640219fb007901a5\",\"bytes\":11876},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/modules/bundle.js.map\",\"sha256\":\"b26e27bfefd81bcb47eb2fd3f30776d0a38a6b0bf6c8e5b9f74b7f0b68c53a78\",\"bytes\":8695},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-Q2dWMY/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js\",\"original_sha256\":\"34e72d0b39262dc46869660f2ef4658d5350834662b7a7ff50e0d44c58bdeefb\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":7131}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/reports/stdout.json\",\"sha256\":\"8ca8cb697dcc6ef47daf06c0d06e9ba416460beadd2e332b1f0303ae899a3863\",\"bytes\":173},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/reports/provenance.json\",\"sha256\":\"91aae56c626694f140a3137dbdf62bea480ae311eb7e5a23a31f34ad1e748a35\",\"bytes\":194},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/manifest.json\",\"sha256\":\"03f6724269444e24b6a69066c2b75134427e517bb33fa90fc39367f5c47a36cd\",\"bytes\":3622},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_69c048dcb09d3abe20e39de46731f2171e01e6bd2810e269b188895a14b24666",
+      "subject": {
+        "name": "desktop-mount-panel-DrmfCD50.js",
+        "digest": {
+          "sha256": "34e72d0b39262dc46869660f2ef4658d5350834662b7a7ff50e0d44c58bdeefb"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js",
+        "output_directory": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":294}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-Q2dWMY/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-Q2dWMY/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 294
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-Q2dWMY/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  7131
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js",
+          "sha256": "34e72d0b39262dc46869660f2ef4658d5350834662b7a7ff50e0d44c58bdeefb",
+          "bytes": 7131,
+          "snapshot_path": "/tmp/rea-wakaru-Q2dWMY/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/inputs/bundle.js",
+            "sha256": "34e72d0b39262dc46869660f2ef4658d5350834662b7a7ff50e0d44c58bdeefb",
+            "bytes": 7131
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/modules/bundle.js",
+              "sha256": "1202d1836d5db367be8c0714cf2d3bac989d353263d8f529640219fb007901a5",
+              "bytes": 11876
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/modules/bundle.js.map",
+              "sha256": "b26e27bfefd81bcb47eb2fd3f30776d0a38a6b0bf6c8e5b9f74b7f0b68c53a78",
+              "bytes": 8695
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-Q2dWMY/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js",
+              "original_sha256": "34e72d0b39262dc46869660f2ef4658d5350834662b7a7ff50e0d44c58bdeefb",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 7131
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/reports/stdout.json",
+          "sha256": "8ca8cb697dcc6ef47daf06c0d06e9ba416460beadd2e332b1f0303ae899a3863",
+          "bytes": 173
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/reports/provenance.json",
+          "sha256": "91aae56c626694f140a3137dbdf62bea480ae311eb7e5a23a31f34ad1e748a35",
+          "bytes": 194
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/manifest.json",
+          "sha256": "03f6724269444e24b6a69066c2b75134427e517bb33fa90fc39367f5c47a36cd",
+          "bytes": 3622
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/desktop-mount-panel-DrmfCD50.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/desktop-mount-panel-DrmfCD50/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

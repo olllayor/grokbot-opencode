@@ -1,0 +1,2496 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "inspect_electron_page",
+  "arguments": {
+    "cdp_endpoint": "http://127.0.0.1:60218",
+    "target_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+    "observation_ms": 1000,
+    "include_script_sources": false
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_d46bc09e29d02e0c4c5383e60a6fb5e68d17ab42d140f7b092e16554f7ed847a\",\"subject\":null,\"provider\":{\"id\":\"rea-cdp-electron\",\"name\":\"REA Electron file-page CDP observation provider\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.electron-page-inspection\",\"operation\":\"inspect_electron_page\",\"parameters\":{\"cdp_endpoint\":\"http://127.0.0.1:60218\",\"target_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"observation_ms\":1000,\"include_script_sources\":false},\"raw_result\":null,\"normalized_result\":{\"browser\":{\"product\":\"Chrome/148.0.7778.97\",\"protocol_version\":\"1.3\",\"revision\":\"537.36 (@6b3fa66a923a9442c8ab0bc71b4b41ff24528d3b)\",\"user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) GrokBot/0.66.0 Chrome/148.0.7778.97 Electron/42.1.0 Safari/537.36\",\"js_version\":\"14.8.178.14\"},\"target\":{\"target_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"type\":\"page\",\"title\":\"Grok Bot\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/index.html\",\"attached\":false},\"capture_window\":{\"started_at\":\"2026-10-10T19:34:45.475Z\",\"ended_at\":\"2026-10-10T19:34:46.589Z\",\"observation_ms\":1000},\"completeness\":{\"status\":\"policy_filtered\",\"conditions\":[\"policy_filtered\"],\"policy_filtered_sections\":[\"script_sources\",\"scripts\"],\"attach_limited_sections\":[],\"truncated_sections\":[],\"unavailable_sections\":[],\"excluded\":[{\"section\":\"script_sources\",\"reason\":\"not_approved\",\"count\":36},{\"section\":\"scripts\",\"reason\":\"out_of_target_scope\",\"count\":2},{\"section\":\"scripts\",\"reason\":\"unattributed_origin\",\"count\":3}],\"dropped_events\":{\"scripts\":0,\"network_requests\":0,\"console_events\":0,\"websocket_connections\":0,\"websocket_frames\":0,\"webmcp_tools\":0,\"timeline_events\":0,\"total\":0}},\"frames\":[{\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"parent_frame_id\":null,\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/index.html\"}],\"dom\":{\"total_nodes\":145,\"nodes\":[{\"index\":0,\"parent_index\":-1,\"node_type\":9,\"node_name\":\"#document\",\"node_value_length\":0,\"attribute_names\":[]},{\"index\":1,\"parent_index\":0,\"node_type\":10,\"node_name\":\"html\",\"node_value_length\":0,\"attribute_names\":[]},{\"index\":2,\"parent_index\":0,\"node_type\":1,\"node_name\":\"HTML\",\"node_value_length\":0,\"attribute_names\":[\"lang\",\"data-theme\",\"dir\",\"style\"]},{\"index\":3,\"parent_index\":2,\"node_type\":1,\"node_name\":\"HEAD\",\"node_value_length\":0,\"attribute_names\":[]},{\"index\":4,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":5,\"parent_index\":3,\"node_type\":1,\"node_name\":\"SCRIPT\",\"node_value_length\":0,\"attribute_names\":[\"src\"]},{\"index\":6,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":6,\"attribute_names\":[]},{\"index\":7,\"parent_index\":3,\"node_type\":1,\"node_name\":\"META\",\"node_value_length\":0,\"attribute_names\":[\"charset\"]},{\"index\":8,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":9,\"parent_index\":3,\"node_type\":1,\"node_name\":\"META\",\"node_value_length\":0,\"attribute_names\":[\"http-equiv\",\"content\"]},{\"index\":10,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":11,\"parent_index\":3,\"node_type\":1,\"node_name\":\"META\",\"node_value_length\":0,\"attribute_names\":[\"name\",\"content\"]},{\"index\":12,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":13,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"type\",\"href\"]},{\"index\":14,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":15,\"parent_index\":3,\"node_type\":1,\"node_name\":\"TITLE\",\"node_value_length\":0,\"attribute_names\":[]},{\"index\":16,\"parent_index\":15,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":8,\"attribute_names\":[]},{\"index\":17,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":18,\"parent_index\":3,\"node_type\":1,\"node_name\":\"SCRIPT\",\"node_value_length\":0,\"attribute_names\":[\"type\",\"crossorigin\",\"src\"]},{\"index\":19,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":20,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"crossorigin\",\"href\"]},{\"index\":21,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":22,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"crossorigin\",\"href\"]},{\"index\":23,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":24,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"crossorigin\",\"href\"]},{\"index\":25,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":26,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"crossorigin\",\"href\"]},{\"index\":27,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":28,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"crossorigin\",\"href\"]},{\"index\":29,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":30,\"parent_index\":3,\"node_type\":1,\"node_name\":\"STYLE\",\"node_value_length\":0,\"attribute_names\":[]},{\"index\":31,\"parent_index\":30,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":142,\"attribute_names\":[]},{\"index\":32,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":33,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"crossorigin\",\"href\"]},{\"index\":34,\"parent_index\":3,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":3,\"attribute_names\":[]},{\"index\":35,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":36,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":37,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":38,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":39,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":40,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":41,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":42,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":43,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":44,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":45,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":46,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":47,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":48,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":49,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"crossorigin\",\"href\"]},{\"index\":50,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":51,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":52,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":53,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":54,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":55,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":56,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":57,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":58,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":59,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":60,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":61,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":62,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":63,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":64,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":65,\"parent_index\":3,\"node_type\":1,\"node_name\":\"LINK\",\"node_value_length\":0,\"attribute_names\":[\"rel\",\"as\",\"crossorigin\",\"href\"]},{\"index\":66,\"parent_index\":3,\"node_type\":1,\"node_name\":\"STYLE\",\"node_value_length\":0,\"attribute_names\":[\"id\"]},{\"index\":67,\"parent_index\":66,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":53121,\"attribute_names\":[]},{\"index\":68,\"parent_index\":2,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":3,\"attribute_names\":[]},{\"index\":69,\"parent_index\":2,\"node_type\":1,\"node_name\":\"BODY\",\"node_value_length\":0,\"attribute_names\":[]},{\"index\":70,\"parent_index\":69,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":71,\"parent_index\":69,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"id\"]},{\"index\":72,\"parent_index\":71,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"data-platform\",\"data-step\",\"data-step-index\",\"data-theme\"]},{\"index\":73,\"parent_index\":72,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\"]},{\"index\":74,\"parent_index\":72,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":75,\"parent_index\":74,\"node_type\":1,\"node_name\":\"MAIN\",\"node_value_length\":0,\"attribute_names\":[\"aria-labelledby\",\"class\"]},{\"index\":76,\"parent_index\":75,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":77,\"parent_index\":76,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"style\"]},{\"index\":78,\"parent_index\":77,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":79,\"parent_index\":78,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"data-grok-state\",\"style\"]},{\"index\":80,\"parent_index\":79,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"style\"]},{\"index\":81,\"parent_index\":80,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"style\"]},{\"index\":82,\"parent_index\":81,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"xmlns\",\"id\",\"width\",\"height\",\"viewBox\"]},{\"index\":83,\"parent_index\":82,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"fill-rule\"]},{\"index\":84,\"parent_index\":78,\"node_type\":1,\"node_name\":\"H1\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"id\"]},{\"index\":85,\"parent_index\":84,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":8,\"attribute_names\":[]},{\"index\":86,\"parent_index\":77,\"node_type\":1,\"node_name\":\"P\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":87,\"parent_index\":86,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":58,\"attribute_names\":[]},{\"index\":88,\"parent_index\":77,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":89,\"parent_index\":88,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":90,\"parent_index\":89,\"node_type\":1,\"node_name\":\"P\",\"node_value_length\":0,\"attribute_names\":[\"aria-live\",\"class\"]},{\"index\":91,\"parent_index\":90,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"style\"]},{\"index\":92,\"parent_index\":90,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":24,\"attribute_names\":[]},{\"index\":93,\"parent_index\":89,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":94,\"parent_index\":93,\"node_type\":1,\"node_name\":\"BUTTON\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"data-sentiment\",\"data-size\",\"data-variant\",\"type\"]},{\"index\":95,\"parent_index\":94,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":96,\"parent_index\":95,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":11,\"attribute_names\":[]},{\"index\":97,\"parent_index\":93,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\"]},{\"index\":98,\"parent_index\":97,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":2,\"attribute_names\":[]},{\"index\":99,\"parent_index\":93,\"node_type\":1,\"node_name\":\"BUTTON\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"data-sentiment\",\"data-size\",\"data-variant\",\"type\"]},{\"index\":100,\"parent_index\":99,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":101,\"parent_index\":100,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":6,\"attribute_names\":[]},{\"index\":102,\"parent_index\":76,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":103,\"parent_index\":102,\"node_type\":1,\"node_name\":\"P\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":104,\"parent_index\":103,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":51,\"attribute_names\":[]},{\"index\":105,\"parent_index\":103,\"node_type\":1,\"node_name\":\"A\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"href\",\"rel\",\"target\"]},{\"index\":106,\"parent_index\":105,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":107,\"parent_index\":72,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\"]},{\"index\":108,\"parent_index\":107,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\"]},{\"index\":109,\"parent_index\":108,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"style\"]},{\"index\":110,\"parent_index\":109,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"data-grok-state\",\"data-paused\",\"style\"]},{\"index\":111,\"parent_index\":110,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"style\"]},{\"index\":112,\"parent_index\":111,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"style\"]},{\"index\":113,\"parent_index\":112,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"xmlns\",\"id\",\"width\",\"height\",\"viewBox\"]},{\"index\":114,\"parent_index\":113,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"fill-rule\"]},{\"index\":115,\"parent_index\":110,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"fill\",\"viewBox\",\"style\"]},{\"index\":116,\"parent_index\":115,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"stroke\",\"stroke-width\"]},{\"index\":117,\"parent_index\":108,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"style\"]},{\"index\":118,\"parent_index\":117,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"data-grok-state\",\"data-paused\",\"style\"]},{\"index\":119,\"parent_index\":118,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"style\"]},{\"index\":120,\"parent_index\":119,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"style\"]},{\"index\":121,\"parent_index\":120,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"xmlns\",\"id\",\"width\",\"height\",\"viewBox\"]},{\"index\":122,\"parent_index\":121,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"fill-rule\"]},{\"index\":123,\"parent_index\":118,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"fill\",\"viewBox\",\"style\"]},{\"index\":124,\"parent_index\":123,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"stroke\",\"stroke-width\"]},{\"index\":125,\"parent_index\":108,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"style\"]},{\"index\":126,\"parent_index\":125,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"data-grok-state\",\"data-paused\",\"style\"]},{\"index\":127,\"parent_index\":126,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"style\"]},{\"index\":128,\"parent_index\":127,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"style\"]},{\"index\":129,\"parent_index\":128,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"xmlns\",\"id\",\"width\",\"height\",\"viewBox\"]},{\"index\":130,\"parent_index\":129,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"fill-rule\"]},{\"index\":131,\"parent_index\":126,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"fill\",\"viewBox\",\"style\"]},{\"index\":132,\"parent_index\":131,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"stroke\",\"stroke-width\"]},{\"index\":133,\"parent_index\":108,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"style\"]},{\"index\":134,\"parent_index\":133,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"data-grok-state\",\"data-paused\",\"style\"]},{\"index\":135,\"parent_index\":134,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"style\"]},{\"index\":136,\"parent_index\":135,\"node_type\":1,\"node_name\":\"SPAN\",\"node_value_length\":0,\"attribute_names\":[\"style\"]},{\"index\":137,\"parent_index\":136,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"xmlns\",\"id\",\"width\",\"height\",\"viewBox\"]},{\"index\":138,\"parent_index\":137,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"fill-rule\"]},{\"index\":139,\"parent_index\":134,\"node_type\":1,\"node_name\":\"svg\",\"node_value_length\":0,\"attribute_names\":[\"aria-hidden\",\"class\",\"fill\",\"viewBox\",\"style\"]},{\"index\":140,\"parent_index\":139,\"node_type\":1,\"node_name\":\"path\",\"node_value_length\":0,\"attribute_names\":[\"d\",\"fill\",\"stroke\",\"stroke-width\"]},{\"index\":141,\"parent_index\":71,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"class\",\"data-sand-overlay-layer\",\"popover\"]},{\"index\":142,\"parent_index\":69,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]},{\"index\":143,\"parent_index\":69,\"node_type\":1,\"node_name\":\"DIV\",\"node_value_length\":0,\"attribute_names\":[\"id\",\"aria-hidden\"]},{\"index\":144,\"parent_index\":69,\"node_type\":3,\"node_name\":\"#text\",\"node_value_length\":5,\"attribute_names\":[]}]},\"scripts\":{\"total\":36,\"items\":[{\"script_key\":\"electron_script_07ea915bb507aa08164aaa791c8053617b7be3fb8cf416786d167805f41c8dec\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-shiki-token-cache-hLYN1QGX.js\",\"cdp_hash\":\"aa44d99aadc076dceee0e18c276f4f0536ae6582c99e12e0e4f53c14bee7a02d\",\"length\":19253,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_2a7b34fb3e6d2d4c167fc19f2bb9ff6dada0897cc735769a311f1e898efdbb96\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-app-Cj5f8Gby.js\",\"cdp_hash\":\"75b7f924acc1cc08270c8140d7da82f4ef644a453c4d58c1d4bb45f564c77376\",\"length\":2197106,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_2b478a9741d8c706b26698130da4154e74af345a8f182289730332086e826d1c\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-common-CdCvBQNJ.js\",\"cdp_hash\":\"18f0ca00b780799744c0657bdb1a64c4bca39c201c4ef50361545a8d0679ebda\",\"length\":255622,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_2cbc4f660b24f0dc56dfb2064abb67bfe21c3e4cebc67c18dbabd106f19b676d\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/reconstructed-renderer.js\",\"cdp_hash\":\"0f09dc4a645b14a2e804d763b11d664bd506c5f403e5e28fc5dd1fa03a732d0a\",\"length\":26359,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_43b4802fc0367f0ac43c2f4ceb78a69ff9ae59c59d17b006fd5a02f6057f52ab\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-share-card-frame-gOKZUO-a.js\",\"cdp_hash\":\"bb8fdaf50796769a749999cd7d02e17a61d39cf42a63db8215eb43d123fa1427\",\"length\":5652,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_4f712cb446f2c12dd92a4e3b92892af6725ccc7176ca49793dc67a22cdc65836\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js\",\"cdp_hash\":\"31d3b9fa20f85f3b5142411f65ad393292bd7d7a547b43ebff22d7e86f986f71\",\"length\":777857,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_50a62b0411c649859f23aa02cbd908202d353651d0dfad5977ec7206d7853917\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index-ZYxf-aBb.js\",\"cdp_hash\":\"3dcbdb2ba6e33e6a912bb72533894871ad2a7bb0669d5a5ab23ce62a848b6b86\",\"length\":2659326,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_536578b33bccd3b451e27deaf38381d6fc60a1199393a1cc44f8e16bbdc2027b\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-platform-Dcfeegfw.js\",\"cdp_hash\":\"533aa945fb0516a5a8ffc222b56b1f2b0049b48aab9d99c21435203eccbda41a\",\"length\":572755,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_53d9dc49f4b0000e999e1266da59e037211f9c8605f2e3106853de789ebc900c\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-agent-rows-BhWKSjqA.js\",\"cdp_hash\":\"1b0f60c10d327a46ac164f63dc07f9a677493fa4c77c0a9d6ee0f07d0b7d0bf6\",\"length\":1896,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_62b968260a4c3d4b4b39932a684ac3f7867c8d9b4e52c8b2ea8c269ba3b81792\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-box-desktop-modal-CuGtBMZ_.js\",\"cdp_hash\":\"f3c5d9bf1d0e3788f111eff94c1cecabd8404b68ccc7a922269055240b25581b\",\"length\":39790,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_62c8893819fb808bfc3a4b2bf57cd914212e0402396a42eaea0994eeaebecd1b\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-index-C0dBjfzC.js\",\"cdp_hash\":\"62e935eab54840827fefd1e40af6123adfcaa1ad69b734c084e739093cbe7f17\",\"length\":25006,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_6514d42c41f0f37ebb9dc24ef71a0ec43f176d6cf9eb4104d595e37505638d28\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-onboarding-flow-DAsxqYAq.js\",\"cdp_hash\":\"078876ad0de476288a50f64eb8d0d9060d7ee68d44b1f2ec78c139a0cd79c827\",\"length\":76484,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_65dbe0edd6716b1bc5c7ad4771dc9d350d0a5146a9bd27bdfa76ebfbb81d036f\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-markdown-math-D9a2zKdp.js\",\"cdp_hash\":\"e2ed8647a67799748f40ac33bc26749468058187635948441b690f1c9e6caee0\",\"length\":206200,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_6d4e8a43b8fc6fc0107eb0456e88c0bd35fae3664dde59cee601c8f75d875010\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-index-C28g9N0y.js\",\"cdp_hash\":\"36cb45b79a4faf8da277a11321a7f5d334fc3597dcc2da02a6f0d47b451cc1b0\",\"length\":19748,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_6ef36ba58474101cac2ec6febe572a6c09403781beeb16bbb79eee376898cbc8\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-agent-character-picker-DUX3hpCp.js\",\"cdp_hash\":\"69d0fc92e0292f57b6a08027aeab2e87977dde0a8dc639da0e11cfe96866b92f\",\"length\":9419,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_781f9b7d41326edf21bf0131fe4b89b6e9f1e21515520cc3bf279bcbc58ba85c\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-DefaultCode-CGxOfvcH.js\",\"cdp_hash\":\"812bd3ccb28dda4dfbed93da1317069b716557e9286405bfdde856a4c7d9d009\",\"length\":398153,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_88718f08e059af8c5acdce48879f2f2b7f4a0798fe9611f21da39c3811c15432\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-file-markdown-46Rn501q.js\",\"cdp_hash\":\"9d8bd36483a12e3d02734ee4bdbaa336789edadee28f1d3aa3dd3df318b79c55\",\"length\":19701,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_92f46a52e60159e91dc8651ba1d15446929ab37e35960eddca1a1e09a77b9f94\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-details-dialog-CbD31Hrp.js\",\"cdp_hash\":\"62a112d96cb3c0e9d9e4fb231d5cc604210c4291a63c7d1cb7047c71de4a87f9\",\"length\":45955,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_9bd420939f7d795ebe0c1adaae147483a94ca3f87515c8e2656ce9637cf76e8b\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-react-64JnVBsh.js\",\"cdp_hash\":\"3ff9371bee8d67743fcf0802712176b42b60c5fec2935d528fdabb4f5f0939fb\",\"length\":134362,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_9e1880dd01a9c549b109c074876d2e7fc9e2fc5ee91c45f8c006e85de846b2ee\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-template-editor-dialog-Nc0OT5-x.js\",\"cdp_hash\":\"950bfebeacaa74e06dc5579511fd00df49e44c6c8235b5632d85e0d31b36e668\",\"length\":6344,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_a209275ba8af96e5fbe3e68774c4ada04498f45d92b72fe22d0c3da838d6c9e5\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-wipe-navigation-B3wgZxtA.js\",\"cdp_hash\":\"a31ec4bf79af539db04e84f3dfb556ab3fd569231e7759403d014d1d0ede67a3\",\"length\":6800,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_a3f9cea69f5a0cb693c31a9974eeaaabadfc3c574f25107b08be743fbcdd9f38\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-transcript-markdown-CYMJ1eec.js\",\"cdp_hash\":\"00d4c0f3009e06eecaf06882073aec8165601b1e747170741aa1b55de18a44e6\",\"length\":47363,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_a6e2048e89c5b4db77c6e6389229119f0f5fb7150cac09812ba8da0b69eb2111\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-sentry-sdk-SVPtdEdF.js\",\"cdp_hash\":\"f22bc227f87b0c35118cf4d8fd49804badc48e770cd8e8ef48146090fa439321\",\"length\":106576,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_b0f23f2d77375dcdc7ac353475d454cf8b0ff650b15143bb785189daf2c36b3f\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-get-file-icon-ZAkFyGfn.js\",\"cdp_hash\":\"b0d6a037b55464fdb8a3931a4b1abd7efbf4c99c75e95604c7a3dcfeeaabadb1\",\"length\":46056,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_b5262d4af7c51b52747b6e9ff5373308bcdfe906f274c11008481c834a2ff32a\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-details-focus-BkZ83BHB.js\",\"cdp_hash\":\"f69718c85bef96ee901f6418ce5fe9d8e6bdafad6d1902a3bedf47dad6919879\",\"length\":908,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_bb8f11ce9bdde5f79b208afb69c6e617031d84a934ac21d9da5adba10debf89a\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-ToggleIconButton-DDH2e1NR.js\",\"cdp_hash\":\"ddc0c39b358694dcbf5147f024b9f9fff3b61ca901b5daa1c813179dbda5c165\",\"length\":16886,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_c946bd9c10bb0c91ac07f7e9986b0f12e06e8085750164b93938dad6dbb08867\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-network-debugger-dialog-CP26Orpf.js\",\"cdp_hash\":\"fb2f075c0c4bc96bd1b2982922db6026dd4f98d3c0acfa1a0060c636115cc2c6\",\"length\":15228,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_ce6b5c03cb13d656625f1daa7a26377df0b821891265be0367a9fb271dc04e35\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-bot-details-pane-CISL5cWF.js\",\"cdp_hash\":\"f3ae6e097f63b8c748954c1d2bd0ba2df278f658a49301248c67f83f869397f4\",\"length\":1030,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_d0fc9d892899d4105e0c3a59a548f01e3d759cc6c0ddd2fefd9eacca6bb8e233\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-computer-screen-preview-CWm3uF84.js\",\"cdp_hash\":\"2944af029ff8fcd4eda8599a22ca51cbecbd2c4261d76b6d99b42c416b5b26bb\",\"length\":19517,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_dbf2dbf7c32ef0e2ac04b4639582b674e5a97e8f35ac143214562f8efc05c79d\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-bot-share-card-CeroIs_e.js\",\"cdp_hash\":\"95027c9cdeff47f6f86154dac2ab053615595bc9b58546cb3ba1f1638297a42d\",\"length\":6830,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_dd0a4ba01c5bd4eabab8b9e6af89c712b86dea4f34a552bb125350085bc14de2\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-new-agent-pane-rQyepdtx.js\",\"cdp_hash\":\"bca3a73cdbd0eb7e13b3d29eef02cf27fd3aa580fd66433a1989ed38b207607d\",\"length\":31487,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_e40b61de3e5471b2ada95608d4a48990075da37f02735b837787118568ca54aa\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-member-chip-SDE-oMC0.js\",\"cdp_hash\":\"c149d143af666e1718fc6cfa415c357a636609016a5c8fc63966792df9514f04\",\"length\":4147,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_e4c81c681ba767bf4c6c8c5fb736c7e177e2e1cca3699cf37742da41143c6ab7\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-use-active-option-scroll-B1hXdW5d.js\",\"cdp_hash\":\"9ff38f8d3047bdb3d24ae88f501ff2a212e61b07e385ee8ee34c82a5142ed854\",\"length\":1245,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_f1642321d9312c4e03b603b7faea933209e1d1464425e11607b332167486caca\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-fullscreen-file-viewer-body-C0tdpt_M.js\",\"cdp_hash\":\"1f0935c490ff664c2ab7c53861a064270527d5b2d0f126d0ad7fe58e028ea8b6\",\"length\":112185,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_f4c1a7e5bd6a208c49b56aa5028a9a96258b8713ed5f436b28bd082e0d7f29a8\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/dune-render-trace-hook-265eb7be.js\",\"cdp_hash\":\"08f9c00851957356537845e7b01d1e46e6bbd27ea354bde3035c21030d6a33dc\",\"length\":1120,\"is_module\":false,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}},{\"script_key\":\"electron_script_fb63a3f697c81bd984c0507bd1eef5b40dd85864e7799c457aab1448edc22c3c\",\"frame_id\":\"FD9A64B02506A9EB0BCB56D3B8554D86\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-new-chat-bar-CV7S1605.js\",\"cdp_hash\":\"e2e4f5a42ecf5dc2eaa253ecad20420645c2716eaf62857ae963e8c0f7b70f6e\",\"length\":47452,\"is_module\":true,\"language\":\"JavaScript\",\"source\":{\"included\":false,\"reason\":\"source capture was not selected\"}}]},\"resources\":[{\"resource_key\":\"electron_resource_0f6a0380f9593c0d6f114997d754ec0a64cb1d2229db701fe04fe20fb851f670\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index-ZYxf-aBb.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":2659326},{\"resource_key\":\"electron_resource_1632a24d265355ee664803c1b9abcc2ad2f45329f75b2f439007c5cf3baca92f\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-platform-Dcfeegfw.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":572755},{\"resource_key\":\"electron_resource_2411d7b2282af74820eafb5a577320c68e49c9ea34bf35efcaa4433e056c16a2\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-details-focus-BkZ83BHB.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":908},{\"resource_key\":\"electron_resource_25417aefc25c1bc82974aa734fe8f2f85fb769b1edbd96b44e01e50ff5c1a186\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-react-64JnVBsh.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":134362},{\"resource_key\":\"electron_resource_28b8a2032b1d1c395b0a678b010bfcea3c0acd5f2c1a288f78d9f3e6d4d50b57\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/fullscreen-file-viewer-body-C0m-nKZz.css\",\"type\":\"Stylesheet\",\"mime_type\":\"text/css\",\"content_size\":541},{\"resource_key\":\"electron_resource_2970adbc91126f516a5ffc3027433ec1a1eae8526a4c9be986a0a809e57aa2b3\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-box-desktop-modal-CuGtBMZ_.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":39790},{\"resource_key\":\"electron_resource_411deacf86145f20ac94a59228f7ff74a46a7f3fe4299dcd2fec1ad2b14e6761\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index-B9V4agTc.css\",\"type\":\"Stylesheet\",\"mime_type\":\"text/css\",\"content_size\":655404},{\"resource_key\":\"electron_resource_46cc7617d381018410d3597657e33b4deb1dfc7463688f46710583acce050ea2\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":777857},{\"resource_key\":\"electron_resource_4727b56bfc4a81cdcf162c299697e3641f2faed272e3a308691fa61c1f1cd7d6\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-common-CdCvBQNJ.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":255622},{\"resource_key\":\"electron_resource_476d55fba274e01dac1025102b10b99420d50a577c8c95dcf6d6cc3eb830388c\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-network-debugger-dialog-CP26Orpf.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":15228},{\"resource_key\":\"electron_resource_49b4dce4c1e83c16e2965a446c4d3beb1f8fcb046b6a7fe6be1fe3d9c84da8cc\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-agent-character-picker-DUX3hpCp.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":9419},{\"resource_key\":\"electron_resource_4a283ca20d61027a149dd8e2f48e4f324bb619068aedeb2d9aff1c6f26c5a0da\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-index-C0dBjfzC.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":25006},{\"resource_key\":\"electron_resource_4cd97251323f174c246e54b50b0f518d15cb10209609e73e89da5eb02cb50196\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-template-editor-dialog-Nc0OT5-x.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":6344},{\"resource_key\":\"electron_resource_584c7e90a469e5bbafc81de8959f192dd11d4c133dac42f460f6840da77a9267\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-shiki-token-cache-hLYN1QGX.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":19253},{\"resource_key\":\"electron_resource_5be3df9d785fedffa8d267a4f336f11f9eda6d3410409f8a925c1d49f279c08b\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-share-card-frame-gOKZUO-a.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":5652},{\"resource_key\":\"electron_resource_6577c8df68656fb421e659bb895589695774f85439e30051654cfe95110a934f\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-transcript-markdown-CYMJ1eec.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":47363},{\"resource_key\":\"electron_resource_67fff1cee3cbf3d378423fe73903ebf3dbb6b88f01f311a3ee9067977cadacf0\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-app-Cj5f8Gby.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":2197106},{\"resource_key\":\"electron_resource_6926966b7074b02b7bb836a3397c53d3075734b7dde530109454e2640a9118c6\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-bot-details-pane-CISL5cWF.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":1030},{\"resource_key\":\"electron_resource_73cf7f88091cfe203579a9fd95fcfdea906bc612ef7e5b7e2c8cb08d9d174ed0\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-wipe-navigation-B3wgZxtA.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":6800},{\"resource_key\":\"electron_resource_79271a8b2d42870909d694283fa749406c47b74e820c87ede1ee9f70833eb1ea\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-file-markdown-46Rn501q.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":19701},{\"resource_key\":\"electron_resource_7b78e200c52ec2c66346fac6d03779fd3defb1edd67c829d5ee38faf84e06f87\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-agent-rows-BhWKSjqA.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":1896},{\"resource_key\":\"electron_resource_7e6e8b80e6e99f62fe014d3af8bd0593090cdf75aa38c139d835f47e32b03ee2\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-details-dialog-CbD31Hrp.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":45955},{\"resource_key\":\"electron_resource_816f1e21d813bb323dd2c5bb0952593f026c3b74bed5d78b85ff412b0e04f69f\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-bot-share-card-CeroIs_e.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":6830},{\"resource_key\":\"electron_resource_8c5db9476765574a58f0a414bda39fa01aaa6d8073fcf4b8b7e4f3be30859866\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-member-chip-SDE-oMC0.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":4147},{\"resource_key\":\"electron_resource_991ca9453bef23200c8351274b2dfad0e873d8f276484b65159084b0b41768aa\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-computer-screen-preview-CWm3uF84.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":19517},{\"resource_key\":\"electron_resource_998e345d72f8e1f66e5368afb6d7c6b1a8113b67f2a0aebb38e5f0832211a98c\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-get-file-icon-ZAkFyGfn.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":46056},{\"resource_key\":\"electron_resource_a338b6230d5361e90b06e6d7bfee5ef4949f56af441f0f65eee67d7dcd68f1a0\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/cursor-icons-16-4RnoYH3n.woff2\",\"type\":\"Font\",\"mime_type\":\"application/octet-stream\",\"content_size\":125140},{\"resource_key\":\"electron_resource_b7b1a78bfba1e04bf8b808e8827c1664869e8022c28316dc5ec8f3b1912a47f4\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/reconstructed-renderer.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":26359},{\"resource_key\":\"electron_resource_bd58000102a89ca3947beb836573d72a31ec71fcec6ebdf5d9ae5374de09e32e\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-new-agent-pane-rQyepdtx.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":31487},{\"resource_key\":\"electron_resource_c1678fcf65f14bbf1e3b43c690d72f81cc52af719faa5c6260c112dc54f74bbf\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-use-active-option-scroll-B1hXdW5d.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":1245},{\"resource_key\":\"electron_resource_c9533e714aaf63031e3b7a1399e51987022e608591386a1c3fb89517645f1d01\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-prompt-editor-d85mg-tN.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":126642},{\"resource_key\":\"electron_resource_d18220e9a1e56ad526d4ce0284ab964e712f08c9f6dae5c024a7c1daf092c260\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-markdown-math-D9a2zKdp.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":206200},{\"resource_key\":\"electron_resource_d3ff18f5fe42247196792327c0f9f50ed5c72c6457f3272834d1c9d9f4fe6d64\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-sentry-sdk-SVPtdEdF.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":106576},{\"resource_key\":\"electron_resource_d42e0ba5ac0011c71c2d6912cd022a98ce00dbbd02a3749104e5f9ae7bd44f10\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-index-C28g9N0y.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":19748},{\"resource_key\":\"electron_resource_d959f7cf4a410a3e227213cfe550e1cbb294ef4c28f3da8c67a06a48a4fc8ab5\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/dune-render-trace-hook-265eb7be.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":1120},{\"resource_key\":\"electron_resource_df7ec4a0feeb7c66ec2982561aad4babc17a80073388be70d132c4cd5df27811\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-onboarding-flow-DAsxqYAq.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":76484},{\"resource_key\":\"electron_resource_e2c90955fbcb880c0f5d802c8bc36ea900543f65b8297ba8fc2984c7c9312a7e\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-new-chat-bar-CV7S1605.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":47452},{\"resource_key\":\"electron_resource_f6b6a57badde040e4ca1a809c248b0e60405c32bc76501064c10ca30b06abd01\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-ToggleIconButton-DDH2e1NR.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":16886},{\"resource_key\":\"electron_resource_fc80ade9de6b243b7fd4a4995aa335a993b9fea009a36ebf4f1c3e2a7384a6ad\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-DefaultCode-CGxOfvcH.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":398153},{\"resource_key\":\"electron_resource_ff3dc9a03644534ec556cb993482b5b5fa2552b1dd3e9fb0311ea9016e40189c\",\"file_path\":\"/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-fullscreen-file-viewer-body-C0tdpt_M.js\",\"type\":\"Script\",\"mime_type\":\"text/javascript\",\"content_size\":112187}],\"workers\":[],\"limitations\":[\"Local file paths exposed by the selected CDP target are retained in the observation.\",\"REA does not evaluate renderer JavaScript, invoke Electron APIs, navigate, click, or close the page.\",\"Select include_script_sources to retain script contents.\"]},\"confidence\":\"observed\",\"authority\":\"external-service\",\"environment\":{\"id\":\"Chrome/148.0.7778.97@537.36 (@6b3fa66a923a9442c8ab0bc71b4b41ff24528d3b)\",\"platform\":\"unknown\",\"architecture\":\"unknown\",\"isolation\":\"none\"},\"limitations\":[\"Artifact identity is unavailable for this observation.\",\"Local file paths exposed by the selected CDP target are retained in the observation.\",\"REA does not evaluate renderer JavaScript, invoke Electron APIs, navigate, click, or close the page.\",\"Select include_script_sources to retain script contents.\",\"Browser host platform and architecture were not observed.\"],\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_d46bc09e29d02e0c4c5383e60a6fb5e68d17ab42d140f7b092e16554f7ed847a",
+      "subject": null,
+      "provider": {
+        "id": "rea-cdp-electron",
+        "name": "REA Electron file-page CDP observation provider",
+        "version": "1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.electron-page-inspection",
+      "operation": "inspect_electron_page",
+      "parameters": {
+        "cdp_endpoint": "http://127.0.0.1:60218",
+        "target_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+        "observation_ms": 1000,
+        "include_script_sources": false
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "browser": {
+          "product": "Chrome/148.0.7778.97",
+          "protocol_version": "1.3",
+          "revision": "537.36 (@6b3fa66a923a9442c8ab0bc71b4b41ff24528d3b)",
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) GrokBot/0.66.0 Chrome/148.0.7778.97 Electron/42.1.0 Safari/537.36",
+          "js_version": "14.8.178.14"
+        },
+        "target": {
+          "target_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+          "type": "page",
+          "title": "Grok Bot",
+          "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/index.html",
+          "attached": false
+        },
+        "capture_window": {
+          "started_at": "2026-10-10T19:34:45.475Z",
+          "ended_at": "2026-10-10T19:34:46.589Z",
+          "observation_ms": 1000
+        },
+        "completeness": {
+          "status": "policy_filtered",
+          "conditions": [
+            "policy_filtered"
+          ],
+          "policy_filtered_sections": [
+            "script_sources",
+            "scripts"
+          ],
+          "attach_limited_sections": [],
+          "truncated_sections": [],
+          "unavailable_sections": [],
+          "excluded": [
+            {
+              "section": "script_sources",
+              "reason": "not_approved",
+              "count": 36
+            },
+            {
+              "section": "scripts",
+              "reason": "out_of_target_scope",
+              "count": 2
+            },
+            {
+              "section": "scripts",
+              "reason": "unattributed_origin",
+              "count": 3
+            }
+          ],
+          "dropped_events": {
+            "scripts": 0,
+            "network_requests": 0,
+            "console_events": 0,
+            "websocket_connections": 0,
+            "websocket_frames": 0,
+            "webmcp_tools": 0,
+            "timeline_events": 0,
+            "total": 0
+          }
+        },
+        "frames": [
+          {
+            "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+            "parent_frame_id": null,
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/index.html"
+          }
+        ],
+        "dom": {
+          "total_nodes": 145,
+          "nodes": [
+            {
+              "index": 0,
+              "parent_index": -1,
+              "node_type": 9,
+              "node_name": "#document",
+              "node_value_length": 0,
+              "attribute_names": []
+            },
+            {
+              "index": 1,
+              "parent_index": 0,
+              "node_type": 10,
+              "node_name": "html",
+              "node_value_length": 0,
+              "attribute_names": []
+            },
+            {
+              "index": 2,
+              "parent_index": 0,
+              "node_type": 1,
+              "node_name": "HTML",
+              "node_value_length": 0,
+              "attribute_names": [
+                "lang",
+                "data-theme",
+                "dir",
+                "style"
+              ]
+            },
+            {
+              "index": 3,
+              "parent_index": 2,
+              "node_type": 1,
+              "node_name": "HEAD",
+              "node_value_length": 0,
+              "attribute_names": []
+            },
+            {
+              "index": 4,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 5,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "SCRIPT",
+              "node_value_length": 0,
+              "attribute_names": [
+                "src"
+              ]
+            },
+            {
+              "index": 6,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 6,
+              "attribute_names": []
+            },
+            {
+              "index": 7,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "META",
+              "node_value_length": 0,
+              "attribute_names": [
+                "charset"
+              ]
+            },
+            {
+              "index": 8,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 9,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "META",
+              "node_value_length": 0,
+              "attribute_names": [
+                "http-equiv",
+                "content"
+              ]
+            },
+            {
+              "index": 10,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 11,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "META",
+              "node_value_length": 0,
+              "attribute_names": [
+                "name",
+                "content"
+              ]
+            },
+            {
+              "index": 12,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 13,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "type",
+                "href"
+              ]
+            },
+            {
+              "index": 14,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 15,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "TITLE",
+              "node_value_length": 0,
+              "attribute_names": []
+            },
+            {
+              "index": 16,
+              "parent_index": 15,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 8,
+              "attribute_names": []
+            },
+            {
+              "index": 17,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 18,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "SCRIPT",
+              "node_value_length": 0,
+              "attribute_names": [
+                "type",
+                "crossorigin",
+                "src"
+              ]
+            },
+            {
+              "index": 19,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 20,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 21,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 22,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 23,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 24,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 25,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 26,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 27,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 28,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 29,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 30,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "STYLE",
+              "node_value_length": 0,
+              "attribute_names": []
+            },
+            {
+              "index": 31,
+              "parent_index": 30,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 142,
+              "attribute_names": []
+            },
+            {
+              "index": 32,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 33,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 34,
+              "parent_index": 3,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 3,
+              "attribute_names": []
+            },
+            {
+              "index": 35,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 36,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 37,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 38,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 39,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 40,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 41,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 42,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 43,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 44,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 45,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 46,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 47,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 48,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 49,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 50,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 51,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 52,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 53,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 54,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 55,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 56,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 57,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 58,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 59,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 60,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 61,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 62,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 63,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 64,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 65,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "LINK",
+              "node_value_length": 0,
+              "attribute_names": [
+                "rel",
+                "as",
+                "crossorigin",
+                "href"
+              ]
+            },
+            {
+              "index": 66,
+              "parent_index": 3,
+              "node_type": 1,
+              "node_name": "STYLE",
+              "node_value_length": 0,
+              "attribute_names": [
+                "id"
+              ]
+            },
+            {
+              "index": 67,
+              "parent_index": 66,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 53121,
+              "attribute_names": []
+            },
+            {
+              "index": 68,
+              "parent_index": 2,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 3,
+              "attribute_names": []
+            },
+            {
+              "index": 69,
+              "parent_index": 2,
+              "node_type": 1,
+              "node_name": "BODY",
+              "node_value_length": 0,
+              "attribute_names": []
+            },
+            {
+              "index": 70,
+              "parent_index": 69,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 71,
+              "parent_index": 69,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "id"
+              ]
+            },
+            {
+              "index": 72,
+              "parent_index": 71,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "data-platform",
+                "data-step",
+                "data-step-index",
+                "data-theme"
+              ]
+            },
+            {
+              "index": 73,
+              "parent_index": 72,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class"
+              ]
+            },
+            {
+              "index": 74,
+              "parent_index": 72,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 75,
+              "parent_index": 74,
+              "node_type": 1,
+              "node_name": "MAIN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-labelledby",
+                "class"
+              ]
+            },
+            {
+              "index": 76,
+              "parent_index": 75,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 77,
+              "parent_index": 76,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "style"
+              ]
+            },
+            {
+              "index": 78,
+              "parent_index": 77,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 79,
+              "parent_index": 78,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "data-grok-state",
+                "style"
+              ]
+            },
+            {
+              "index": 80,
+              "parent_index": 79,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "style"
+              ]
+            },
+            {
+              "index": 81,
+              "parent_index": 80,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "style"
+              ]
+            },
+            {
+              "index": 82,
+              "parent_index": 81,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "xmlns",
+                "id",
+                "width",
+                "height",
+                "viewBox"
+              ]
+            },
+            {
+              "index": 83,
+              "parent_index": 82,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "fill-rule"
+              ]
+            },
+            {
+              "index": 84,
+              "parent_index": 78,
+              "node_type": 1,
+              "node_name": "H1",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "id"
+              ]
+            },
+            {
+              "index": 85,
+              "parent_index": 84,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 8,
+              "attribute_names": []
+            },
+            {
+              "index": 86,
+              "parent_index": 77,
+              "node_type": 1,
+              "node_name": "P",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 87,
+              "parent_index": 86,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 58,
+              "attribute_names": []
+            },
+            {
+              "index": 88,
+              "parent_index": 77,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 89,
+              "parent_index": 88,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 90,
+              "parent_index": 89,
+              "node_type": 1,
+              "node_name": "P",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-live",
+                "class"
+              ]
+            },
+            {
+              "index": 91,
+              "parent_index": 90,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "style"
+              ]
+            },
+            {
+              "index": 92,
+              "parent_index": 90,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 24,
+              "attribute_names": []
+            },
+            {
+              "index": 93,
+              "parent_index": 89,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 94,
+              "parent_index": 93,
+              "node_type": 1,
+              "node_name": "BUTTON",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "data-sentiment",
+                "data-size",
+                "data-variant",
+                "type"
+              ]
+            },
+            {
+              "index": 95,
+              "parent_index": 94,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 96,
+              "parent_index": 95,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 11,
+              "attribute_names": []
+            },
+            {
+              "index": 97,
+              "parent_index": 93,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class"
+              ]
+            },
+            {
+              "index": 98,
+              "parent_index": 97,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 2,
+              "attribute_names": []
+            },
+            {
+              "index": 99,
+              "parent_index": 93,
+              "node_type": 1,
+              "node_name": "BUTTON",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "data-sentiment",
+                "data-size",
+                "data-variant",
+                "type"
+              ]
+            },
+            {
+              "index": 100,
+              "parent_index": 99,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 101,
+              "parent_index": 100,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 6,
+              "attribute_names": []
+            },
+            {
+              "index": 102,
+              "parent_index": 76,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 103,
+              "parent_index": 102,
+              "node_type": 1,
+              "node_name": "P",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 104,
+              "parent_index": 103,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 51,
+              "attribute_names": []
+            },
+            {
+              "index": 105,
+              "parent_index": 103,
+              "node_type": 1,
+              "node_name": "A",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "href",
+                "rel",
+                "target"
+              ]
+            },
+            {
+              "index": 106,
+              "parent_index": 105,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 107,
+              "parent_index": 72,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class"
+              ]
+            },
+            {
+              "index": 108,
+              "parent_index": 107,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class"
+              ]
+            },
+            {
+              "index": 109,
+              "parent_index": 108,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "style"
+              ]
+            },
+            {
+              "index": 110,
+              "parent_index": 109,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "data-grok-state",
+                "data-paused",
+                "style"
+              ]
+            },
+            {
+              "index": 111,
+              "parent_index": 110,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "style"
+              ]
+            },
+            {
+              "index": 112,
+              "parent_index": 111,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "style"
+              ]
+            },
+            {
+              "index": 113,
+              "parent_index": 112,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "xmlns",
+                "id",
+                "width",
+                "height",
+                "viewBox"
+              ]
+            },
+            {
+              "index": 114,
+              "parent_index": 113,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "fill-rule"
+              ]
+            },
+            {
+              "index": 115,
+              "parent_index": 110,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "fill",
+                "viewBox",
+                "style"
+              ]
+            },
+            {
+              "index": 116,
+              "parent_index": 115,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "stroke",
+                "stroke-width"
+              ]
+            },
+            {
+              "index": 117,
+              "parent_index": 108,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "style"
+              ]
+            },
+            {
+              "index": 118,
+              "parent_index": 117,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "data-grok-state",
+                "data-paused",
+                "style"
+              ]
+            },
+            {
+              "index": 119,
+              "parent_index": 118,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "style"
+              ]
+            },
+            {
+              "index": 120,
+              "parent_index": 119,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "style"
+              ]
+            },
+            {
+              "index": 121,
+              "parent_index": 120,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "xmlns",
+                "id",
+                "width",
+                "height",
+                "viewBox"
+              ]
+            },
+            {
+              "index": 122,
+              "parent_index": 121,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "fill-rule"
+              ]
+            },
+            {
+              "index": 123,
+              "parent_index": 118,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "fill",
+                "viewBox",
+                "style"
+              ]
+            },
+            {
+              "index": 124,
+              "parent_index": 123,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "stroke",
+                "stroke-width"
+              ]
+            },
+            {
+              "index": 125,
+              "parent_index": 108,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "style"
+              ]
+            },
+            {
+              "index": 126,
+              "parent_index": 125,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "data-grok-state",
+                "data-paused",
+                "style"
+              ]
+            },
+            {
+              "index": 127,
+              "parent_index": 126,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "style"
+              ]
+            },
+            {
+              "index": 128,
+              "parent_index": 127,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "style"
+              ]
+            },
+            {
+              "index": 129,
+              "parent_index": 128,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "xmlns",
+                "id",
+                "width",
+                "height",
+                "viewBox"
+              ]
+            },
+            {
+              "index": 130,
+              "parent_index": 129,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "fill-rule"
+              ]
+            },
+            {
+              "index": 131,
+              "parent_index": 126,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "fill",
+                "viewBox",
+                "style"
+              ]
+            },
+            {
+              "index": 132,
+              "parent_index": 131,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "stroke",
+                "stroke-width"
+              ]
+            },
+            {
+              "index": 133,
+              "parent_index": 108,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "style"
+              ]
+            },
+            {
+              "index": 134,
+              "parent_index": 133,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "data-grok-state",
+                "data-paused",
+                "style"
+              ]
+            },
+            {
+              "index": 135,
+              "parent_index": 134,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "style"
+              ]
+            },
+            {
+              "index": 136,
+              "parent_index": 135,
+              "node_type": 1,
+              "node_name": "SPAN",
+              "node_value_length": 0,
+              "attribute_names": [
+                "style"
+              ]
+            },
+            {
+              "index": 137,
+              "parent_index": 136,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "xmlns",
+                "id",
+                "width",
+                "height",
+                "viewBox"
+              ]
+            },
+            {
+              "index": 138,
+              "parent_index": 137,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "fill-rule"
+              ]
+            },
+            {
+              "index": 139,
+              "parent_index": 134,
+              "node_type": 1,
+              "node_name": "svg",
+              "node_value_length": 0,
+              "attribute_names": [
+                "aria-hidden",
+                "class",
+                "fill",
+                "viewBox",
+                "style"
+              ]
+            },
+            {
+              "index": 140,
+              "parent_index": 139,
+              "node_type": 1,
+              "node_name": "path",
+              "node_value_length": 0,
+              "attribute_names": [
+                "d",
+                "fill",
+                "stroke",
+                "stroke-width"
+              ]
+            },
+            {
+              "index": 141,
+              "parent_index": 71,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "class",
+                "data-sand-overlay-layer",
+                "popover"
+              ]
+            },
+            {
+              "index": 142,
+              "parent_index": 69,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            },
+            {
+              "index": 143,
+              "parent_index": 69,
+              "node_type": 1,
+              "node_name": "DIV",
+              "node_value_length": 0,
+              "attribute_names": [
+                "id",
+                "aria-hidden"
+              ]
+            },
+            {
+              "index": 144,
+              "parent_index": 69,
+              "node_type": 3,
+              "node_name": "#text",
+              "node_value_length": 5,
+              "attribute_names": []
+            }
+          ]
+        },
+        "scripts": {
+          "total": 36,
+          "items": [
+            {
+              "script_key": "electron_script_07ea915bb507aa08164aaa791c8053617b7be3fb8cf416786d167805f41c8dec",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-shiki-token-cache-hLYN1QGX.js",
+              "cdp_hash": "aa44d99aadc076dceee0e18c276f4f0536ae6582c99e12e0e4f53c14bee7a02d",
+              "length": 19253,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_2a7b34fb3e6d2d4c167fc19f2bb9ff6dada0897cc735769a311f1e898efdbb96",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-app-Cj5f8Gby.js",
+              "cdp_hash": "75b7f924acc1cc08270c8140d7da82f4ef644a453c4d58c1d4bb45f564c77376",
+              "length": 2197106,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_2b478a9741d8c706b26698130da4154e74af345a8f182289730332086e826d1c",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-common-CdCvBQNJ.js",
+              "cdp_hash": "18f0ca00b780799744c0657bdb1a64c4bca39c201c4ef50361545a8d0679ebda",
+              "length": 255622,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_2cbc4f660b24f0dc56dfb2064abb67bfe21c3e4cebc67c18dbabd106f19b676d",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/reconstructed-renderer.js",
+              "cdp_hash": "0f09dc4a645b14a2e804d763b11d664bd506c5f403e5e28fc5dd1fa03a732d0a",
+              "length": 26359,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_43b4802fc0367f0ac43c2f4ceb78a69ff9ae59c59d17b006fd5a02f6057f52ab",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-share-card-frame-gOKZUO-a.js",
+              "cdp_hash": "bb8fdaf50796769a749999cd7d02e17a61d39cf42a63db8215eb43d123fa1427",
+              "length": 5652,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_4f712cb446f2c12dd92a4e3b92892af6725ccc7176ca49793dc67a22cdc65836",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js",
+              "cdp_hash": "31d3b9fa20f85f3b5142411f65ad393292bd7d7a547b43ebff22d7e86f986f71",
+              "length": 777857,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_50a62b0411c649859f23aa02cbd908202d353651d0dfad5977ec7206d7853917",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index-ZYxf-aBb.js",
+              "cdp_hash": "3dcbdb2ba6e33e6a912bb72533894871ad2a7bb0669d5a5ab23ce62a848b6b86",
+              "length": 2659326,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_536578b33bccd3b451e27deaf38381d6fc60a1199393a1cc44f8e16bbdc2027b",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-platform-Dcfeegfw.js",
+              "cdp_hash": "533aa945fb0516a5a8ffc222b56b1f2b0049b48aab9d99c21435203eccbda41a",
+              "length": 572755,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_53d9dc49f4b0000e999e1266da59e037211f9c8605f2e3106853de789ebc900c",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-agent-rows-BhWKSjqA.js",
+              "cdp_hash": "1b0f60c10d327a46ac164f63dc07f9a677493fa4c77c0a9d6ee0f07d0b7d0bf6",
+              "length": 1896,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_62b968260a4c3d4b4b39932a684ac3f7867c8d9b4e52c8b2ea8c269ba3b81792",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-box-desktop-modal-CuGtBMZ_.js",
+              "cdp_hash": "f3c5d9bf1d0e3788f111eff94c1cecabd8404b68ccc7a922269055240b25581b",
+              "length": 39790,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_62c8893819fb808bfc3a4b2bf57cd914212e0402396a42eaea0994eeaebecd1b",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-index-C0dBjfzC.js",
+              "cdp_hash": "62e935eab54840827fefd1e40af6123adfcaa1ad69b734c084e739093cbe7f17",
+              "length": 25006,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_6514d42c41f0f37ebb9dc24ef71a0ec43f176d6cf9eb4104d595e37505638d28",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-onboarding-flow-DAsxqYAq.js",
+              "cdp_hash": "078876ad0de476288a50f64eb8d0d9060d7ee68d44b1f2ec78c139a0cd79c827",
+              "length": 76484,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_65dbe0edd6716b1bc5c7ad4771dc9d350d0a5146a9bd27bdfa76ebfbb81d036f",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-markdown-math-D9a2zKdp.js",
+              "cdp_hash": "e2ed8647a67799748f40ac33bc26749468058187635948441b690f1c9e6caee0",
+              "length": 206200,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_6d4e8a43b8fc6fc0107eb0456e88c0bd35fae3664dde59cee601c8f75d875010",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-index-C28g9N0y.js",
+              "cdp_hash": "36cb45b79a4faf8da277a11321a7f5d334fc3597dcc2da02a6f0d47b451cc1b0",
+              "length": 19748,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_6ef36ba58474101cac2ec6febe572a6c09403781beeb16bbb79eee376898cbc8",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-agent-character-picker-DUX3hpCp.js",
+              "cdp_hash": "69d0fc92e0292f57b6a08027aeab2e87977dde0a8dc639da0e11cfe96866b92f",
+              "length": 9419,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_781f9b7d41326edf21bf0131fe4b89b6e9f1e21515520cc3bf279bcbc58ba85c",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-DefaultCode-CGxOfvcH.js",
+              "cdp_hash": "812bd3ccb28dda4dfbed93da1317069b716557e9286405bfdde856a4c7d9d009",
+              "length": 398153,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_88718f08e059af8c5acdce48879f2f2b7f4a0798fe9611f21da39c3811c15432",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-file-markdown-46Rn501q.js",
+              "cdp_hash": "9d8bd36483a12e3d02734ee4bdbaa336789edadee28f1d3aa3dd3df318b79c55",
+              "length": 19701,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_92f46a52e60159e91dc8651ba1d15446929ab37e35960eddca1a1e09a77b9f94",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-details-dialog-CbD31Hrp.js",
+              "cdp_hash": "62a112d96cb3c0e9d9e4fb231d5cc604210c4291a63c7d1cb7047c71de4a87f9",
+              "length": 45955,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_9bd420939f7d795ebe0c1adaae147483a94ca3f87515c8e2656ce9637cf76e8b",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-react-64JnVBsh.js",
+              "cdp_hash": "3ff9371bee8d67743fcf0802712176b42b60c5fec2935d528fdabb4f5f0939fb",
+              "length": 134362,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_9e1880dd01a9c549b109c074876d2e7fc9e2fc5ee91c45f8c006e85de846b2ee",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-template-editor-dialog-Nc0OT5-x.js",
+              "cdp_hash": "950bfebeacaa74e06dc5579511fd00df49e44c6c8235b5632d85e0d31b36e668",
+              "length": 6344,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_a209275ba8af96e5fbe3e68774c4ada04498f45d92b72fe22d0c3da838d6c9e5",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-wipe-navigation-B3wgZxtA.js",
+              "cdp_hash": "a31ec4bf79af539db04e84f3dfb556ab3fd569231e7759403d014d1d0ede67a3",
+              "length": 6800,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_a3f9cea69f5a0cb693c31a9974eeaaabadfc3c574f25107b08be743fbcdd9f38",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-transcript-markdown-CYMJ1eec.js",
+              "cdp_hash": "00d4c0f3009e06eecaf06882073aec8165601b1e747170741aa1b55de18a44e6",
+              "length": 47363,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_a6e2048e89c5b4db77c6e6389229119f0f5fb7150cac09812ba8da0b69eb2111",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-sentry-sdk-SVPtdEdF.js",
+              "cdp_hash": "f22bc227f87b0c35118cf4d8fd49804badc48e770cd8e8ef48146090fa439321",
+              "length": 106576,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_b0f23f2d77375dcdc7ac353475d454cf8b0ff650b15143bb785189daf2c36b3f",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-get-file-icon-ZAkFyGfn.js",
+              "cdp_hash": "b0d6a037b55464fdb8a3931a4b1abd7efbf4c99c75e95604c7a3dcfeeaabadb1",
+              "length": 46056,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_b5262d4af7c51b52747b6e9ff5373308bcdfe906f274c11008481c834a2ff32a",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-details-focus-BkZ83BHB.js",
+              "cdp_hash": "f69718c85bef96ee901f6418ce5fe9d8e6bdafad6d1902a3bedf47dad6919879",
+              "length": 908,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_bb8f11ce9bdde5f79b208afb69c6e617031d84a934ac21d9da5adba10debf89a",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-ToggleIconButton-DDH2e1NR.js",
+              "cdp_hash": "ddc0c39b358694dcbf5147f024b9f9fff3b61ca901b5daa1c813179dbda5c165",
+              "length": 16886,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_c946bd9c10bb0c91ac07f7e9986b0f12e06e8085750164b93938dad6dbb08867",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-network-debugger-dialog-CP26Orpf.js",
+              "cdp_hash": "fb2f075c0c4bc96bd1b2982922db6026dd4f98d3c0acfa1a0060c636115cc2c6",
+              "length": 15228,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_ce6b5c03cb13d656625f1daa7a26377df0b821891265be0367a9fb271dc04e35",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-bot-details-pane-CISL5cWF.js",
+              "cdp_hash": "f3ae6e097f63b8c748954c1d2bd0ba2df278f658a49301248c67f83f869397f4",
+              "length": 1030,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_d0fc9d892899d4105e0c3a59a548f01e3d759cc6c0ddd2fefd9eacca6bb8e233",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-computer-screen-preview-CWm3uF84.js",
+              "cdp_hash": "2944af029ff8fcd4eda8599a22ca51cbecbd2c4261d76b6d99b42c416b5b26bb",
+              "length": 19517,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_dbf2dbf7c32ef0e2ac04b4639582b674e5a97e8f35ac143214562f8efc05c79d",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-bot-share-card-CeroIs_e.js",
+              "cdp_hash": "95027c9cdeff47f6f86154dac2ab053615595bc9b58546cb3ba1f1638297a42d",
+              "length": 6830,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_dd0a4ba01c5bd4eabab8b9e6af89c712b86dea4f34a552bb125350085bc14de2",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-new-agent-pane-rQyepdtx.js",
+              "cdp_hash": "bca3a73cdbd0eb7e13b3d29eef02cf27fd3aa580fd66433a1989ed38b207607d",
+              "length": 31487,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_e40b61de3e5471b2ada95608d4a48990075da37f02735b837787118568ca54aa",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-member-chip-SDE-oMC0.js",
+              "cdp_hash": "c149d143af666e1718fc6cfa415c357a636609016a5c8fc63966792df9514f04",
+              "length": 4147,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_e4c81c681ba767bf4c6c8c5fb736c7e177e2e1cca3699cf37742da41143c6ab7",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-use-active-option-scroll-B1hXdW5d.js",
+              "cdp_hash": "9ff38f8d3047bdb3d24ae88f501ff2a212e61b07e385ee8ee34c82a5142ed854",
+              "length": 1245,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_f1642321d9312c4e03b603b7faea933209e1d1464425e11607b332167486caca",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-fullscreen-file-viewer-body-C0tdpt_M.js",
+              "cdp_hash": "1f0935c490ff664c2ab7c53861a064270527d5b2d0f126d0ad7fe58e028ea8b6",
+              "length": 112185,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_f4c1a7e5bd6a208c49b56aa5028a9a96258b8713ed5f436b28bd082e0d7f29a8",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/dune-render-trace-hook-265eb7be.js",
+              "cdp_hash": "08f9c00851957356537845e7b01d1e46e6bbd27ea354bde3035c21030d6a33dc",
+              "length": 1120,
+              "is_module": false,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            },
+            {
+              "script_key": "electron_script_fb63a3f697c81bd984c0507bd1eef5b40dd85864e7799c457aab1448edc22c3c",
+              "frame_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+              "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-new-chat-bar-CV7S1605.js",
+              "cdp_hash": "e2e4f5a42ecf5dc2eaa253ecad20420645c2716eaf62857ae963e8c0f7b70f6e",
+              "length": 47452,
+              "is_module": true,
+              "language": "JavaScript",
+              "source": {
+                "included": false,
+                "reason": "source capture was not selected"
+              }
+            }
+          ]
+        },
+        "resources": [
+          {
+            "resource_key": "electron_resource_0f6a0380f9593c0d6f114997d754ec0a64cb1d2229db701fe04fe20fb851f670",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index-ZYxf-aBb.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 2659326
+          },
+          {
+            "resource_key": "electron_resource_1632a24d265355ee664803c1b9abcc2ad2f45329f75b2f439007c5cf3baca92f",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-platform-Dcfeegfw.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 572755
+          },
+          {
+            "resource_key": "electron_resource_2411d7b2282af74820eafb5a577320c68e49c9ea34bf35efcaa4433e056c16a2",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-details-focus-BkZ83BHB.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 908
+          },
+          {
+            "resource_key": "electron_resource_25417aefc25c1bc82974aa734fe8f2f85fb769b1edbd96b44e01e50ff5c1a186",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-react-64JnVBsh.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 134362
+          },
+          {
+            "resource_key": "electron_resource_28b8a2032b1d1c395b0a678b010bfcea3c0acd5f2c1a288f78d9f3e6d4d50b57",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/fullscreen-file-viewer-body-C0m-nKZz.css",
+            "type": "Stylesheet",
+            "mime_type": "text/css",
+            "content_size": 541
+          },
+          {
+            "resource_key": "electron_resource_2970adbc91126f516a5ffc3027433ec1a1eae8526a4c9be986a0a809e57aa2b3",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-box-desktop-modal-CuGtBMZ_.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 39790
+          },
+          {
+            "resource_key": "electron_resource_411deacf86145f20ac94a59228f7ff74a46a7f3fe4299dcd2fec1ad2b14e6761",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index-B9V4agTc.css",
+            "type": "Stylesheet",
+            "mime_type": "text/css",
+            "content_size": 655404
+          },
+          {
+            "resource_key": "electron_resource_46cc7617d381018410d3597657e33b4deb1dfc7463688f46710583acce050ea2",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 777857
+          },
+          {
+            "resource_key": "electron_resource_4727b56bfc4a81cdcf162c299697e3641f2faed272e3a308691fa61c1f1cd7d6",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-common-CdCvBQNJ.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 255622
+          },
+          {
+            "resource_key": "electron_resource_476d55fba274e01dac1025102b10b99420d50a577c8c95dcf6d6cc3eb830388c",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-network-debugger-dialog-CP26Orpf.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 15228
+          },
+          {
+            "resource_key": "electron_resource_49b4dce4c1e83c16e2965a446c4d3beb1f8fcb046b6a7fe6be1fe3d9c84da8cc",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-agent-character-picker-DUX3hpCp.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 9419
+          },
+          {
+            "resource_key": "electron_resource_4a283ca20d61027a149dd8e2f48e4f324bb619068aedeb2d9aff1c6f26c5a0da",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-index-C0dBjfzC.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 25006
+          },
+          {
+            "resource_key": "electron_resource_4cd97251323f174c246e54b50b0f518d15cb10209609e73e89da5eb02cb50196",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-template-editor-dialog-Nc0OT5-x.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 6344
+          },
+          {
+            "resource_key": "electron_resource_584c7e90a469e5bbafc81de8959f192dd11d4c133dac42f460f6840da77a9267",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-shiki-token-cache-hLYN1QGX.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 19253
+          },
+          {
+            "resource_key": "electron_resource_5be3df9d785fedffa8d267a4f336f11f9eda6d3410409f8a925c1d49f279c08b",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-share-card-frame-gOKZUO-a.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 5652
+          },
+          {
+            "resource_key": "electron_resource_6577c8df68656fb421e659bb895589695774f85439e30051654cfe95110a934f",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-transcript-markdown-CYMJ1eec.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 47363
+          },
+          {
+            "resource_key": "electron_resource_67fff1cee3cbf3d378423fe73903ebf3dbb6b88f01f311a3ee9067977cadacf0",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/index.eager-app-Cj5f8Gby.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 2197106
+          },
+          {
+            "resource_key": "electron_resource_6926966b7074b02b7bb836a3397c53d3075734b7dde530109454e2640a9118c6",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-bot-details-pane-CISL5cWF.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 1030
+          },
+          {
+            "resource_key": "electron_resource_73cf7f88091cfe203579a9fd95fcfdea906bc612ef7e5b7e2c8cb08d9d174ed0",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-wipe-navigation-B3wgZxtA.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 6800
+          },
+          {
+            "resource_key": "electron_resource_79271a8b2d42870909d694283fa749406c47b74e820c87ede1ee9f70833eb1ea",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-file-markdown-46Rn501q.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 19701
+          },
+          {
+            "resource_key": "electron_resource_7b78e200c52ec2c66346fac6d03779fd3defb1edd67c829d5ee38faf84e06f87",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-agent-rows-BhWKSjqA.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 1896
+          },
+          {
+            "resource_key": "electron_resource_7e6e8b80e6e99f62fe014d3af8bd0593090cdf75aa38c139d835f47e32b03ee2",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-bot-template-details-dialog-CbD31Hrp.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 45955
+          },
+          {
+            "resource_key": "electron_resource_816f1e21d813bb323dd2c5bb0952593f026c3b74bed5d78b85ff412b0e04f69f",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-team-bot-share-card-CeroIs_e.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 6830
+          },
+          {
+            "resource_key": "electron_resource_8c5db9476765574a58f0a414bda39fa01aaa6d8073fcf4b8b7e4f3be30859866",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-member-chip-SDE-oMC0.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 4147
+          },
+          {
+            "resource_key": "electron_resource_991ca9453bef23200c8351274b2dfad0e873d8f276484b65159084b0b41768aa",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-computer-screen-preview-CWm3uF84.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 19517
+          },
+          {
+            "resource_key": "electron_resource_998e345d72f8e1f66e5368afb6d7c6b1a8113b67f2a0aebb38e5f0832211a98c",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-get-file-icon-ZAkFyGfn.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 46056
+          },
+          {
+            "resource_key": "electron_resource_a338b6230d5361e90b06e6d7bfee5ef4949f56af441f0f65eee67d7dcd68f1a0",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/cursor-icons-16-4RnoYH3n.woff2",
+            "type": "Font",
+            "mime_type": "application/octet-stream",
+            "content_size": 125140
+          },
+          {
+            "resource_key": "electron_resource_b7b1a78bfba1e04bf8b808e8827c1664869e8022c28316dc5ec8f3b1912a47f4",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/reconstructed-renderer.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 26359
+          },
+          {
+            "resource_key": "electron_resource_bd58000102a89ca3947beb836573d72a31ec71fcec6ebdf5d9ae5374de09e32e",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-new-agent-pane-rQyepdtx.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 31487
+          },
+          {
+            "resource_key": "electron_resource_c1678fcf65f14bbf1e3b43c690d72f81cc52af719faa5c6260c112dc54f74bbf",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-use-active-option-scroll-B1hXdW5d.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 1245
+          },
+          {
+            "resource_key": "electron_resource_c9533e714aaf63031e3b7a1399e51987022e608591386a1c3fb89517645f1d01",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-prompt-editor-d85mg-tN.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 126642
+          },
+          {
+            "resource_key": "electron_resource_d18220e9a1e56ad526d4ce0284ab964e712f08c9f6dae5c024a7c1daf092c260",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-markdown-math-D9a2zKdp.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 206200
+          },
+          {
+            "resource_key": "electron_resource_d3ff18f5fe42247196792327c0f9f50ed5c72c6457f3272834d1c9d9f4fe6d64",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-sentry-sdk-SVPtdEdF.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 106576
+          },
+          {
+            "resource_key": "electron_resource_d42e0ba5ac0011c71c2d6912cd022a98ce00dbbd02a3749104e5f9ae7bd44f10",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-index-C28g9N0y.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 19748
+          },
+          {
+            "resource_key": "electron_resource_d959f7cf4a410a3e227213cfe550e1cbb294ef4c28f3da8c67a06a48a4fc8ab5",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/dune-render-trace-hook-265eb7be.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 1120
+          },
+          {
+            "resource_key": "electron_resource_df7ec4a0feeb7c66ec2982561aad4babc17a80073388be70d132c4cd5df27811",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-onboarding-flow-DAsxqYAq.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 76484
+          },
+          {
+            "resource_key": "electron_resource_e2c90955fbcb880c0f5d802c8bc36ea900543f65b8297ba8fc2984c7c9312a7e",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-new-chat-bar-CV7S1605.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 47452
+          },
+          {
+            "resource_key": "electron_resource_f6b6a57badde040e4ca1a809c248b0e60405c32bc76501064c10ca30b06abd01",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-ToggleIconButton-DDH2e1NR.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 16886
+          },
+          {
+            "resource_key": "electron_resource_fc80ade9de6b243b7fd4a4995aa335a993b9fea009a36ebf4f1c3e2a7384a6ad",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-DefaultCode-CGxOfvcH.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 398153
+          },
+          {
+            "resource_key": "electron_resource_ff3dc9a03644534ec556cb993482b5b5fa2552b1dd3e9fb0311ea9016e40189c",
+            "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/chunk-fullscreen-file-viewer-body-C0tdpt_M.js",
+            "type": "Script",
+            "mime_type": "text/javascript",
+            "content_size": 112187
+          }
+        ],
+        "workers": [],
+        "limitations": [
+          "Local file paths exposed by the selected CDP target are retained in the observation.",
+          "REA does not evaluate renderer JavaScript, invoke Electron APIs, navigate, click, or close the page.",
+          "Select include_script_sources to retain script contents."
+        ]
+      },
+      "confidence": "observed",
+      "authority": "external-service",
+      "environment": {
+        "id": "Chrome/148.0.7778.97@537.36 (@6b3fa66a923a9442c8ab0bc71b4b41ff24528d3b)",
+        "platform": "unknown",
+        "architecture": "unknown",
+        "isolation": "none"
+      },
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Local file paths exposed by the selected CDP target are retained in the observation.",
+        "REA does not evaluate renderer JavaScript, invoke Electron APIs, navigate, click, or close the page.",
+        "Select include_script_sources to retain script contents.",
+        "Browser host platform and architecture were not observed."
+      ],
+      "locations": [],
+      "evidence_links": []
+    }
+  }
+}

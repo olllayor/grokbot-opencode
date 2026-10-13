@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/workspace/evidence/wakaru/index.eager-app-Cj5f8Gby-canonical.json\",\"bytes\":6392,\"records\":1,\"unknowns\":0}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/workspace/evidence/wakaru/index.eager-app-Cj5f8Gby-canonical.json",
+      "bytes": 6392,
+      "records": 1,
+      "unknowns": 0
+    }
+  }
+}

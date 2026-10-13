@@ -1,0 +1,104 @@
+{
+  "artifact": "dist/electron-main/main-app.cjs",
+  "sha256": "144eb4daf54b935eed40ee2e483c062dd00951c420d539679fd30fbf351eb9ef",
+  "ranges": [
+    {
+      "symbol": "agr",
+      "start": 2295771,
+      "end": 2295820
+    },
+    {
+      "symbol": "sgr",
+      "start": 2295820,
+      "end": 2295925
+    },
+    {
+      "symbol": "yot",
+      "start": 2295925,
+      "end": 2296010
+    },
+    {
+      "symbol": "_ot",
+      "start": 2296022,
+      "end": 2296478
+    },
+    {
+      "symbol": "Eot",
+      "start": 2296478,
+      "end": 2296920
+    },
+    {
+      "symbol": "bot",
+      "start": 2296999,
+      "end": 2297137
+    },
+    {
+      "symbol": "Mot",
+      "start": 2298365,
+      "end": 2298830
+    },
+    {
+      "symbol": "dgr",
+      "start": 2298830,
+      "end": 2299803
+    },
+    {
+      "symbol": "ugr",
+      "start": 2299803,
+      "end": 2300431
+    },
+    {
+      "symbol": "pgr",
+      "start": 2300431,
+      "end": 2300938
+    },
+    {
+      "symbol": "fgr",
+      "start": 2300938,
+      "end": 2301487
+    },
+    {
+      "symbol": "mgr",
+      "start": 2301487,
+      "end": 2301737
+    },
+    {
+      "symbol": "Pot",
+      "start": 2301737,
+      "end": 2301961
+    },
+    {
+      "symbol": "ggr",
+      "start": 2301961,
+      "end": 2302061
+    },
+    {
+      "symbol": "Agr",
+      "start": 2302061,
+      "end": 2302215
+    },
+    {
+      "symbol": "yw",
+      "start": 2302215,
+      "end": 2302250
+    },
+    {
+      "symbol": "wot",
+      "start": 2302250,
+      "end": 2302322
+    },
+    {
+      "symbol": "Sw",
+      "start": 2302322,
+      "end": 2302373
+    },
+    {
+      "symbol": "tie",
+      "start": 2302373,
+      "end": 2302498
+    }
+  ],
+  "limitations": [
+    "Only selected inert functions; imports/other services outside scope."
+  ]
+}

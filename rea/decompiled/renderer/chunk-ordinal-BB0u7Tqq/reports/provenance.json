@@ -1,0 +1,7 @@
+{
+  "format": "unknown",
+  "strategy": "structural",
+  "modules": {
+    "bundle.js": {"input": "/tmp/rea-wakaru-3CivPP/inputs/bundle.js", "ranges": [[0,1629]], "extraction": "structural"}
+  }
+}

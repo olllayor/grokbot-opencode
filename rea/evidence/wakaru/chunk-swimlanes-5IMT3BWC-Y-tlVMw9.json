@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js",
+    "output_directory": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_4752dc0636d7ef512949ab3247d5868b2f8af5056554d9be91163c7d7f45c820\",\"subject\":{\"name\":\"chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js\",\"digest\":{\"sha256\":\"ce97fee2c8a7c54e0d35906004697aefda714c58434a172c282d22141bfc8764\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js\",\"output_directory\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":1632}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-TlK1fH/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-TlK1fH/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":1632},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-TlK1fH/inputs/bundle.js\",\"ranges\":[[0,119291]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js\",\"sha256\":\"ce97fee2c8a7c54e0d35906004697aefda714c58434a172c282d22141bfc8764\",\"bytes\":119291,\"snapshot_path\":\"/tmp/rea-wakaru-TlK1fH/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/inputs/bundle.js\",\"sha256\":\"ce97fee2c8a7c54e0d35906004697aefda714c58434a172c282d22141bfc8764\",\"bytes\":119291}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/modules/bundle.js\",\"sha256\":\"20ee08e7a98e269ed46f7cb2d4da88279cc308550be5a130027ba60e0b84a5f6\",\"bytes\":256689},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/modules/bundle.js.map\",\"sha256\":\"53ffcb4dbb1adf5e680684f92339e0004b38050757bc7a78311b8b086d086514\",\"bytes\":211437},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-TlK1fH/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js\",\"original_sha256\":\"ce97fee2c8a7c54e0d35906004697aefda714c58434a172c282d22141bfc8764\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":119291}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/reports/stdout.json\",\"sha256\":\"bd9ea5960322f2c4c6ba1d1a5b805918d170221d39328ea6c62527b50c2213b4\",\"bytes\":174},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/reports/provenance.json\",\"sha256\":\"d57dfafa14e23973e87ef1b061f745455bda48b968ac6aff48ebe7e8ac46ef4d\",\"bytes\":196},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/manifest.json\",\"sha256\":\"c9ff79e194da5b01d604c4cae06a4cd4ef21a60a1f8ff79a771dde98b9195d1d\",\"bytes\":3671},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_4752dc0636d7ef512949ab3247d5868b2f8af5056554d9be91163c7d7f45c820",
+      "subject": {
+        "name": "chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js",
+        "digest": {
+          "sha256": "ce97fee2c8a7c54e0d35906004697aefda714c58434a172c282d22141bfc8764"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js",
+        "output_directory": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":1632}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-TlK1fH/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-TlK1fH/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 1632
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-TlK1fH/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  119291
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js",
+          "sha256": "ce97fee2c8a7c54e0d35906004697aefda714c58434a172c282d22141bfc8764",
+          "bytes": 119291,
+          "snapshot_path": "/tmp/rea-wakaru-TlK1fH/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/inputs/bundle.js",
+            "sha256": "ce97fee2c8a7c54e0d35906004697aefda714c58434a172c282d22141bfc8764",
+            "bytes": 119291
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/modules/bundle.js",
+              "sha256": "20ee08e7a98e269ed46f7cb2d4da88279cc308550be5a130027ba60e0b84a5f6",
+              "bytes": 256689
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/modules/bundle.js.map",
+              "sha256": "53ffcb4dbb1adf5e680684f92339e0004b38050757bc7a78311b8b086d086514",
+              "bytes": 211437
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-TlK1fH/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js",
+              "original_sha256": "ce97fee2c8a7c54e0d35906004697aefda714c58434a172c282d22141bfc8764",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 119291
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/reports/stdout.json",
+          "sha256": "bd9ea5960322f2c4c6ba1d1a5b805918d170221d39328ea6c62527b50c2213b4",
+          "bytes": 174
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/reports/provenance.json",
+          "sha256": "d57dfafa14e23973e87ef1b061f745455bda48b968ac6aff48ebe7e8ac46ef4d",
+          "bytes": 196
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/manifest.json",
+          "sha256": "c9ff79e194da5b01d604c4cae06a4cd4ef21a60a1f8ff79a771dde98b9195d1d",
+          "bytes": 3671
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-swimlanes-5IMT3BWC-Y-tlVMw9.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/chunk-swimlanes-5IMT3BWC-Y-tlVMw9/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

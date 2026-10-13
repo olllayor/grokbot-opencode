@@ -1,0 +1,120 @@
+{
+  "originalPath": "recovered/dist/electron-main/main-app.cjs",
+  "sha256": "144eb4daf54b935eed40ee2e483c062dd00951c420d539679fd30fbf351eb9ef",
+  "ranges": [
+    {
+      "symbol": "wn",
+      "start": 850098,
+      "end": 850121,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "k0t",
+      "start": 850121,
+      "end": 850240,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "w",
+      "start": 850240,
+      "end": 850435,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "Po",
+      "start": 850435,
+      "end": 850542,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "f4",
+      "start": 850786,
+      "end": 850840,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "m4",
+      "start": 850840,
+      "end": 850880,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "Sl",
+      "start": 850880,
+      "end": 850981,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "w0t",
+      "start": 850981,
+      "end": 851028,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "NRe",
+      "start": 851028,
+      "end": 851075,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "T0t",
+      "start": 851075,
+      "end": 851119,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "g4",
+      "start": 851119,
+      "end": 851181,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "R0t",
+      "start": 851181,
+      "end": 851389,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "x0t",
+      "start": 851389,
+      "end": 851606,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "xh",
+      "start": 851606,
+      "end": 851771,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "M0t",
+      "start": 851771,
+      "end": 852182,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "P0t",
+      "start": 852182,
+      "end": 852423,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "B0t",
+      "start": 852423,
+      "end": 853417,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "D0t",
+      "start": 853417,
+      "end": 853542,
+      "semantics": "UTF-16 character indices"
+    },
+    {
+      "symbol": "_l",
+      "start": 853542,
+      "end": 853683,
+      "semantics": "UTF-16 character indices"
+    }
+  ]
+}

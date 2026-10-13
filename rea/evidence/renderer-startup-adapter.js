@@ -1,0 +1,63 @@
+let fB,mB,JRe,w6,Vc,Ba,pB,rf,fp,eEe,xn,_6,hB;
+const recoveredStartup = bootstrapRenderer({
+ window, performance, clock: li,
+ createTelemetryLoader: w => (fB = rle(w)),
+ deferredTasks: [R$,u3e,MCe,B5e,N7e,Kke,lfe,cRe],
+ loadAnimationFeatures: eie,
+ installInvariantReporter: bie,
+ assert: js,
+ createCapability: () => (Vc = dle()),
+ createDesktop: capability => (Ba = ule(capability)),
+ installFailureReporter: desktop => fle(new tie(value => Vy(desktop.reportClientFailure(value)))),
+ installEntrypointDiagnostics: () => yie(nie),
+ setPlatform: mle,
+ playNotificationSound: ple,
+ createPortBridge: gle,
+ createIdentityTransport: options => (rf = hle(options)),
+ installReactionAck: options => { fp = options.scheduleTimeout; sie(options); },
+ createPersistence: options => (eEe = yle(options)),
+ wrapSource: source => xle(source,aie(lie)),
+ createClient: options => (xn = kle(options)),
+ voiceCallTransport: Zle,
+ loadUnifiedBilling: () => Bt(() => import('./chunk-index-DYBNJbIk.js'),__vite__mapDeps([136,1]),import.meta.url),
+ openCredits: view => sa.runtime.actions.open(Gy.link({view})),
+ createVoicePreviewPlayer: ble,
+ createVoiceMemoClip: Yle,
+ resolveAccountSlot: Xle,
+ onSendQueuedFlush: Kle,
+ reportPersistence: Qle,
+ report: es,
+ installDraftPersistence: vle,
+ initializeClient: Sle,
+ initializeAccountFlow: client => jle(client,xie(),Ffe),
+ isDeepLink: value => Fy.isDeepLink(value),
+ isScmConnectLink: wle,
+ scmConnectPayload: _le,
+ reportScmFailure: $s,
+ dispatchDeepLink: DTe,
+ installClientObservers: Cle,
+ applyTheme: Jle,
+ activateLocale: Nle,
+ currentLocale: Ile,
+ initializeSelectionTelemetry: (client,telemetry,capability) => Tle(client.selection.snapshots,Ale(telemetry.setTag,capability.telemetry)),
+ initializeExperimentBindings: client => JIe({experiments:client.experiments.snapshots,roster:client.roster.snapshots,team:client.team.snapshots,teamMemberships:t_(client),teamPolicy:client.teamPolicy.snapshots,usageSummary:client.usageSummary.snapshots,unifiedBillingDevScenario:client.unifiedBilling.isDevScenarioArmed}),
+ devPort: window.sandDev,
+ connectDevPort: Ple,
+ connectRenderTracing: client => { const xn = client; {const t=sa.tracing,e=window.sandRenderTrace;t!==null&&e!=null&&Promise.all([t,Bt(()=>import("./chunk-connect-xJo8TA8W.js"),__vite__mapDeps([137,3,4,1,138]),import.meta.url)]).then(([n,{connectRenderTracePort:s}])=>{s(n,e,xn.selection.snapshots)},n=>es("render_trace_connect",n))} },
+ beforeWaking: Rle,
+ createWakingHandle: (client,scheduleTimeout) => (hB = o0e(client,scheduleTimeout,{isDocumentVisible:()=>document.visibilityState==='visible',subscribeWindowFocus:client.desktopWindow.subscribeWindowFocus},{onWakingReport:value=>Vy(Ba.reportAgentsUnreachable(value))})),
+ initializeAfterWaking: (client,waking,scheduleTimeout) => {const xn=client,hB=waking,fp=scheduleTimeout;i0e(xn);
+Ele({roster:xn.roster.snapshots,boot:xn.boot,readFreshAccess:()=>Ba.getSandAccessFresh(),report:t=>Vy(Ba.reportAccessBlocked(t)),scheduleTimeout:fp,causeReadDeadline:kie(Mle)});
+zle(h_,{hasDiskPressure:()=>xn.foreverBox.diskPressureSnapshots.get()!=null,getRoster:()=>{const t=xn.roster.snapshots.get();return{agents:t.agents.rows,isRosterComplete:t.hasCompleteRoster}},subscribe:t=>{const e=[xn.foreverBox.diskPressureSnapshots.subscribe(t),xn.roster.snapshots.subscribe(t)];return()=>{for(const n of e)n()}},launchNewAgent:async t=>{try{return(await xn.roster.createAgent({name:t.name,description:t.description,purpose:t.purpose,origin:"user",isKickstartRequested:!0})).agent.id}catch(e){if(!(e instanceof Zr))throw e;return $s(e),null}},requestReAudit:async t=>{try{return(await xn.roster.requestDiskSaverAudit(t))?.isAuditInFlight??!0}catch(e){if(!(e instanceof Zr))throw e;return e.failure.code===iie}}});
+$le({scheduleTimeout:fp,subscribeServers:t=>xn.mcp.serverSnapshots.subscribe(t),getConnectedServerIdentities:()=>{const t=xn.mcp.serverSnapshots.get(),e=t.status==="ready"?t.value.servers:[],n=new Map;for(const s of e)n.set(s.id,(n.get(s.id)??0)+1);return e.filter(s=>s.status==="connected"||s.status==="disabledByTeamAdminPolicy").map(s=>({serverIdentifier:s.serverIdentifier,name:s.name,isMultiAccount:(n.get(s.id)??0)>1}))},subscribeAuthCompletions:t=>xn.mcp.authCompletionsSnapshots.subscribe(t),getCancelledAuthIdentities:()=>xn.mcp.authCompletionsSnapshots.get().filter(t=>t.outcome==="cancelled").map(t=>({serverIdentifier:t.serverIdentifier??`mcp-row-${t.serverId}`,name:t.serverName,isMultiAccount:t.accountKey!=="default",...t.failureDetail==null?{}:{failureDetail:t.failureDetail}})),subscribeBoot:t=>xn.boot.subscribe(t),isAccountRestoring:()=>xn.boot.get().status==="restoring"});
+Ole({updatePrompt:xn.updatePrompt,updateStatus:xn.updateStatus.snapshots,navigation:sa.runtime.store});},
+ clearNonReadyState: () => {Dle();qle();},
+ resetRestoringState: Lle,
+ noteAccountChange: waking => waking.noteAccountChange(),
+ initializeFirstRunAndHeap: (client,capability) => {const xn=client,Vc=capability;Fle(xn.firstRun.snapshots,Vc);
+let tEe;
+Ble(Vc.telemetry,li,{loadedAgents:()=>xn.transcript.loadedAgentCount(),loadedTranscriptEntries:()=>xn.transcript.loadedTranscriptEntryCount(),idleMinutesLast15m:()=>(tEe??=oie(li)).sampleIdleMinutes()});},
+ observeRootPopulation: Gle,
+ mountApp: (root,client,waking,features) => {const w6=root,xn=client,hB=waking,JRe=features;SW.createRoot(w6,{onUncaughtError:(t,e)=>{Is(t,{contexts:{react:{componentStack:e.componentStack??null}}})}}).render(o.jsx(I.StrictMode,{children:o.jsx(jW,{i18n:qn,children:o.jsx(Vle,{children:o.jsx(wW,{features:JRe,strict:!0,children:o.jsx(zc,{boundary:"app",variant:"app",children:o.jsx(kl,{menuSize:Wle,children:o.jsx(Ule,{client:xn,children:o.jsx($T,{children:o.jsx(rE,{handle:hB,children:o.jsx(aF,{children:o.jsx(sce,{children:o.jsxs(Hle,{children:[o.jsx(lB,{}),o.jsx(fD,{}),o.jsx(sB,{}),o.jsx(oB,{}),o.jsx(nB,{children:o.jsx(YF,{})})]})})})})})})})})})})})}));}
+});
+({telemetry:fB,deferred:mB,animationFeatures:JRe,root:w6,capability:Vc,desktop:Ba,setZoomFactor:pB,transport:rf,scheduleTimeout:fp,persistence:eEe,client:xn,updateTheme:_6,waking:hB}=recoveredStartup);

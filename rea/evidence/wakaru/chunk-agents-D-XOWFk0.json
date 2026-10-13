@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js",
+    "output_directory": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_a6e87198e28e941e4a277feeaca890f088701001a33a92223bc1f01ee7d4b0ad\",\"subject\":{\"name\":\"chunk-agents-D-XOWFk0.js\",\"digest\":{\"sha256\":\"54bd865c59b9231c06dc1c83c3bbdb46c8ba8e562eaba7b8980a48887af99171\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js\",\"output_directory\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":162}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-OSZcVb/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-OSZcVb/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":162},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-OSZcVb/inputs/bundle.js\",\"ranges\":[[0,21636]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js\",\"sha256\":\"54bd865c59b9231c06dc1c83c3bbdb46c8ba8e562eaba7b8980a48887af99171\",\"bytes\":21636,\"snapshot_path\":\"/tmp/rea-wakaru-OSZcVb/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/inputs/bundle.js\",\"sha256\":\"54bd865c59b9231c06dc1c83c3bbdb46c8ba8e562eaba7b8980a48887af99171\",\"bytes\":21636}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/modules/bundle.js\",\"sha256\":\"798d448d6923854f3317fb8e231c878e2eb94c72472cba0cda9dedd5f3d3c52f\",\"bytes\":21639},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/modules/bundle.js.map\",\"sha256\":\"cf0ad2d84132eecd6a3fc4442e92f3f8881fb6dd19cde3cb05cef5bb889626bf\",\"bytes\":445},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-OSZcVb/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js\",\"original_sha256\":\"54bd865c59b9231c06dc1c83c3bbdb46c8ba8e562eaba7b8980a48887af99171\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":21636}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/reports/stdout.json\",\"sha256\":\"0bb9260cff6b43267f25e4030d03ff4cc8e62723810031b7fb5509aae0358788\",\"bytes\":173},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/reports/provenance.json\",\"sha256\":\"8b4f7cebf67f3ed7b04d6be167298e797bacf8787f4094f943fe2026a0bb31a5\",\"bytes\":195},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/manifest.json\",\"sha256\":\"3c8899d8b07a507b7290db40b9ed6cc6279d05e07503961fcc695c20c88e1942\",\"bytes\":3568},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_a6e87198e28e941e4a277feeaca890f088701001a33a92223bc1f01ee7d4b0ad",
+      "subject": {
+        "name": "chunk-agents-D-XOWFk0.js",
+        "digest": {
+          "sha256": "54bd865c59b9231c06dc1c83c3bbdb46c8ba8e562eaba7b8980a48887af99171"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js",
+        "output_directory": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":162}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-OSZcVb/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-OSZcVb/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 162
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-OSZcVb/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  21636
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js",
+          "sha256": "54bd865c59b9231c06dc1c83c3bbdb46c8ba8e562eaba7b8980a48887af99171",
+          "bytes": 21636,
+          "snapshot_path": "/tmp/rea-wakaru-OSZcVb/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/inputs/bundle.js",
+            "sha256": "54bd865c59b9231c06dc1c83c3bbdb46c8ba8e562eaba7b8980a48887af99171",
+            "bytes": 21636
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/modules/bundle.js",
+              "sha256": "798d448d6923854f3317fb8e231c878e2eb94c72472cba0cda9dedd5f3d3c52f",
+              "bytes": 21639
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/modules/bundle.js.map",
+              "sha256": "cf0ad2d84132eecd6a3fc4442e92f3f8881fb6dd19cde3cb05cef5bb889626bf",
+              "bytes": 445
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-OSZcVb/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js",
+              "original_sha256": "54bd865c59b9231c06dc1c83c3bbdb46c8ba8e562eaba7b8980a48887af99171",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 21636
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/reports/stdout.json",
+          "sha256": "0bb9260cff6b43267f25e4030d03ff4cc8e62723810031b7fb5509aae0358788",
+          "bytes": 173
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/reports/provenance.json",
+          "sha256": "8b4f7cebf67f3ed7b04d6be167298e797bacf8787f4094f943fe2026a0bb31a5",
+          "bytes": 195
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/manifest.json",
+          "sha256": "3c8899d8b07a507b7290db40b9ed6cc6279d05e07503961fcc695c20c88e1942",
+          "bytes": 3568
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-agents-D-XOWFk0.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/chunk-agents-D-XOWFk0/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

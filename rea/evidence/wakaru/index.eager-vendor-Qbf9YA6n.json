@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js",
+    "output_directory": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n",
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_7e3ae5d28767f10a98b5c27e43bab93476580222de9bb61c78cac8edd4e55171\",\"subject\":{\"name\":\"index.eager-vendor-Qbf9YA6n.js\",\"digest\":{\"sha256\":\"92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js\",\"output_directory\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":6283}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-ngRIlw/inputs/bundle.js\",\"--unpack=strict\",\"--level=standard\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-ngRIlw/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":6283},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-ngRIlw/inputs/bundle.js\",\"ranges\":[[0,534430]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js\",\"sha256\":\"92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f\",\"bytes\":534430,\"snapshot_path\":\"/tmp/rea-wakaru-ngRIlw/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/inputs/bundle.js\",\"sha256\":\"92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f\",\"bytes\":534430}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"standard\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/modules/bundle.js\",\"sha256\":\"cf267e4fdbeedf0881c4716683de7bfe8b911d2b0173f1849ad3043eb7b253b6\",\"bytes\":1216401},\"source_map\":{\"path\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/modules/bundle.js.map\",\"sha256\":\"cd4afeb47d01bedfce713682b105e0089b888619d8ebe1b6b51da92e108d0a98\",\"bytes\":736438},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-ngRIlw/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js\",\"original_sha256\":\"92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":534430}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/reports/stdout.json\",\"sha256\":\"ee2f1423200790d524d4a20528254e522ee4c985d000f817e66f2f831aeacd3e\",\"bytes\":174},\"provenance\":{\"path\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/reports/provenance.json\",\"sha256\":\"1af16033b8b4290d7f122a0c1b4f54b74a787363f82665541b07671d6c9992f7\",\"bytes\":196},\"manifest\":{\"path\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/manifest.json\",\"sha256\":\"d47d3e950d138685623d91586696059f10e15be606d3f4dc5a96807de4c4f34a\",\"bytes\":3624},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_7e3ae5d28767f10a98b5c27e43bab93476580222de9bb61c78cac8edd4e55171",
+      "subject": {
+        "name": "index.eager-vendor-Qbf9YA6n.js",
+        "digest": {
+          "sha256": "92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js",
+        "output_directory": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n",
+        "extraction_mode": "structural",
+        "rewrite_level": "standard"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":6283}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-ngRIlw/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=standard",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-ngRIlw/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 6283
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-ngRIlw/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  534430
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js",
+          "sha256": "92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f",
+          "bytes": 534430,
+          "snapshot_path": "/tmp/rea-wakaru-ngRIlw/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/inputs/bundle.js",
+            "sha256": "92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f",
+            "bytes": 534430
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "standard"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/modules/bundle.js",
+              "sha256": "cf267e4fdbeedf0881c4716683de7bfe8b911d2b0173f1849ad3043eb7b253b6",
+              "bytes": 1216401
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/modules/bundle.js.map",
+              "sha256": "cd4afeb47d01bedfce713682b105e0089b888619d8ebe1b6b51da92e108d0a98",
+              "bytes": 736438
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-ngRIlw/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js",
+              "original_sha256": "92819526c861474acdd64235acfc4961a3ad7507cfc0b57267a3aca4455ebc4f",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 534430
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/reports/stdout.json",
+          "sha256": "ee2f1423200790d524d4a20528254e522ee4c985d000f817e66f2f831aeacd3e",
+          "bytes": 174
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/reports/provenance.json",
+          "sha256": "1af16033b8b4290d7f122a0c1b4f54b74a787363f82665541b07671d6c9992f7",
+          "bytes": 196
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/manifest.json",
+          "sha256": "d47d3e950d138685623d91586696059f10e15be606d3f4dc5a96807de4c4f34a",
+          "bytes": 3624
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/index.eager-vendor-Qbf9YA6n.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/renderer/index.eager-vendor-Qbf9YA6n/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

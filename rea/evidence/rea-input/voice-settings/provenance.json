@@ -1,0 +1,16 @@
+[
+  {
+    "symbol": "USe",
+    "original": "recovered/dist/renderer/assets/index.eager-app-Cj5f8Gby.js",
+    "start": 1506421,
+    "end": 1506603,
+    "sha256": "bda7171ef4973362b6f892dab9bd0b79a8983dd129abdefd85b71188d2cf0140"
+  },
+  {
+    "symbol": "GSe",
+    "original": "recovered/dist/renderer/assets/index.eager-app-Cj5f8Gby.js",
+    "start": 1506603,
+    "end": 1507283,
+    "sha256": "7dd47cf0ddaea5a0e732a38be74c948b588eae3226432a980c28ce043ee49bba"
+  }
+]

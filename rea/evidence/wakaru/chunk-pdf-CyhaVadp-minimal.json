@@ -1,0 +1,223 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "tool": "recover_javascript_sources",
+  "arguments": {
+    "path": "/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js",
+    "output_directory": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal",
+    "extraction_mode": "structural",
+    "rewrite_level": "minimal"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_83b2e83e3a59635132134e16b2cc4ac47cee4e685434eea3365942d2364b98fd\",\"subject\":{\"name\":\"chunk-pdf-CyhaVadp.js\",\"digest\":{\"sha256\":\"dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a\"},\"format\":\"javascript\",\"architecture\":null,\"local_path\":\"/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js\"},\"provider\":{\"id\":\"wakaru\",\"name\":\"Wakaru\",\"version\":\"1.13.0\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"recover_javascript_sources\",\"parameters\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js\",\"output_directory\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal\",\"extraction_mode\":\"structural\",\"rewrite_level\":\"minimal\"},\"raw_result\":{\"version\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"wakaru 1.13.0\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"--version\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"execution\":{\"exit_code\":0,\"signal\":null,\"stdout\":\"{\\\"detected_formats\\\":[],\\\"safety\\\":\\\"normal\\\",\\\"modules\\\":[{\\\"filename\\\":\\\"bundle.js\\\",\\\"kind\\\":\\\"javascript\\\",\\\"status\\\":\\\"decompiled\\\"}],\\\"warnings\\\":[],\\\"total\\\":1,\\\"failed\\\":0,\\\"elapsed_ms\\\":2610}\\n\",\"stderr\":\"\",\"command\":\"/usr/local/bin/wakaru\",\"arguments\":[\"/tmp/rea-wakaru-UKrBDc/inputs/bundle.js\",\"--unpack=strict\",\"--level=minimal\",\"--provenance\",\"--emit-source-map\",\"--json\",\"-o\",\"/tmp/rea-wakaru-UKrBDc/modules\"],\"resource_limiter\":\"/usr/bin/prlimit\"},\"report\":{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":2610},\"provenance\":{\"format\":\"unknown\",\"strategy\":\"structural\",\"modules\":{\"bundle.js\":{\"input\":\"/tmp/rea-wakaru-UKrBDc/inputs/bundle.js\",\"ranges\":[[0,400605]],\"extraction\":\"structural\"}}}},\"normalized_result\":{\"source\":{\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js\",\"sha256\":\"dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a\",\"bytes\":400605,\"snapshot_path\":\"/tmp/rea-wakaru-UKrBDc/inputs/bundle.js\",\"published_copy\":{\"path\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/inputs/bundle.js\",\"sha256\":\"dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a\",\"bytes\":400605}},\"engine\":{\"id\":\"wakaru\",\"version\":\"1.13.0\",\"executable\":{\"path\":\"/usr/local/bin/wakaru\",\"sha256\":\"e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e\",\"bytes\":25301016},\"audited_source_revision\":\"6070266d24b32951fa2fe1d2dad5b4313bd5c81b\",\"executed_source_revision\":null},\"options\":{\"extraction_mode\":\"structural\",\"rewrite_level\":\"minimal\"},\"status\":\"complete\",\"detected_formats\":[],\"reported_safety\":\"normal\",\"reported_strategy\":\"structural\",\"reported_format\":\"unknown\",\"total\":1,\"failed\":0,\"modules\":[{\"reported_filename\":\"bundle.js\",\"reported_status\":\"decompiled\",\"artifact\":{\"path\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/modules/bundle.js\",\"sha256\":\"f694a484ade6e1668ef0d6105d4c03e2ce75bae2d0a5c9b252dc9968d458c7b9\",\"bytes\":767897},\"source_map\":{\"path\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/modules/bundle.js.map\",\"sha256\":\"0856aa03dd7f41701544349b6fd7e72b72e779b0ef13839d382aea656f2b818f\",\"bytes\":584068},\"provenance\":{\"reported_input\":\"/tmp/rea-wakaru-UKrBDc/inputs/bundle.js\",\"original_path\":\"/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js\",\"original_sha256\":\"dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a\",\"extraction\":\"structural\",\"byte_ranges\":[{\"start\":0,\"end\":400605}],\"context_byte_ranges\":[],\"range_semantics\":\"half-open-utf8-bytes\"}}],\"warnings\":[],\"report\":{\"path\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/reports/stdout.json\",\"sha256\":\"aa80a81b7d70e4d706bc64b8d23ec747de89fab5574dabc8a2c390d6ba9e7af1\",\"bytes\":174},\"provenance\":{\"path\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/reports/provenance.json\",\"sha256\":\"e0a47b5c503abe609cfcb9b091d556f89c4d946a6a662f47af7a0b880153f04d\",\"bytes\":196},\"manifest\":{\"path\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/manifest.json\",\"sha256\":\"0dc8a651ffd747a0778525f4f2d595808daa426d33bb926e40e6e55336b465c3\",\"bytes\":3622},\"analysis_input\":{\"input_path\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/modules\",\"format\":\"directory\"},\"runtime_equivalence\":\"unknown\",\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"]},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.\",\"Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.\",\"Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.\",\"Inspection mode may produce non-executable regions. No input or recovered application code is executed.\",\"Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js\"},{\"kind\":\"artifact-path\",\"path\":\"/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/modules/bundle.js\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_83b2e83e3a59635132134e16b2cc4ac47cee4e685434eea3365942d2364b98fd",
+      "subject": {
+        "name": "chunk-pdf-CyhaVadp.js",
+        "digest": {
+          "sha256": "dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a"
+        },
+        "format": "javascript",
+        "architecture": null,
+        "local_path": "/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js"
+      },
+      "provider": {
+        "id": "wakaru",
+        "name": "Wakaru",
+        "version": "1.13.0"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "recover_javascript_sources",
+      "parameters": {
+        "path": "/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js",
+        "output_directory": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal",
+        "extraction_mode": "structural",
+        "rewrite_level": "minimal"
+      },
+      "raw_result": {
+        "version": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "wakaru 1.13.0\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "--version"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "execution": {
+          "exit_code": 0,
+          "signal": null,
+          "stdout": "{\"detected_formats\":[],\"safety\":\"normal\",\"modules\":[{\"filename\":\"bundle.js\",\"kind\":\"javascript\",\"status\":\"decompiled\"}],\"warnings\":[],\"total\":1,\"failed\":0,\"elapsed_ms\":2610}\n",
+          "stderr": "",
+          "command": "/usr/local/bin/wakaru",
+          "arguments": [
+            "/tmp/rea-wakaru-UKrBDc/inputs/bundle.js",
+            "--unpack=strict",
+            "--level=minimal",
+            "--provenance",
+            "--emit-source-map",
+            "--json",
+            "-o",
+            "/tmp/rea-wakaru-UKrBDc/modules"
+          ],
+          "resource_limiter": "/usr/bin/prlimit"
+        },
+        "report": {
+          "detected_formats": [],
+          "safety": "normal",
+          "modules": [
+            {
+              "filename": "bundle.js",
+              "kind": "javascript",
+              "status": "decompiled"
+            }
+          ],
+          "warnings": [],
+          "total": 1,
+          "failed": 0,
+          "elapsed_ms": 2610
+        },
+        "provenance": {
+          "format": "unknown",
+          "strategy": "structural",
+          "modules": {
+            "bundle.js": {
+              "input": "/tmp/rea-wakaru-UKrBDc/inputs/bundle.js",
+              "ranges": [
+                [
+                  0,
+                  400605
+                ]
+              ],
+              "extraction": "structural"
+            }
+          }
+        }
+      },
+      "normalized_result": {
+        "source": {
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js",
+          "sha256": "dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a",
+          "bytes": 400605,
+          "snapshot_path": "/tmp/rea-wakaru-UKrBDc/inputs/bundle.js",
+          "published_copy": {
+            "path": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/inputs/bundle.js",
+            "sha256": "dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a",
+            "bytes": 400605
+          }
+        },
+        "engine": {
+          "id": "wakaru",
+          "version": "1.13.0",
+          "executable": {
+            "path": "/usr/local/bin/wakaru",
+            "sha256": "e8c7ca052974604197389f6ace7464e4dd24dce64e2730971521bd6606ec9c9e",
+            "bytes": 25301016
+          },
+          "audited_source_revision": "6070266d24b32951fa2fe1d2dad5b4313bd5c81b",
+          "executed_source_revision": null
+        },
+        "options": {
+          "extraction_mode": "structural",
+          "rewrite_level": "minimal"
+        },
+        "status": "complete",
+        "detected_formats": [],
+        "reported_safety": "normal",
+        "reported_strategy": "structural",
+        "reported_format": "unknown",
+        "total": 1,
+        "failed": 0,
+        "modules": [
+          {
+            "reported_filename": "bundle.js",
+            "reported_status": "decompiled",
+            "artifact": {
+              "path": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/modules/bundle.js",
+              "sha256": "f694a484ade6e1668ef0d6105d4c03e2ce75bae2d0a5c9b252dc9968d458c7b9",
+              "bytes": 767897
+            },
+            "source_map": {
+              "path": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/modules/bundle.js.map",
+              "sha256": "0856aa03dd7f41701544349b6fd7e72b72e779b0ef13839d382aea656f2b818f",
+              "bytes": 584068
+            },
+            "provenance": {
+              "reported_input": "/tmp/rea-wakaru-UKrBDc/inputs/bundle.js",
+              "original_path": "/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js",
+              "original_sha256": "dbeb005f7e1135138996db467a0c7ca3e4cb27975836bb7bd88114b64dd8317a",
+              "extraction": "structural",
+              "byte_ranges": [
+                {
+                  "start": 0,
+                  "end": 400605
+                }
+              ],
+              "context_byte_ranges": [],
+              "range_semantics": "half-open-utf8-bytes"
+            }
+          }
+        ],
+        "warnings": [],
+        "report": {
+          "path": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/reports/stdout.json",
+          "sha256": "aa80a81b7d70e4d706bc64b8d23ec747de89fab5574dabc8a2c390d6ba9e7af1",
+          "bytes": 174
+        },
+        "provenance": {
+          "path": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/reports/provenance.json",
+          "sha256": "e0a47b5c503abe609cfcb9b091d556f89c4d946a6a662f47af7a0b880153f04d",
+          "bytes": 196
+        },
+        "manifest": {
+          "path": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/manifest.json",
+          "sha256": "0dc8a651ffd747a0778525f4f2d595808daa426d33bb926e40e6e55336b465c3",
+          "bytes": 3622
+        },
+        "analysis_input": {
+          "input_path": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/modules",
+          "format": "directory"
+        },
+        "runtime_equivalence": "unknown",
+        "limitations": [
+          "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+          "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+          "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+          "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+          "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+        ]
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+        "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+        "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+        "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+        "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+      ],
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/recovered/dist/renderer/assets/chunk-pdf-CyhaVadp.js"
+        },
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/decompiled/alternatives/chunk-pdf-CyhaVadp-minimal/modules/bundle.js"
+        }
+      ],
+      "evidence_links": []
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Electron bootstrap reconstruction
+
+Observed source: `rea/recovered/dist/electron-main/main.cjs`, rendered without semantic changes in `rea/evidence/main-readable.cjs`. REA MCP application evidence is indexed by the root investigation report. This reconstruction does not claim to recover original source names or original module boundaries.
+
+Readable strict TypeScript modules reconstruct the complete executable bootstrap chain: user-data CLI/environment precedence, cycle-safe chained system error classification, packaged invariant error, per-path serialized atomic writes, symlink-following ordinary writes, no-follow root containment and parent/target checks, Linux directory-descriptor traversal, permission preservation/defaults, fsync and rename cleanup, CommonJS V8 cache loading/persistence and pruning, and core-to-app startup/failure reporting. The root-owned entrypoint handles Electron wiring and the shipped Sentry debug identifier.
+
+Exports: `resolveUserDataDirectory`, `codeCacheDirectory`, `loadCachedBundle`, and `startMain`. The shipped build identifier is `9a3ba4dd-3f0f-4325-8fd2-21f1eaff1ba1`.
+
+Validation: `node --test tests/bootstrap.test.mjs`: 6 passing differential tests comparing reconstructed modules to the actual shipped JavaScript definitions. Cases cover malformed/duplicate CLI arguments and environment precedence, nested/cyclic errors and cache statuses, atomic symlink behavior and no-follow rejection, mode preservation/private default and concurrent write ordering, cache retention/stale temporary cleanup, deferred startup and failure routing, and actual CommonJS execution plus V8 cache cold/hot/rejected persistence. Strict standalone TypeScript check passes for all five modules.
+
+Limits: filesystem behavior was exercised on macOS; Linux descriptor traversal is statically reconstructed but not runtime-tested here. Unsupported chmod failures and filesystem fault races are preserved from shipped control flow, not injected in tests. Tests execute controlled CommonJS fixtures, not the full original Electron application. Original private/unreachable helper exports and bundler compatibility scaffolding are not retained; the shipped invariant reporting callback is permanently null and message stripping permanently enabled.

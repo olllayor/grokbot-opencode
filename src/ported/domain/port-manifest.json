@@ -1,0 +1,18 @@
+{
+  "dynamic": 4409,
+  "primitive": 17,
+  "ambientGlobals": [
+    "URL",
+    "module"
+  ],
+  "sourceHash": "d541e847ffedb558d62446d41feaaa7222140adb215b7d5e088aab478c378736",
+  "filename": "domain-adapter.cjs",
+  "erasedAstHash": "600e8dc4cf315f756cbe35ce7d71521bd11e204d9e6eaeb9f0b16bd35c90062c",
+  "tsHash": "8c31bac718d50445f36c5736d0969c8f44e54b06dce7ebb52e1f2c1ac2191e85",
+  "source": "domain-adapter.cjs",
+  "destination": "domain-adapter.cts",
+  "strictChecked": true,
+  "checkerHash": null,
+  "importBoundaries": [],
+  "classification": "application-or-mixed-bundle"
+}

@@ -1,0 +1,9 @@
+{
+  "format": "esbuild",
+  "strategy": "structural",
+  "modules": {
+    "Pp.js": {"input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js", "ranges": [[245011,274235]], "extraction": "structural"},
+    "Vp.js": {"input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js", "ranges": [[274464,280724]], "extraction": "structural"},
+    "entry.js": {"input": "/tmp/rea-wakaru-MQIGNR/inputs/bundle.js", "ranges": [[0,384],[385,59620],[60211,62991],[63470,199817],[200212,204077],[204248,204677],[205793,206124],[206742,207556],[208974,211323],[211399,212340],[212715,212958],[213023,213947],[214061,214543],[214908,215647],[215926,216001],[216179,220658],[222526,223170],[224026,224663],[225041,225212],[225344,244802],[274235,274245],[280724,369449]], "extraction": "structural"}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "output": "evidence/rea-differential-process.json",
+  "server": {
+    "name": "rea",
+    "version": "6.3.0"
+  },
+  "isError": false,
+  "evidence_id": "ev_3c62418e256a43b44f57b678236881978321306874d35ba0abf30de9e39f5fa1",
+  "exit": {
+    "code": 0,
+    "signal": 0,
+    "reason": "exited"
+  },
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "The executable digest is a prelaunch file sample; matching path metadata immediately after spawn does not prove an atomic operating-system image binding.",
+    "Process trees are sampled and may omit short-lived descendants.",
+    "Filesystem observations are before/after snapshots, not syscall traces.",
+    "Inherited host environment variables are not recorded and may affect results.",
+    "No filesystem observation paths were selected; filesystem effects remain unknown."
+  ]
+}

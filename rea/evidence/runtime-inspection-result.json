@@ -1,0 +1,61 @@
+{
+  "evidenceId": "ev_d46bc09e29d02e0c4c5383e60a6fb5e68d17ab42d140f7b092e16554f7ed847a",
+  "target": {
+    "target_id": "FD9A64B02506A9EB0BCB56D3B8554D86",
+    "type": "page",
+    "title": "Grok Bot",
+    "file_path": "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/index.html",
+    "attached": false
+  },
+  "domNodes": 145,
+  "reconstructedRendererScripts": [
+    "/Users/clps/Documents/GitHub/grokbot/build/application/dist/renderer/assets/reconstructed-renderer.js"
+  ],
+  "completeness": {
+    "status": "policy_filtered",
+    "conditions": [
+      "policy_filtered"
+    ],
+    "policy_filtered_sections": [
+      "script_sources",
+      "scripts"
+    ],
+    "attach_limited_sections": [],
+    "truncated_sections": [],
+    "unavailable_sections": [],
+    "excluded": [
+      {
+        "section": "script_sources",
+        "reason": "not_approved",
+        "count": 36
+      },
+      {
+        "section": "scripts",
+        "reason": "out_of_target_scope",
+        "count": 2
+      },
+      {
+        "section": "scripts",
+        "reason": "unattributed_origin",
+        "count": 3
+      }
+    ],
+    "dropped_events": {
+      "scripts": 0,
+      "network_requests": 0,
+      "console_events": 0,
+      "websocket_connections": 0,
+      "websocket_frames": 0,
+      "webmcp_tools": 0,
+      "timeline_events": 0,
+      "total": 0
+    }
+  },
+  "limitations": [
+    "Artifact identity is unavailable for this observation.",
+    "Local file paths exposed by the selected CDP target are retained in the observation.",
+    "REA does not evaluate renderer JavaScript, invoke Electron APIs, navigate, click, or close the page.",
+    "Select include_script_sources to retain script contents.",
+    "Browser host platform and architecture were not observed."
+  ]
+}

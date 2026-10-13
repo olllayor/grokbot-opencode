@@ -1,0 +1,37 @@
+{
+  "name": "grokbot-reconstruction",
+  "version": "0.66.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs && node src/electron-preload/verify-reconstruction.mjs && node src/rpc/verify-reconstruction.mjs && node rea/evidence/verify-renderer.mjs && node rea/evidence/verify-auxiliary-preloads.mjs && node rea/evidence/verify-auxiliary-lifecycle.mjs && node rea/evidence/verify-renderer-startup.mjs",
+    "build:ts": "node scripts/reconstruct.mjs",
+    "build": "npm run typecheck && npm run build:ts && node scripts/build.mjs",
+    "verify": "node scripts/verify-source-coverage.mjs && node scripts/verify.mjs",
+    "rea": "node rea/scripts/rea-mcp.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "rea:web": "node rea/scripts/analyze-web-bundle.mjs && node rea/scripts/summarize-web-bundle.mjs",
+    "rea:decompile": "sh rea/scripts/decompile-renderer.sh",
+    "rea:verify-decompiled": "node rea/scripts/verify-decompilation.mjs",
+    "rea:repair-decompiled": "node rea/scripts/repair-decompiled-exports.mjs && node rea/scripts/repair-decompiled-pdf.mjs",
+    "port:generate": "node rea/scripts/ts-port-tree.mjs rea/recovered src/ported",
+    "test:typed": "node scripts/main-ts-verify-settings.mjs && node scripts/renderer-ts-verify.mjs && node scripts/workers-ts-verify.mjs && node scripts/workers-ts-services-verify.mjs && node scripts/workers-ts-connection-verify.mjs && node scripts/workers-ts-cli-verify.mjs && node scripts/workers-ts-provisioning-verify.mjs",
+    "port:verify": "node rea/scripts/ts-port-verify.mjs rea/recovered src/ported full",
+    "port:verify-hashes": "node rea/scripts/ts-port-verify.mjs rea/recovered src/ported hashes",
+    "test:port": "node rea/scripts/ts-port-test.mjs",
+    "start": "node scripts/start.mjs"
+  },
+  "devDependencies": {
+    "@babel/generator": "^7.28.5",
+    "@babel/parser": "^7.28.5",
+    "@babel/traverse": "^7.28.5",
+    "@babel/types": "^7.28.5",
+    "@electron/asar": "4.3.1",
+    "@types/node": "^22.20.5",
+    "electron": "^42.1.0",
+    "esbuild": "^0.25.11",
+    "prettier": "3.6.2",
+    "typescript": "^5.9.3"
+  }
+}
