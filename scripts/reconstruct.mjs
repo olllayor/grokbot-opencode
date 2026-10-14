@@ -14,6 +14,17 @@ const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const output = path.join(root, 'build', 'application');
 await mkdir(output, { recursive: true });
 await cp(path.join(root, 'rea/recovered'), output, { recursive: true, verbatimSymlinks: true });
+const iconsDir = path.join(root, 'src', 'assets', 'icons');
+try {
+  await access(path.join(iconsDir, 'icon.png'));
+  await mkdir(path.join(output, 'resources'), { recursive: true });
+  await cp(path.join(iconsDir, 'icon.png'), path.join(output, 'resources', 'icon.png'));
+  try {
+    await access(path.join(iconsDir, 'icon.icns'));
+    await cp(path.join(iconsDir, 'icon.icns'), path.join(output, 'resources', 'icon.icns'));
+    await cp(path.join(iconsDir, 'icon.icns'), path.join(output, 'resources', 'electron.icns'));
+  } catch {}
+} catch {}
 const manifest = { status: 'complete-typescript-source-port', upstreamTypesRecovered: false, recoveredArtifact: '/Applications/Grok Bot.app/Contents/Resources/app.asar', replacements: [], residuals: ['Native helpers and Electron runtime are reused', 'Dynamic cross-module contracts remain explicit unknown boundaries; upstream TypeScript types are unavailable'], sourceMaps: 'Absent in shipped artifact; original TypeScript types/names unrecoverable' };
 await compileSourcePort({ root, output, manifest });
 const digest = text => createHash('sha256').update(text).digest('hex');

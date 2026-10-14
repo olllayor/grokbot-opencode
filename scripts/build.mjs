@@ -16,6 +16,12 @@ await cp(template, staging, {
   verbatimSymlinks: true,
   filter: source => !['app.asar', 'app.asar.unpacked', '_CodeSignature', 'CodeResources'].includes(path.basename(source)),
 });
+const icnsSource = path.join(root, 'build', 'application', 'resources', 'icon.icns');
+try {
+  await access(icnsSource);
+  await cp(icnsSource, path.join(staging, 'Contents', 'Resources', 'electron.icns'));
+  await cp(icnsSource, path.join(staging, 'Contents', 'Resources', 'icon.icns'));
+} catch {}
 const archive = path.join(staging, 'Contents', 'Resources', 'app.asar');
 await createPackageWithOptions(path.join(root, 'build', 'application'), archive, {
   unpack: '**/*.{node,dylib}',

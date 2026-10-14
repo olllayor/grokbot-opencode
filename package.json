@@ -6,6 +6,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.mjs && node src/electron-preload/verify-reconstruction.mjs && node src/rpc/verify-reconstruction.mjs && node rea/evidence/verify-renderer.mjs && node rea/evidence/verify-auxiliary-preloads.mjs && node rea/evidence/verify-auxiliary-lifecycle.mjs && node rea/evidence/verify-renderer-startup.mjs",
+    "generate:icons": "node scripts/generate-official-icons.mjs",
     "build:ts": "node scripts/reconstruct.mjs",
     "build": "npm run typecheck && npm run build:ts && node scripts/build.mjs",
     "verify": "node scripts/verify-source-coverage.mjs && node scripts/verify.mjs",
