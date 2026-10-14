@@ -1,6 +1,6 @@
 {
-  "executable": "/Users/ollayor/Code/open-source/open-grokbot/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron",
-  "profile": "/Users/ollayor/Code/open-source/open-grokbot/build/smoke-profile-1791879004863",
+  "executable": "/Users/ollayor/Code/open-source/grokbot-opencode/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron",
+  "profile": "/Users/ollayor/Code/open-source/grokbot-opencode/build/smoke-profile-1791957383168",
   "aliveAfter12Seconds": true,
   "exit": {
     "code": 0,

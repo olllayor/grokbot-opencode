@@ -1,3 +1,40 @@
-[sand] using isolated user-data dir: /Users/ollayor/Code/open-source/open-grokbot/build/smoke-profile-1791879004863
-[55161:1013/131016.910756:ERROR:content/browser/network_service_instance_impl.cc:703] Network service crashed or was terminated, restarting service.
-[55161:1013/131016.937534:ERROR:content/browser/gpu/gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=15
+[sand] using isolated user-data dir: /Users/ollayor/Code/open-source/grokbot-opencode/build/smoke-profile-1791957383168
+[sand] dev control server failed to bind :62150: Error: listen EADDRINUSE: address already in use 127.0.0.1:62150
+    at Server.setupListenHandle [as _listen2] (node:net:2008:16)
+    at listenInCluster (node:net:2065:12)
+    at node:net:2274:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 62150
+}
+(node:91013) ExperimentalWarning: vm.USE_MAIN_CONTEXT_DEFAULT_LOADER is an experimental feature and might change at any time
+(Use `Electron --trace-warnings ...` to show where the warning was created)
+[opencode-coordinator] initializing OpenCode server manager...
+[sand:privacy] privacy-mode lookup failed, using privacy-safe fallback backend=https://api2.cursor.sh/ error=Unauthenticated
+[opencode-coordinator] connected to OpenCode at http://127.0.0.1:49554
+[opencode-coordinator] request: setHostSettings (id=m-1)
+[opencode-coordinator] request: getHostStatus (id=r-1)
+[opencode-coordinator] request: getServerAgentRoster (id=r-2)
+[opencode-coordinator] request: listAgents (id=r-3)
+[opencode-coordinator] request: getTrays (id=r-4)
+[opencode-coordinator] request: getTeachRecordingStatus (id=r-5)
+[opencode-coordinator] request: isEgressTunnelAvailable (id=r-6)
+[opencode-coordinator] request: getBotTemplateExportPolicy (id=r-7)
+[opencode-coordinator] request: getHostStatus (id=r-8)
+[opencode-coordinator] request: getHostSettings (id=m-2)
+[opencode-coordinator] request: getHostSettings (id=m-3)
+[opencode-coordinator] request: countAgents (id=r-9)
+[opencode-coordinator] request: setHostSettings (id=m-4)
+[opencode-coordinator] request: getAgentTranscriptTail (id=r-10)
+[opencode-coordinator] request: skillsCatalog (id=r-11)
+[opencode-coordinator] request: getMainAgent (id=r-12)
+[opencode-coordinator] request: setWindowFocused (id=m-5)
+[opencode-coordinator] request: setHostSettings (id=m-6)
+[opencode-coordinator] request: listBoxMcpServers (id=m-7)
+[opencode-coordinator] request: setWindowFocused (id=m-8)
+[opencode-coordinator] shutdown received on control port
+[91013:1014/105635.285728:ERROR:content/browser/gpu/gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=15
+[91013:1014/105635.297059:ERROR:content/browser/network_service_instance_impl.cc:703] Network service crashed or was terminated, restarting service.

@@ -37,6 +37,7 @@ async function main() {
 
     let outcome: DrOutcome;
 
+                console.log(`[opencode-coordinator] request: ${method} (id=${requestId})`);
     try {
       let value: unknown;
       switch (method) {
@@ -49,7 +50,14 @@ async function main() {
         case "getServerAgentRoster":
           value = await agentManager.getServerAgentRoster();
           break;
+        case "listAgents":
+          value = [(await agentManager.ensureDefaultAgent())];
+          break;
+        case "countAgents":
+          value = 1;
+          break;
         case "openAgentTail":
+        case "getAgentTranscriptTail":
           value = await agentManager.openAgentTail(args?.id, args?.limit);
           break;
         case "sendPrompt":
@@ -57,6 +65,43 @@ async function main() {
           break;
         case "interruptAgentRun":
           value = await agentManager.interruptAgentRun(args?.id);
+          break;
+        case "getForeverBoxStatus":
+        case "ensureForeverBox":
+        case "getHostStatus":
+          value = { status: "ready" };
+          break;
+        case "getHostSettings":
+          value = { settings: {} };
+          break;
+        case "setHostSettings":
+        case "setWindowFocused":
+        case "setAgentUnread":
+        case "setAgentHiddenFromSidebar":
+        case "setAgentNotifyOnUpdates":
+        case "setAgentDraftingDisabled":
+        case "markAgentTaskRead":
+          value = { status: "ok" };
+          break;
+        case "isEgressTunnelAvailable":
+          value = false;
+          break;
+        case "getTeachRecordingStatus":
+          value = { status: "idle" };
+          break;
+        case "getBotTemplateExportPolicy":
+          value = { policy: "none" };
+          break;
+        case "skillsCatalog":
+        case "listBoxMcpServers":
+        case "getSubagents":
+        case "getAsyncTasks":
+        case "getTrays":
+        case "listAllAutomations":
+          value = [];
+          break;
+        case "getBoxSecretsStatus":
+          value = { secrets: [] };
           break;
         case "promptAcceptanceStatus":
           value = { status: "accepted" };
@@ -72,13 +117,6 @@ async function main() {
           break;
         case "getAgentTasks":
           value = { tasks: [] };
-          break;
-        case "setAgentUnread":
-        case "setAgentHiddenFromSidebar":
-        case "setAgentNotifyOnUpdates":
-        case "setAgentDraftingDisabled":
-        case "markAgentTaskRead":
-          value = { status: "ok" };
           break;
         default:
           console.warn(`[opencode-coordinator] unhandled method: ${method}`);
@@ -109,7 +147,8 @@ async function main() {
   };
 
   const bindDataPort = (port: MessagePort) => {
-    port.on("message", (msg: DrFrame) => {
+    port.on("message", (raw: any) => {
+      const msg: DrFrame = raw && typeof raw === "object" && "data" in raw ? raw.data : raw;
       if (msg && msg.kind === "request") {
         handleRequest(port, msg.requestId, msg.method, msg.args);
       }
@@ -118,7 +157,8 @@ async function main() {
   };
 
   const bindControlPort = (controlPort: MessagePort) => {
-    controlPort.on("message", (msg: DrFrame) => {
+    controlPort.on("message", (raw: any) => {
+      const msg: DrFrame = raw && typeof raw === "object" && "data" in raw ? raw.data : raw;
       if (msg && msg.kind === "lifecycle") {
         if (msg.phase === "shutdown") {
           console.log("[opencode-coordinator] shutdown received on control port");
