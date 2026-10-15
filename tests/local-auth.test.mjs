@@ -14,10 +14,10 @@ async function importAuth() {
   return import(`data:text/javascript;base64,${Buffer.from(result.outputFiles[0].text).toString('base64')}`);
 }
 
-const { SandCursorAuthService, DEFAULT_LOCAL_USER } = await importAuth();
+const { LocalAuthService, DEFAULT_LOCAL_USER } = await importAuth();
 
-test('SandCursorAuthService provides immediate logged-in status with local developer identity', async () => {
-  const auth = new SandCursorAuthService();
+test('LocalAuthService provides immediate logged-in status with local developer identity', async () => {
+  const auth = new LocalAuthService();
   const status = await auth.getStatus();
   assert.equal(status.kind, 'logged-in');
   assert.equal(status.authId, DEFAULT_LOCAL_USER.authId);
@@ -28,7 +28,7 @@ test('SandCursorAuthService provides immediate logged-in status with local devel
 });
 
 test('tokens are available synchronously and asynchronously without remote OAuth network calls', async () => {
-  const auth = new SandCursorAuthService();
+  const auth = new LocalAuthService();
   const peeked = auth.peekAccessToken();
   assert.ok(typeof peeked === 'string' && peeked.length > 0);
   const valid = await auth.getValidAccessToken();
@@ -39,7 +39,7 @@ test('tokens are available synchronously and asynchronously without remote OAuth
 });
 
 test('login and logout operations maintain authorized developer state', async () => {
-  const auth = new SandCursorAuthService();
+  const auth = new LocalAuthService();
   const loginResult = await auth.login();
   assert.equal(loginResult.kind, 'logged-in');
   const logoutResult = await auth.logout();
@@ -48,7 +48,7 @@ test('login and logout operations maintain authorized developer state', async ()
 });
 
 test('subscribe delivers current status and reacts to profile mutations', async () => {
-  const auth = new SandCursorAuthService();
+  const auth = new LocalAuthService();
   const received = [];
   const unsubscribe = auth.subscribe((s) => received.push(s));
 
@@ -67,7 +67,7 @@ test('subscribe delivers current status and reacts to profile mutations', async 
 });
 
 test('backendAuth and team snapshots provide required structures for internal services', async () => {
-  const auth = new SandCursorAuthService();
+  const auth = new LocalAuthService();
   const backend = auth.backendAuth();
   assert.ok(typeof backend.getAccessToken === 'function');
   assert.ok(typeof backend.getTeamId === 'function');

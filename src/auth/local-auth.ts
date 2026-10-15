@@ -1,8 +1,7 @@
 /**
  * Local Developer Authentication Service.
- * Replaces the xAI / Cursor OAuth and loopback server flow with a persistent,
- * local-developer identity so open-grokbot starts up authorized and responsive
- * without network or browser login requirements.
+ * Provides a persistent local-developer identity so open-grokbot starts up
+ * authorized and responsive without network or browser login requirements.
  */
 
 export interface LocalAuthUser {
@@ -31,7 +30,7 @@ export interface AuthStatus {
   freshness?: number;
 }
 
-export class SandCursorAuthService {
+export class LocalAuthService {
   public environment: unknown;
   public user: LocalAuthUser;
   public listeners = new Set<(status: AuthStatus) => void>();
@@ -66,6 +65,10 @@ export class SandCursorAuthService {
       isAnysphereUser: this.user.isAnysphereUser,
       profilePictureUrl: this.user.profilePictureUrl,
     };
+  }
+
+  public async getAuthStatus(): Promise<AuthStatus> {
+    return this.getStatus();
   }
 
   public async getValidAccessToken(_options?: unknown): Promise<string> {
@@ -201,3 +204,6 @@ export class SandCursorAuthService {
     return await mutation();
   }
 }
+
+/** @deprecated Use {@link LocalAuthService}. Kept for reconstruct binding compatibility. */
+export const SandCursorAuthService = LocalAuthService;
