@@ -6,17 +6,20 @@ import { startMain } from './startup.js';
 
 if (process.platform === 'darwin') {
   app.setName('Grok Bot');
-  const setDockIcon = () => {
-    try {
-      if (app.dock && typeof app.dock.setIcon === 'function') {
-        const iconPath = process.env.SAND_DEV_APP_ICON || join(__dirname, '../../resources/icon.png');
-        app.dock.setIcon(iconPath);
-      }
-    } catch {}
-  };
-  setDockIcon();
-  if (!app.isReady()) {
-    void app.whenReady().then(setDockIcon);
+  // A packaged build takes its dock icon from the bundle's .icns. Only the unpackaged
+  // runtime shows the Electron binary's icon, which needs an explicit setIcon. Setting it
+  // once after ready costs ~20ms; calling it before ready too costs ~85ms for no icon gain.
+  if (!app.isPackaged) {
+    const setDockIcon = () => {
+      try {
+        if (app.dock && typeof app.dock.setIcon === 'function') {
+          const iconPath = process.env.SAND_DEV_APP_ICON || join(__dirname, '../../resources/icon.png');
+          app.dock.setIcon(iconPath);
+        }
+      } catch {}
+    };
+    if (app.isReady()) setDockIcon();
+    else void app.whenReady().then(setDockIcon);
   }
 }
 

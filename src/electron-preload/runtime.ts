@@ -163,12 +163,9 @@ export function platformOptional<T>(platform: string, value: T): T | undefined {
 }
 export const isDev = !!process.env.SAND_RESTART_EXIT_CODE?.length;
 export function usesProductionBackend(): boolean {
-  const endpoint =
-    process.env.SAND_BACKEND_URL ?? process.env.CURSOR_API_BASE_URL;
-  return (
-    !endpoint?.length ||
-    (URL.canParse(endpoint) && new URL(endpoint).host === "api2.cursor.sh")
-  );
+  // This open-source build never contacts Cursor's production backend.
+  // Returning false prevents privacy-mode lookups against api2.cursor.sh.
+  return false;
 }
 export function reportTelemetryFailure(error: unknown): void {
   console.warn(

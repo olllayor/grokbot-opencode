@@ -837,7 +837,7 @@ export class MeetingSiteRules {
     /^(join|leave|mute|unmute|video|chat|share|more|people|participants|host|audio|stop|start|end|meeting|invite|react|settings|microphone|camera|screen|call|waiting|admitted|guest|presenting|you|off|on|close|open)$/i;
   static roleTag = /\s*\((?:presenting|you|host|me|guest)\)\s*$/i;
   static jobTitle = /,.*$/;
-  static botName = /\bbot\b|\bnotetaker\b|\bcursor\s+agent\b/i;
+  static botName = /\bbot\b|\bnotetaker\b|\bgrok\s*bot\s+agent\b|\bopencode\s+agent\b/i;
   static classifyBy(
     signals: PageSignals,
     terminalPhrases: ["denied" | "ended", string[]][],

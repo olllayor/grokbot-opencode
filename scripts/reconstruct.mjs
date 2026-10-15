@@ -75,6 +75,18 @@ async function patch(relativeFile, imports, replacements) {
   manifest.replacements.push({kind:'typescript-entrypoint-lifecycle',source:'src/renderer/renderer-startup.ts',artifact:relativeFile,originalStart:first.start,originalEnd:last.end,originalSha256:digest(code.slice(first.start,last.end))});
   const inserted=parse(adapter,{sourceType:'module'}).program.body.map(node=>t.removePropertiesDeep(node));
   nodes.splice(nodes.indexOf(first),nodes.indexOf(last)-nodes.indexOf(first)+1,...inserted);
+  traverse(ast, {
+   CallExpression(callPath) {
+    const callee = callPath.node.callee;
+    if (t.isMemberExpression(callee) && t.isIdentifier(callee.property, { name: 'flatMap' })) {
+     if (t.isIdentifier(callee.object, { name: 'n' })) {
+      callee.object = t.logicalExpression('||', t.identifier('n'), t.arrayExpression([]));
+     } else if (t.isMemberExpression(callee.object) && t.isIdentifier(callee.object.property, { name: 'memberIds' })) {
+      callee.object = t.logicalExpression('||', callee.object, t.arrayExpression([]));
+     }
+    }
+   }
+  });
  }
  const matched=new Set();
  traverse(ast,{Program(program){
@@ -156,7 +168,23 @@ await patch('dist/electron-main/main-app.cjs',`const __grokbotUpdate = require('
  M0t:'__grokbotRpc.validateArguments',P0t:'__grokbotRpc.probeMethod',B0t:'__grokbotRpc.serveMethods',_l:'__grokbotRpc.serveEdge',
  ar:'__grokbotRpc.EdgeCallFailure',xC:'__grokbotRpc.EdgeTrustPolicyMissingError',
  KY:'__grokbotAuth.SandCursorAuthService',
+ kq:'()=>S.PrivacyMode.NO_STORAGE',
+ RD:'()=>S.PrivacyMode.NO_STORAGE',
 });
+const mainAppOut = path.join(output, 'dist/electron-main/main-app.cjs');
+let mainAppSrc = await readFile(mainAppOut, 'utf8');
+if (!mainAppSrc.includes('workspaceDir:')) {
+ mainAppSrc = mainAppSrc.replace(
+  /processConfig:\s*\{\s*appVersion:\s*Tw\(\)\.version,\s*isPackaged:\s*Te\.app\.isPackaged,\s*dataDir:\s*\(void 0,\s*Lc\.getSandRootDir\)\(\)\s*\}/,
+  `processConfig: {
+            appVersion: Tw().version,
+            isPackaged: Te.app.isPackaged,
+            dataDir: (void 0, Lc.getSandRootDir)(),
+            workspaceDir: process.env.OPENCODE_PROJECT_DIR || process.env.WORKSPACE_DIR || process.cwd()
+          }`
+ );
+ await writeFile(mainAppOut, mainAppSrc);
+}
 const rendererImport=`import * as __grokbotRenderer from './${path.basename(renderer)}'; const bootstrapRenderer=__grokbotRenderer.bootstrapRenderer;`;
 await patch('dist/renderer/assets/index-ZYxf-aBb.js',rendererImport,{
  x6:'__grokbotRenderer.shouldShowFirstBoxFailure',BRe:'__grokbotRenderer.canRevealAppView',GRe:'__grokbotRenderer.resolveBootPresentation',VRe:'__grokbotRenderer.resolveBootBusyLabel',
