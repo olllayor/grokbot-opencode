@@ -17,7 +17,8 @@ export type DrFrame =
     }
   | {
       kind: "event";
-      name: string;
+      family: string;
+      name?: string;
       payload: unknown;
     }
   | {
@@ -45,10 +46,20 @@ export interface TranscriptToolCallEntry {
   kind: "tool-call";
   id: string;
   name: string;
-  status: "running" | "completed" | "failed";
+  status: "running" | "completed" | "failed" | "pending";
+  summary?: string;
   input?: unknown;
   output?: unknown;
   timestampMs: number;
+}
+
+export interface TranscriptThinkingEntry {
+  kind: "thinking";
+  id: string;
+  text: string;
+  isStreaming: boolean;
+  timestampMs: number;
+  durationMs?: number;
 }
 
 export interface TranscriptNoticeEntry {
@@ -61,13 +72,20 @@ export interface TranscriptNoticeEntry {
 export type TranscriptEntry =
   | TranscriptMessageEntry
   | TranscriptToolCallEntry
+  | TranscriptThinkingEntry
   | TranscriptNoticeEntry;
+
+export interface TranscriptOrderedStamp {
+  replicaKey: string;
+  epoch: string;
+  sequence: number;
+}
 
 export interface TranscriptSnapshotEvent {
   type: "snapshot";
   activeAgentId: string;
   entries: TranscriptEntry[];
-  ordered: { sequence: number };
+  ordered: TranscriptOrderedStamp;
   coverage: {
     kind: "transcript-live-range";
     fromSequence: number;
@@ -79,14 +97,14 @@ export interface TranscriptAppendedEvent {
   type: "appended";
   agentId: string;
   entry: TranscriptEntry;
-  ordered: { sequence: number };
+  ordered: TranscriptOrderedStamp;
 }
 
 export interface TranscriptUpdatedEvent {
   type: "updated";
   agentId: string;
   entry: TranscriptEntry;
-  ordered?: { sequence: number };
+  ordered?: TranscriptOrderedStamp;
 }
 
 export type TranscriptFeedEvent =
@@ -100,6 +118,10 @@ export interface AgentDescriptor {
   harness: "temporal" | "box";
   role?: string;
   model?: string;
+  cwd?: string;
+  memberIds?: string[];
+  memberAgentIds?: string[];
+  isGroup?: boolean;
 }
 
 export interface SendPromptArgs {
@@ -111,4 +133,29 @@ export interface SendPromptArgs {
   richText?: string;
   replyToId?: string;
   sessionId?: string;
+  cwd?: string;
+  directory?: string;
+  workingDirectory?: string;
 }
+
+export interface PromptFileAttachment {
+  uri: string;
+  mime?: string;
+  name?: string;
+  description?: string;
+}
+
+export interface SkillDescriptor {
+  name: string;
+  description: string;
+  content?: string;
+}
+
+export interface McpServerDescriptor {
+  id?: string;
+  serverIdentifier?: string;
+  name: string;
+  status?: "connected" | "connecting" | "error" | "disabled";
+  tools?: Array<{ name: string; description?: string }>;
+}
+
