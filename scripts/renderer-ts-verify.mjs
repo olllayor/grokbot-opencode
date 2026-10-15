@@ -51,7 +51,8 @@ const reset = () => { caches = new Map(); ref = undefined; hookStates=[];stateCu
 let assertions = 0;
 const compare = (actual, expected) => { assert.deepEqual(actual, expected); assertions++; };
 for (const entry of manifest.entries) {
- const original = await load(`${manifest.targetRoot}/${entry.file}`);
+ const rootPrefix = manifest.targetRoot.startsWith("rea/") ? "" : "rea/";
+ const original = await load(`${rootPrefix}${manifest.targetRoot}/${entry.file}`);
  const rebuilt = await load(entry.typescript);
  compare(Object.keys(rebuilt).sort(), Object.keys(original).sort());
  switch (entry.file) {
