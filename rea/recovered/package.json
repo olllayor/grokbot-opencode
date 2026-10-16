@@ -68,7 +68,7 @@
     "@sand/client": "workspace:*",
     "@sand/shared": "workspace:*",
     "@sentry/electron": "7.2.0",
-    "@sentry/node-core": "10.17.0",
+    "@sentry/node-core": "10.27.0",
     "@statsig/js-client": "^3.20.0",
     "@stylexjs/stylex": "0.18.3",
     "@tanstack/react-query": "5.100.9",
